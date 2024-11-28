@@ -1,10 +1,10 @@
-// ./../../../questions/questions4_1.js
+// ./../../../questions/questions4/questions4_1.js
 
 import React from "react";
 import { Input, Radio, Checkbox } from "@material-tailwind/react";
-import Slider from "@mui/material/Slider"; // Importar desde MUI
+import Slider from "@mui/material/Slider"; // Importar Slider de MUI
 
-export const questions4_1 = (formData, handleChange) => [
+export const questions4_1 = (formData, handleChange, handleSelectChange) => [
   // Responsabilidad de Proporcionar Recursos
   {
     label: "Responsabilidad de Proporcionar Recursos",
@@ -17,7 +17,7 @@ export const questions4_1 = (formData, handleChange) => [
       <div className="flex gap-4">
         <Radio
           name="respRecursosPregunta1"
-          label="Sí"
+          label={<span className="text-black font-semibold">Sí</span>}
           value="Sí"
           onChange={handleChange}
           checked={formData.respRecursosPregunta1 === "Sí"}
@@ -25,7 +25,7 @@ export const questions4_1 = (formData, handleChange) => [
         />
         <Radio
           name="respRecursosPregunta1"
-          label="No"
+          label={<span className="text-black font-semibold">No</span>}
           value="No"
           onChange={handleChange}
           checked={formData.respRecursosPregunta1 === "No"}
@@ -33,7 +33,7 @@ export const questions4_1 = (formData, handleChange) => [
         />
         <Radio
           name="respRecursosPregunta1"
-          label="No Aplica"
+          label={<span className="text-black font-semibold">No Aplica</span>}
           value="No Aplica"
           onChange={handleChange}
           checked={formData.respRecursosPregunta1 === "No Aplica"}
@@ -47,7 +47,11 @@ export const questions4_1 = (formData, handleChange) => [
     component: (
       <div className="flex flex-col gap-2">
         <Checkbox
-          label="Implementación de la Norma Técnica de la Calidad del Proceso Estadístico"
+          label={
+            <span className="text-black font-semibold">
+              Implementación de la Norma Técnica de la Calidad del Proceso Estadístico
+            </span>
+          }
           name="respRecursosPregunta2"
           value="Implementación de la Norma Técnica de la Calidad del Proceso Estadístico"
           onChange={handleChange}
@@ -55,7 +59,11 @@ export const questions4_1 = (formData, handleChange) => [
           color="black"
         />
         <Checkbox
-          label="Mantenimiento y mejora del proceso estadístico"
+          label={
+            <span className="text-black font-semibold">
+              Mantenimiento y mejora del proceso estadístico
+            </span>
+          }
           name="respRecursosPregunta2"
           value="Mantenimiento y mejora del proceso estadístico"
           onChange={handleChange}
@@ -63,7 +71,11 @@ export const questions4_1 = (formData, handleChange) => [
           color="black"
         />
         <Checkbox
-          label="Compromiso con la transparencia, la confidencialidad y la imparcialidad"
+          label={
+            <span className="text-black font-semibold">
+              Compromiso con la transparencia, la confidencialidad y la imparcialidad
+            </span>
+          }
           name="respRecursosPregunta2"
           value="Compromiso con la transparencia, la confidencialidad y la imparcialidad"
           onChange={handleChange}
@@ -71,7 +83,11 @@ export const questions4_1 = (formData, handleChange) => [
           color="black"
         />
         <Checkbox
-          label="Continuidad de la operación estadística"
+          label={
+            <span className="text-black font-semibold">
+              Continuidad de la operación estadística
+            </span>
+          }
           name="respRecursosPregunta2"
           value="Continuidad de la operación estadística"
           onChange={handleChange}
@@ -125,7 +141,7 @@ export const questions4_1 = (formData, handleChange) => [
       <div className="flex gap-4">
         <Radio
           name="respMejoraPregunta1"
-          label="Sí"
+          label={<span className="text-black font-semibold">Sí</span>}
           value="Sí"
           onChange={handleChange}
           checked={formData.respMejoraPregunta1 === "Sí"}
@@ -133,7 +149,7 @@ export const questions4_1 = (formData, handleChange) => [
         />
         <Radio
           name="respMejoraPregunta1"
-          label="No"
+          label={<span className="text-black font-semibold">No</span>}
           value="No"
           onChange={handleChange}
           checked={formData.respMejoraPregunta1 === "No"}
@@ -147,76 +163,88 @@ export const questions4_1 = (formData, handleChange) => [
     component: (
       <div className="flex flex-col gap-4">
         <div>
-          <p className="font-medium">a) Procesos estadísticos</p>
+          <p className="font-medium text-black">a) Procesos estadísticos</p>
           <Slider
             value={formData.respMejoraPregunta2a}
-            onChange={(event, value) => handleChange({ target: { name: "respMejoraPregunta2a", value } })}
+            onChange={(event, value) =>
+              handleSelectChange("respMejoraPregunta2a", value)
+            }
             min={1}
             max={5}
             step={1}
             aria-labelledby="procesos-estadisticos-slider"
           />
-          <span className="ml-2">{formData.respMejoraPregunta2a}</span>
+          <span className="ml-2 text-black">{formData.respMejoraPregunta2a}</span>
         </div>
         <div>
-          <p className="font-medium">b) Recursos necesarios</p>
+          <p className="font-medium text-black">b) Recursos necesarios</p>
           <Slider
             value={formData.respMejoraPregunta2b}
-            onChange={(event, value) => handleChange({ target: { name: "respMejoraPregunta2b", value } })}
+            onChange={(event, value) =>
+              handleSelectChange("respMejoraPregunta2b", value)
+            }
             min={1}
             max={5}
             step={1}
             aria-labelledby="recursos-necesarios-slider"
           />
-          <span className="ml-2">{formData.respMejoraPregunta2b}</span>
+          <span className="ml-2 text-black">{formData.respMejoraPregunta2b}</span>
         </div>
         <div>
-          <p className="font-medium">c) Transparencia</p>
+          <p className="font-medium text-black">c) Transparencia</p>
           <Slider
             value={formData.respMejoraPregunta2c}
-            onChange={(event, value) => handleChange({ target: { name: "respMejoraPregunta2c", value } })}
+            onChange={(event, value) =>
+              handleSelectChange("respMejoraPregunta2c", value)
+            }
             min={1}
             max={5}
             step={1}
             aria-labelledby="transparencia-slider"
           />
-          <span className="ml-2">{formData.respMejoraPregunta2c}</span>
+          <span className="ml-2 text-black">{formData.respMejoraPregunta2c}</span>
         </div>
         <div>
-          <p className="font-medium">d) Confidencialidad</p>
+          <p className="font-medium text-black">d) Confidencialidad</p>
           <Slider
             value={formData.respMejoraPregunta2d}
-            onChange={(event, value) => handleChange({ target: { name: "respMejoraPregunta2d", value } })}
+            onChange={(event, value) =>
+              handleSelectChange("respMejoraPregunta2d", value)
+            }
             min={1}
             max={5}
             step={1}
             aria-labelledby="confidencialidad-slider"
           />
-          <span className="ml-2">{formData.respMejoraPregunta2d}</span>
+          <span className="ml-2 text-black">{formData.respMejoraPregunta2d}</span>
         </div>
         <div>
-          <p className="font-medium">e) Imparcialidad</p>
+          <p className="font-medium text-black">e) Imparcialidad</p>
           <Slider
             value={formData.respMejoraPregunta2e}
-            onChange={(event, value) => handleChange({ target: { name: "respMejoraPregunta2e", value } })}
+            onChange={(event, value) =>
+              handleSelectChange("respMejoraPregunta2e", value)
+            }
             min={1}
             max={5}
             step={1}
             aria-labelledby="imparcialidad-slider"
           />
-          <span className="ml-2">{formData.respMejoraPregunta2e}</span>
+          <span className="ml-2 text-black">{formData.respMejoraPregunta2e}</span>
         </div>
         <div>
-          <p className="font-medium">f) Continuidad</p>
+          <p className="font-medium text-black">f) Continuidad</p>
           <Slider
             value={formData.respMejoraPregunta2f}
-            onChange={(event, value) => handleChange({ target: { name: "respMejoraPregunta2f", value } })}
+            onChange={(event, value) =>
+              handleSelectChange("respMejoraPregunta2f", value)
+            }
             min={1}
             max={5}
             step={1}
             aria-labelledby="continuidad-slider"
           />
-          <span className="ml-2">{formData.respMejoraPregunta2f}</span>
+          <span className="ml-2 text-black">{formData.respMejoraPregunta2f}</span>
         </div>
       </div>
     ),
@@ -265,7 +293,7 @@ export const questions4_1 = (formData, handleChange) => [
       <div className="flex gap-4">
         <Radio
           name="asignacionPregunta1"
-          label="Sí"
+          label={<span className="text-black font-semibold">Sí</span>}
           value="Sí"
           onChange={handleChange}
           checked={formData.asignacionPregunta1 === "Sí"}
@@ -273,7 +301,7 @@ export const questions4_1 = (formData, handleChange) => [
         />
         <Radio
           name="asignacionPregunta1"
-          label="No"
+          label={<span className="text-black font-semibold">No</span>}
           value="No"
           onChange={handleChange}
           checked={formData.asignacionPregunta1 === "No"}
@@ -281,7 +309,7 @@ export const questions4_1 = (formData, handleChange) => [
         />
         <Radio
           name="asignacionPregunta1"
-          label="No Aplica"
+          label={<span className="text-black font-semibold">No Aplica</span>}
           value="No Aplica"
           onChange={handleChange}
           checked={formData.asignacionPregunta1 === "No Aplica"}
@@ -295,7 +323,7 @@ export const questions4_1 = (formData, handleChange) => [
     component: (
       <div className="flex flex-col gap-2">
         <Checkbox
-          label="Roles específicos"
+          label={<span className="text-black font-semibold">Roles específicos</span>}
           name="asignacionPregunta2"
           value="Roles específicos"
           onChange={handleChange}
@@ -303,7 +331,7 @@ export const questions4_1 = (formData, handleChange) => [
           color="black"
         />
         <Checkbox
-          label="Responsabilidades correspondientes"
+          label={<span className="text-black font-semibold">Responsabilidades correspondientes</span>}
           name="asignacionPregunta2"
           value="Responsabilidades correspondientes"
           onChange={handleChange}
@@ -311,7 +339,7 @@ export const questions4_1 = (formData, handleChange) => [
           color="black"
         />
         <Checkbox
-          label="Cumplimiento de requisitos"
+          label={<span className="text-black font-semibold">Cumplimiento de requisitos</span>}
           name="asignacionPregunta2"
           value="Cumplimiento de requisitos"
           onChange={handleChange}
@@ -364,14 +392,16 @@ export const questions4_1 = (formData, handleChange) => [
     component: (
       <div className="flex flex-col gap-2">
         <Slider
-          value={Number(formData.evaluacionPregunta1)}
-          onChange={(event, value) => handleChange({ target: { name: "evaluacionPregunta1", value } })}
+          value={formData.evaluacionPregunta1}
+          onChange={(event, value) =>
+            handleChange({ target: { name: "evaluacionPregunta1", value } })
+          }
           min={1}
           max={5}
           step={1}
           aria-labelledby="evaluacion-responsabilidad-slider"
         />
-        <span className="ml-2">{formData.evaluacionPregunta1}</span>
+        <span className="ml-2 text-black">{formData.evaluacionPregunta1}</span>
       </div>
     ),
   },
@@ -422,7 +452,7 @@ export const questions4_1 = (formData, handleChange) => [
         value={formData.sugerenciasComentario}
         onChange={handleChange}
         placeholder="Ingrese su comentario"
-        className="w-4/5"
+        className="w-4/5 text-black border-black"
         color="black"
       />
     ),
@@ -439,7 +469,7 @@ export const questions4_1 = (formData, handleChange) => [
     component: (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
-          <p className="font-medium">Acción</p>
+          <p className="font-medium text-black">Acción</p>
           <Input
             type="text"
             name="accion"
@@ -450,7 +480,7 @@ export const questions4_1 = (formData, handleChange) => [
           />
         </div>
         <div>
-          <p className="font-medium">Responsable SNS</p>
+          <p className="font-medium text-black">Responsable SNS</p>
           <Input
             type="text"
             name="responsableSNS"
@@ -461,7 +491,7 @@ export const questions4_1 = (formData, handleChange) => [
           />
         </div>
         <div>
-          <p className="font-medium">Fecha prevista de cumplimiento</p>
+          <p className="font-medium text-black">Fecha prevista de cumplimiento</p>
           <Input
             type="date"
             name="fechaCumplimiento"

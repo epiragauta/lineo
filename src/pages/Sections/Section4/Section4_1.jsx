@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Button } from "@material-tailwind/react";
 import { questions as operationQuestions } from "./../../../questions/operation_questions";
-import { questions4_1 as form4_1Questions } from "./../../../questions/questions4/questions4_1";
+import { questions4_1 as form4_1Questions } from "./../../../questions/questions4/questions4_1"; // Ruta de importación corregida
 import Divider from "./../../../components/Divider";
 
 const Formulario = () => {
@@ -59,6 +59,7 @@ const Formulario = () => {
     fechaCumplimiento: "",
   });
 
+  // Función para manejar cambios en inputs de tipo texto, radio y checkbox
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
 
@@ -80,15 +81,24 @@ const Formulario = () => {
     }
   };
 
+  // **Nueva Función handleSelectChange**
+  const handleSelectChange = (name, value) => {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Formulario enviado", formData);
     // Aquí puedes agregar la lógica para enviar el formulario
   };
 
+  // **Pasar handleSelectChange a las preguntas**
   const questionsArray = [
-    ...operationQuestions(formData, handleChange),
-    ...form4_1Questions(formData, handleChange),
+    ...operationQuestions(formData, handleChange, handleSelectChange),
+    ...form4_1Questions(formData, handleChange, handleSelectChange),
   ];
 
   return (
@@ -109,9 +119,13 @@ const Formulario = () => {
           {question.type === "section" ? (
             <h3 className="text-xl font-semibold mb-4">{question.label}</h3>
           ) : (
-            <div className="p-4 border border-gray-300 rounded shadow-sm bg-gray-100">
+            <div
+              className={`p-4 border border-black rounded shadow-sm ${
+                index % 2 === 0 ? "bg-gray-100" : "bg-primary_light"
+              }`}
+            >
               {question.label && (
-                <label className="block text-lg font-medium mb-2">
+                <label className="block text-lg font-medium mb-2 text-black">
                   {question.label}
                 </label>
               )}

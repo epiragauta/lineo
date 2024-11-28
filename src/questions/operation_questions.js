@@ -1,5 +1,7 @@
+// ./../../../questions/operation_questions.js
+
 import React from "react";
-import { Input, Select, Option, Radio } from "@material-tailwind/react";
+import { Input, Select, Option, Radio, Checkbox } from "@material-tailwind/react";
 
 export const questions = (formData, handleChange, handleSelectChange) => [
   {
@@ -13,6 +15,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         placeholder="Ingrese el nombre"
         required
         color="black"
+        className="text-black border-black"
       />
     ),
   },
@@ -25,6 +28,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         onChange={(value) => handleSelectChange("dependencia", value)}
         required
         color="black"
+        className="text-black border-black"
       >
         <Option value="direccion">Dirección de Innovación y Desarrollo</Option>
         <Option value="subdireccion">Subdirección de Analítica</Option>
@@ -40,14 +44,14 @@ export const questions = (formData, handleChange, handleSelectChange) => [
       <div className="flex gap-4">
         <Radio
           name="registroAdmin"
-          label="Sí"
+          label={<span className="text-black font-semibold">Sí</span>}
           value="Sí"
           onChange={handleChange}
           color="black"
         />
         <Radio
           name="registroAdmin"
-          label="No"
+          label={<span className="text-black font-semibold">No</span>}
           value="No"
           onChange={handleChange}
           color="black"
@@ -66,6 +70,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         placeholder="Describe el objetivo"
         required
         color="black"
+        className="text-black border-black"
       />
     ),
   },
@@ -80,6 +85,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         placeholder="Describe la población objetivo"
         required
         color="black"
+        className="text-black border-black"
       />
     ),
   },
@@ -93,6 +99,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         onChange={handleChange}
         required
         color="black"
+        className="text-black border-black"
       />
     ),
   },
@@ -105,6 +112,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         onChange={(value) => handleSelectChange("areaTematica", value)}
         required
         color="black"
+        className="text-black border-black"
       >
         <Option value="economica">Económica</Option>
         <Option value="sociodemografica">Sociodemográfica</Option>
@@ -123,6 +131,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         placeholder="Ejemplo: Mensual, Anual"
         required
         color="black"
+        className="text-black border-black"
       />
     ),
   },
@@ -135,6 +144,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         onChange={(value) => handleSelectChange("unidadEstudio", value)}
         required
         color="black"
+        className="text-black border-black"
       >
         <Option value="Personas">Personas</Option>
         <Option value="IPS">IPS</Option>
@@ -153,6 +163,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         onChange={handleChange}
         placeholder="Ingrese sugerencias"
         color="black"
+        className="text-black border-black"
       />
     ),
   },
@@ -166,6 +177,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         onChange={handleChange}
         placeholder="Ingrese cobertura geográfica"
         color="black"
+        className="text-black border-black"
       />
     ),
   },
@@ -179,6 +191,7 @@ export const questions = (formData, handleChange, handleSelectChange) => [
         onChange={handleChange}
         placeholder="Ingrese período de referencia"
         color="black"
+        className="text-black border-black"
       />
     ),
   },
