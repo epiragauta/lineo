@@ -120,8 +120,8 @@ const Formulario = () => {
             <h3 className="text-xl font-semibold mb-4">{question.label}</h3>
           ) : (
             <div
-              className={`p-4 border border-black rounded shadow-sm ${
-                index % 2 === 0 ? "bg-gray-100" : "bg-primary_light"
+              className={`p-4 border rounded shadow-sm ${
+                index % 2 === 0 ? "bg-gray-100 border-primary" : "bg-primary_light border-gray-700"
               }`}
             >
               {question.label && (

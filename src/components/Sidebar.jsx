@@ -44,7 +44,7 @@ const Sidebar = ({ onLogout }) => {
         <ul>
           <li>
             <Link
-              to="/4.1"
+              to="/forms/4/4.1"
               className="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition"
             >
               <FaLightbulb className="mr-3" />
