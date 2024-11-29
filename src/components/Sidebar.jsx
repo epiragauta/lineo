@@ -1,78 +1,133 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import SNSaludLogo from '../assets/SNSaludLogo.png';
-import LineoLogo from '../assets/LogoLineo-02.png';
+// ./src/components/Sidebar.js
+
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from '@material-tailwind/react';
 import {
   FaHome,
-  FaLightbulb,
+  FaGavel,
+  FaBook,
+  FaRegLightbulb,
+  FaTools,
+  FaDatabase,
+  FaCog,
+  FaChartLine,
+  FaShareAlt,
+  FaChartPie,
+  FaWrench,
   FaSignOutAlt,
-  FaChartBar,
 } from 'react-icons/fa';
+import SNSaludLogo from '../assets/SNSaludLogo.png';
+import LineoLogo from '../assets/LogoLineo-02.png';
+import formsConfig from '../config/formsConfig';
+
+// Mapeo de nombres de iconos a componentes de react-icons
+const iconMapping = {
+  FaHome: <FaHome />,
+  FaGavel: <FaGavel />,
+  FaBook: <FaBook />,
+  FaRegLightbulb: <FaRegLightbulb />,
+  FaTools: <FaTools />,
+  FaDatabase: <FaDatabase />,
+  FaCog: <FaCog />,
+  FaChartLine: <FaChartLine />,
+  FaShareAlt: <FaShareAlt />,
+  FaChartPie: <FaChartPie />,
+  FaWrench: <FaWrench />,
+  // Agrega más mapeos según sea necesario
+};
 
 const Sidebar = ({ onLogout }) => {
+  const location = useLocation();
+  const [open, setOpen] = useState(null);
+
+  const handleOpen = (section) => {
+    setOpen(open === section ? null : section);
+  };
+
   return (
-    <aside className="fixed inset-y-0 left-0 w-64 h-screen bg-white shadow-lg">
+    <aside className="fixed inset-y-0 left-0 w-64 h-screen bg-white shadow-lg overflow-y-auto">
       {/* Logo Superior */}
       <div className="flex justify-center items-center p-4">
-        <img
-          src={SNSaludLogo}
-          alt="SNSalud Logo"
-          className="w-40"
-        />
+        <img src={SNSaludLogo} alt="SNSalud Logo" className="w-40" />
       </div>
 
       {/* Navegación */}
-      <nav className="mt-6">
-        <h3 className="px-4 py-2 text-gray-600 text-sm font-semibold uppercase">
-          General
-        </h3>
+      <nav className="mt-6 px-2">
+        {/* General */}
+        <h3 className="text-gray-900 text-sm font-bold uppercase mb-2">General</h3>
         <ul>
           <li>
             <Link
               to="/home"
-              className="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition"
+              className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
+                location.pathname === '/home' ? 'bg-blue-100 text-blue-600' : ''
+              }`}
             >
-              <FaHome className="mr-3" />
-              Home
+              {iconMapping.FaHome}
+              <span className="ml-3">Home</span>
             </Link>
           </li>
         </ul>
 
-        <h3 className="px-4 py-2 text-gray-600 text-sm font-semibold uppercase">
-          Secciones
-        </h3>
-        <ul>
-          <li>
-            <Link
-              to="/forms/4/4.1"
-              className="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition"
-            >
-              <FaLightbulb className="mr-3" />
-              4.1 Responsabilidades
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/4.2"
-              className="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition"
-            >
-              <FaLightbulb className="mr-3" />
-              4.2 Requisitos
-            </Link>
-          </li>
-        </ul>
+        {/* Formularios */}
+        <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">Formularios</h3>
+        {formsConfig.map((section) => (
+          <Accordion
+            key={section.section}
+            open={open === section.section}
+            // icon={
+            //   open === section.section ? (
+            //     <FaWrench className="w-4 h-4" />
+            //   ) : (
+            //     <FaWrench className="w-4 h-4" />
+            //   )
+            // }
+            className="mb-2"
+          >
+            <AccordionHeader onClick={() => handleOpen(section.section)}>
+              <div className="flex items-center">
+                {iconMapping[section.icon] || <FaRegLightbulb />}
+                <span className="ml-3 text-sm font-normal text-primary">{section.sectionLabel}</span>
+              </div>
+            </AccordionHeader>
+            <AccordionBody>
+              <ul>
+                {section.subsections.map((form) => (
+                  <li key={form.path}>
+                    <Link
+                      to={form.path}
+                      className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
+                        location.pathname === form.path ? 'bg-blue-100 text-blue-600' : ''
+                      }`}
+                    >
+                      {/* Puedes usar un icono diferente para las subsecciones si lo deseas */}
+                      {iconMapping[section.icon] || <FaRegLightbulb />}
+                      <span className="ml-3">{form.label}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </AccordionBody>
+          </Accordion>
+        ))}
 
-        <h3 className="px-4 py-2 text-gray-600 text-sm font-semibold uppercase">
-          Dashboards
-        </h3>
+        {/* Dashboards */}
+        <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">Dashboards</h3>
         <ul>
           <li>
             <Link
-              to="/4/4.1"
-              className="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition"
+              to="/dashboard"
+              className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
+                location.pathname === '/dashboard' ? 'bg-blue-100 text-blue-600' : ''
+              }`}
             >
-              <FaChartBar className="mr-3" />
-              Dashboard 4.1
+              {iconMapping.FaChartPie}
+              <span className="ml-3">Dashboard General</span>
             </Link>
           </li>
         </ul>
@@ -90,12 +145,8 @@ const Sidebar = ({ onLogout }) => {
       </div>
 
       {/* Logo Inferior */}
-      <div className="absolute bottom-4 left-0 w-full flex justify-center items-center">
-        <img
-          src={LineoLogo}
-          alt="Lineo Logo"
-          className="w-32"
-        />
+      <div className="bottom-4 left-0 w-full flex justify-center items-center">
+        <img src={LineoLogo} alt="Lineo Logo" className="w-32" />
       </div>
     </aside>
   );
