@@ -20,6 +20,8 @@ import {
   FaChartPie,
   FaWrench,
   FaSignOutAlt,
+  FaChevronDown,
+  FaChevronUp,
 } from 'react-icons/fa';
 import SNSaludLogo from '../assets/SNSaludLogo.png';
 import LineoLogo from '../assets/LogoLineo-02.png';
@@ -38,6 +40,8 @@ const iconMapping = {
   FaShareAlt: <FaShareAlt />,
   FaChartPie: <FaChartPie />,
   FaWrench: <FaWrench />,
+  FaChevronDown: <FaChevronDown />,
+  FaChevronUp: <FaChevronUp />,
   // Agrega más mapeos según sea necesario
 };
 
@@ -80,13 +84,13 @@ const Sidebar = ({ onLogout }) => {
           <Accordion
             key={section.section}
             open={open === section.section}
-            // icon={
-            //   open === section.section ? (
-            //     <FaWrench className="w-4 h-4" />
-            //   ) : (
-            //     <FaWrench className="w-4 h-4" />
-            //   )
-            // }
+            icon={
+              open === section.section ? (
+                <FaChevronUp className="w-4 h-4" />
+              ) : (
+                <FaChevronDown className="w-4 h-4" />
+              )
+            }
             className="mb-2"
           >
             <AccordionHeader onClick={() => handleOpen(section.section)}>
