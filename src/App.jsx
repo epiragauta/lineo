@@ -25,19 +25,25 @@ function App() {
             <PrivateRoute>
               <Layout>
                 <Routes>
-                  <Route path="/home" element={<Home />} />
-                  <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+
+                <Route path="forms">
 
                   {/* Rutas para Formularios */}
                   {formsConfig.map((section) =>
                     section.subsections.map((form) => (
                       <Route
                         key={form.path}
-                        path={form.path}
+                        path={form.path} // Ruta relativa a '/forms'
                         element={<form.component />}
                       />
                     ))
                   )}
+
+                  {/* Redirige cualquier ruta desconocida dentro de '/forms' a '/forms/create' */}
+                  <Route path="*" element={<Navigate to="/home" replace />} />
+                </Route>
 
                   {/* Redirige cualquier ruta desconocida a /home */}
                   <Route path="*" element={<Navigate to="/home" replace />} />

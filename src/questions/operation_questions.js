@@ -1,211 +1,132 @@
 // ./../../../questions/operation_questions.js
 
 import React from "react";
-import { Input, Select, Option, Radio, Checkbox } from "@material-tailwind/react";
+import RadioQuestion from "../components/questions/RadioQuestion";
+import InputQuestion from "../components/questions/InputQuestion";
+import SelectBoxQuestion from "../components/questions/SelectBoxQuestion";
 
-export const questions = (formData, handleChange, handleSelectChange) => [
-  {
-    label: "Nombre de la Operación Estadística",
-    component: (
-      <Input
-        type="text"
-        name="nombreOperacion"
-        value={formData.nombreOperacion}
-        onChange={handleChange}
-        placeholder="Ingrese el nombre"
-        required
-        color="black"
-        className="text-black border-black"
-      />
-    ),
-  },
-  {
-    label: "Dependencia Encargada",
-    component: (
-      <Select
-        name="dependencia"
-        value={formData.dependencia}
-        onChange={(value) => handleSelectChange("dependencia", value)}
-        required
-        color="black"
-        className="text-black border-black"
-      >
-        <Option value="direccion">Dirección de Innovación y Desarrollo</Option>
-        <Option value="subdireccion">Subdirección de Analítica</Option>
-        <Option value="ti">Subdirección de TI</Option>
-        <Option value="interno">Control Interno</Option>
-        <Option value="metodologia">Subdirección de Metodología</Option>
-      </Select>
-    ),
-  },
-  {
-    label: "Categorización como Registro Administrativo",
-    component: (
-      <div className="flex gap-4">
-        <Radio
-          name="registroAdmin"
-          label={<span className="text-black font-semibold">Sí</span>}
-          value="Sí"
-          onChange={handleChange}
-          color="black"
-        />
-        <Radio
-          name="registroAdmin"
-          label={<span className="text-black font-semibold">No</span>}
-          value="No"
-          onChange={handleChange}
-          color="black"
-        />
-      </div>
-    ),
-  },
-  {
-    label: "Objetivo de la Operación",
-    component: (
-      <Input
-        type="text"
-        name="objetivo"
-        value={formData.objetivo}
-        onChange={handleChange}
-        placeholder="Describe el objetivo"
-        required
-        color="black"
-        className="text-black border-black"
-      />
-    ),
-  },
-  {
-    label: "Población Objetivo",
-    component: (
-      <Input
-        type="text"
-        name="poblacion"
-        value={formData.poblacion}
-        onChange={handleChange}
-        placeholder="Describe la población objetivo"
-        required
-        color="black"
-        className="text-black border-black"
-      />
-    ),
-  },
-  {
-    label: "Año de Inicio",
-    component: (
-      <Input
-        type="date"
-        name="anioInicio"
-        value={formData.anioInicio}
-        onChange={handleChange}
-        required
-        color="black"
-        className="text-black border-black"
-      />
-    ),
-  },
-  {
-    label: "Área Temática",
-    component: (
-      <Select
-        name="areaTematica"
-        value={formData.areaTematica}
-        onChange={(value) => handleSelectChange("areaTematica", value)}
-        required
-        color="black"
-        className="text-black border-black"
-      >
-        <Option value="economica">Económica</Option>
-        <Option value="sociodemografica">Sociodemográfica</Option>
-        <Option value="ambiental">Ambiental</Option>
-      </Select>
-    ),
-  },
-  {
-    label: "Periodicidad de la Operación Estadística",
-    component: (
-      <Input
-        type="text"
-        name="periodicidad"
-        value={formData.periodicidad}
-        onChange={handleChange}
-        placeholder="Ejemplo: Mensual, Anual"
-        required
-        color="black"
-        className="text-black border-black"
-      />
-    ),
-  },
-  {
-    label: "Unidades de Estudio",
-    component: (
-      <Select
-        name="unidadEstudio"
-        value={formData.unidadEstudio}
-        onChange={(value) => handleSelectChange("unidadEstudio", value)}
-        required
-        color="black"
-        className="text-black border-black"
-      >
-        <Option value="Personas">Personas</Option>
-        <Option value="IPS">IPS</Option>
-        <Option value="EAPB">EAPB</Option>
-        <Option value="Otras">Otras</Option>
-      </Select>
-    ),
-  },
-  {
-    label: "Variables Principales",
-    component: (
-      <Input
-        type="text"
-        name="variablesPrincipales"
-        value={formData.variablesPrincipales}
-        onChange={handleChange}
-        placeholder="Ingrese sugerencias"
-        color="black"
-        className="text-black border-black"
-      />
-    ),
-  },
-  {
-    label: "Cobertura Geográfica",
-    component: (
-      <Input
-        type="text"
-        name="coberturaGeografica"
-        value={formData.coberturaGeografica}
-        onChange={handleChange}
-        placeholder="Ingrese cobertura geográfica"
-        color="black"
-        className="text-black border-black"
-      />
-    ),
-  },
-  {
-    label: "Período de Referencia",
-    component: (
-      <Input
-        type="text"
-        name="periodoReferencia"
-        value={formData.periodoReferencia}
-        onChange={handleChange}
-        placeholder="Ingrese período de referencia"
-        color="black"
-        className="text-black border-black"
-      />
-    ),
-  },
-  {
-    label: "Método de Recolección de Información",
-    component: (
-      <Input
-        type="text"
-        name="metodoRecoleccion"
-        value={formData.metodoRecoleccion}
-        onChange={handleChange}
-        placeholder="Ingrese método de recolección"
-        color="black"
-      />
-    ),
-  },
+export const operationQuestions = (formData, handleChange, handleSelectChange) => [
+  <InputQuestion
+    key="nombreOperacion"
+    label="Nombre de la Operación Estadística"
+    name="nombreOperacion"
+    value={formData.nombreOperacion}
+    onChange={handleChange}
+    placeholder="Ingrese el nombre"
+  />,
+  <SelectBoxQuestion
+    key="dependencia"
+    label="Dependencia Encargada"
+    name="dependencia"
+    value={formData.dependencia}
+    onChange={handleSelectChange}
+    options={[
+      { value: "direccion", label: "Dirección de Innovación y Desarrollo" },
+      { value: "subdireccion", label: "Subdirección de Analítica" },
+      { value: "ti", label: "Subdirección de TI" },
+      { value: "interno", label: "Control Interno" },
+      { value: "metodologia", label: "Subdirección de Metodología" },
+    ]}
+  />,
+  <RadioQuestion
+    key="registroAdmin"
+    label="Categorización como Registro Administrativo"
+    name="registroAdmin"
+    options={["Sí", "No"]}
+    value={formData.registroAdmin}
+    onChange={handleChange}
+  />,
+  <InputQuestion
+    key="objetivo"
+    label="Objetivo de la Operación"
+    name="objetivo"
+    value={formData.objetivo}
+    onChange={handleChange}
+    placeholder="Describe el objetivo"
+  />,
+  <InputQuestion
+    key="poblacion"
+    label="Población Objetivo"
+    name="poblacion"
+    value={formData.poblacion}
+    onChange={handleChange}
+    placeholder="Describe la población objetivo"
+  />,
+  <InputQuestion
+    key="anioInicio"
+    label="Año de Inicio"
+    name="anioInicio"
+    type="date"
+    value={formData.anioInicio}
+    onChange={handleChange}
+  />,
+  <SelectBoxQuestion
+    key="areaTematica"
+    label="Área Temática"
+    name="areaTematica"
+    value={formData.areaTematica}
+    onChange={handleSelectChange}
+    options={[
+      { value: "economica", label: "Económica" },
+      { value: "sociodemografica", label: "Sociodemográfica" },
+      { value: "ambiental", label: "Ambiental" },
+    ]}
+  />,
+  <InputQuestion
+    key="periodicidad"
+    label="Periodicidad de la Operación Estadística"
+    name="periodicidad"
+    value={formData.periodicidad}
+    onChange={handleChange}
+    placeholder="Ejemplo: Mensual, Anual"
+  />,
+  <SelectBoxQuestion
+    key="unidadEstudio"
+    label="Unidades de Estudio"
+    name="unidadEstudio"
+    value={formData.unidadEstudio}
+    onChange={handleSelectChange}
+    options={[
+      { value: "Personas", label: "Personas" },
+      { value: "IPS", label: "IPS" },
+      { value: "EAPB", label: "EAPB" },
+      { value: "Otras", label: "Otras" },
+    ]}
+  />,
+  <InputQuestion
+    key="variablesPrincipales"
+    label="Variables Principales"
+    name="variablesPrincipales"
+    value={formData.variablesPrincipales}
+    onChange={handleChange}
+    placeholder="Ingrese sugerencias"
+  />,
+  <InputQuestion
+    key="coberturaGeografica"
+    label="Cobertura Geográfica"
+    name="coberturaGeografica"
+    value={formData.coberturaGeografica}
+    onChange={handleChange}
+    placeholder="Ingrese cobertura geográfica"
+  />,
+  <InputQuestion
+    key="periodoReferencia"
+    label="Período de Referencia"
+    name="periodoReferencia"
+    value={formData.periodoReferencia}
+    onChange={handleChange}
+    placeholder="Ingrese período de referencia"
+  />,
+  <InputQuestion
+    key="metodoRecoleccion"
+    label="Método de Recolección de Información"
+    name="metodoRecoleccion"
+    type="text"
+    value={formData.metodoRecoleccion}
+    onChange={handleChange}
+    placeholder="Ingrese método de recolección"
+  />,
 ];
+
+
+// export default operationQuestions;

@@ -1,12 +1,11 @@
-// ./../../../components/Formulario4_2.js
+// ./src/pages/Sections/Section4/Formulario4_7.js
 
-import React, { useState } from "react";
-import { Button } from "@material-tailwind/react";
-import { questions as operationQuestions } from "../../../questions/operation_questions";
-import { questions4_2 as form4_2Questions } from "../../../questions/questions4/questions4_2"; // Importación del nuevo archivo de preguntas
-import Divider from "../../../components/Divider"; // Asegúrate de tener este componente
+import React, { useState, useEffect } from "react";
+import { operationQuestions } from "./../../../questions/operation_questions"; // Importación del arreglo de preguntas de operación
+import { questions4_7 as form4_7Questions } from "./../../../questions/questions4/questions4_7"; // Importación del arreglo de preguntas 4.7
+import FormWrapper from "../../../components/FormWrapper"; // Asegúrate de tener este componente
 
-const Formulario4_2 = () => {
+const Formulario4_7 = () => {
   const [formData, setFormData] = useState({
     // Preguntas de Operation
     nombreOperacion: "",
@@ -22,33 +21,50 @@ const Formulario4_2 = () => {
     coberturaGeografica: "",
     periodoReferencia: "",
     metodoRecoleccion: "",
-    // Preguntas 4.2
-    estructuraOrganicaPregunta1: "",
-    estructuraOrganicaEvidencia1: "",
-    estructuraOrganicaEvidencia2: "",
-    estructuraOrganicaEvidencia3: "",
-    documentacionActividadesPregunta1: "",
-    documentacionActividadesPregunta2: "",
-    documentacionActividadesEvidencia1: "",
-    documentacionActividadesEvidencia2: "",
-    documentacionActividadesEvidencia3: "",
-    infraestructuraPregunta1: "",
-    infraestructuraPregunta2: "",
-    infraestructuraEvidencia1: "",
-    infraestructuraEvidencia2: "",
-    infraestructuraEvidencia3: "",
-    mecanismosCooperacionPregunta1: "",
-    mecanismosCooperacionEvidencia1: "",
-    mecanismosCooperacionEvidencia2: "",
-    mecanismosCooperacionEvidencia3: "",
-    documentacionControlesPregunta1: 3,
-    documentacionControlesEvidencia1: "",
-    documentacionControlesEvidencia2: "",
-    documentacionControlesEvidencia3: "",
-    sugerenciasAltaDireccion: "",
-    accion4_2: "",
-    responsableSNS4_2: "",
-    fechaCumplimiento4_2: "",
+
+    // Preguntas 4.7
+
+    // Identificación de Riesgos
+    identificacion_riesgos_pregunta: "",
+    identificacion_riesgos_detalle_a: "",
+    identificacion_riesgos_detalle_b: "",
+    identificacion_riesgos_detalle_c: "",
+    identificacion_riesgos_evidencia1: "",
+    identificacion_riesgos_evidencia2: "",
+    identificacion_riesgos_evidencia3: "",
+
+    // Implementación de controles
+    implementacion_controles_pregunta: "",
+    implementacion_controles_utiliza: [],
+    implementacion_controles_evidencia1: "",
+    implementacion_controles_evidencia2: "",
+    implementacion_controles_evidencia3: "",
+
+    // Acciones ante la Materialización de Riesgos
+    acciones_materializacion_riesgos_pregunta: 3,
+    acciones_materializacion_riesgos_evidencia1: "",
+    acciones_materializacion_riesgos_evidencia2: "",
+    acciones_materializacion_riesgos_evidencia3: "",
+
+    // Riesgos y Controles
+    riesgos_controles_pregunta: 3,
+    riesgos_controles_evidencia1: "",
+    riesgos_controles_evidencia2: "",
+    riesgos_controles_evidencia3: "",
+
+    // Revisión y Actualización de Riesgos
+    revision_actualizacion_riesgos_pregunta: 3,
+    revision_actualizacion_riesgos_evidencia1: "",
+    revision_actualizacion_riesgos_evidencia2: "",
+    revision_actualizacion_riesgos_evidencia3: "",
+
+    // Sugerencias para Gestión de los Riesgos
+    sugerencias_gestion_riesgos_pregunta: "",
+
+    // Acciones Requeridas
+    accion: "",
+    responsableSNS: "",
+    fechaCumplimiento: "",
   });
 
   // Función para manejar cambios en inputs de tipo texto, radio y checkbox
@@ -81,83 +97,32 @@ const Formulario4_2 = () => {
     });
   };
 
+  // useEffect para monitorear cambios en formData
+  useEffect(() => {
+    console.log("formData actualizado:", formData);
+  }, [formData]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Formulario 4.2 enviado", formData);
+    console.log("Formulario 4.7 enviado", formData);
     // Aquí puedes agregar la lógica para enviar el formulario, por ejemplo, una petición POST a tu backend
   };
 
+  const mainTitle = "Sección 4.7 - Gestión de los Riesgos";
+
+  const introductions = [
+    "La gestión de riesgos en el proceso estadístico es un componente crítico para anticipar, mitigar y controlar posibles eventos que puedan comprometer la calidad, integridad o continuidad del proceso. En el marco de la NTC PE 1000:2020, esta sección establece directrices para identificar, evaluar y gestionar los riesgos asociados a todas las fases del proceso estadístico. Se promueve un enfoque preventivo que integre controles y medidas correctivas, asegurando la sostenibilidad y robustez de las actividades estadísticas."
+  ];
+
   return (
-    <form onSubmit={handleSubmit} className="p-6 bg-white shadow-md rounded">
-      <h1 className="text-3xl font-bold mb-6">
-         Sección 4.2 - Requisitos de la entidad
-      </h1>
-      <h3 className="text-xl font-semibold mb-6">
-      Establece los requisitos fundamentales que deben cumplir las entidades para garantizar la implementación efectiva de los procesos estadísticos con calidad. Esta sección se enfoca en asegurar que la organización cuente con la infraestructura, los procedimientos y los recursos necesarios para soportar las actividades estadísticas de manera eficiente y conforme a los principios establecidos en la norma.
-      </h3>
-
-      <h3 className="text-xl font-semibold mb-6">
-      Entre los aspectos clave, se incluye la importancia de adoptar una política de calidad estadística, documentar procesos, y establecer un sistema de gestión que permita el monitoreo y la mejora continua. La alineación de estos requisitos con los objetivos institucionales asegura una base sólida para cumplir con las demandas de transparencia, confiabilidad y accesibilidad de los datos.
-      </h3>
-      <Divider />
-
-      {/* Operación Estadística */}
-      <h3 className="text-xl font-normal mb-6 text-gray-700">
-        Operación Estadística
-      </h3>
-
-      {operationQuestions(formData, handleChange, handleSelectChange).map((question, index) => (
-        <div key={index} className="mb-6">
-          {question.type === "section" ? (
-            <h3 className="text-xl font-semibold mb-4">{question.label}</h3>
-          ) : (
-            <div
-              className={`p-4 border rounded shadow-sm ${
-                index % 2 === 0 ? "bg-gray-100 border-primary" : "bg-primary_light border-gray-700"
-              }`}
-            >
-              {question.label && (
-                <label className="block text-lg font-medium mb-2 text-black">
-                  {question.label}
-                </label>
-              )}
-              {question.component}
-            </div>
-          )}
-        </div>
-      ))}
-
-      {/* Divider después de las preguntas de Operación Estadística */}
-      <Divider />
-
-      {form4_2Questions(formData, handleChange, handleSelectChange).map((question, index) => (
-        <div key={index} className="mb-6">
-          {question.type === "section" ? (
-            <h3 className="text-xl font-semibold mb-4">{question.label}</h3>
-          ) : (
-            <div
-              className={`p-4 border rounded shadow-sm ${
-                index % 2 === 0 ? "bg-gray-100 border-primary" : "bg-primary_light border-gray-700"
-              }`}
-            >
-              {question.label && (
-                <label className="block text-lg font-medium mb-2 text-black">
-                  {question.label}
-                </label>
-              )}
-              {question.component}
-            </div>
-          )}
-        </div>
-      ))}
-
-      <Divider />
-
-      <Button type="submit" className="mt-6 bg-primary text-white">
-        Enviar
-      </Button>
-    </form>
+    <FormWrapper
+      mainTitle={mainTitle}
+      introductions={introductions}
+      operationQuestions={operationQuestions(formData, handleChange, handleSelectChange)}
+      formQuestions={form4_7Questions(formData, handleChange, handleSelectChange)}
+      handleSubmit={handleSubmit}
+    />
   );
 };
 
-export default Formulario4_2;
+export default Formulario4_7;

@@ -1,12 +1,11 @@
-// ./../../../components/Formulario4_2.js
+// ./src/pages/Sections/Section4/Formulario4_3.js
 
-import React, { useState } from "react";
-import { Button } from "@material-tailwind/react";
-import { questions as operationQuestions } from "../../../questions/operation_questions";
-import { questions4_2 as form4_2Questions } from "../../../questions/questions4/questions4_2"; // Importación del nuevo archivo de preguntas
-import Divider from "../../../components/Divider"; // Asegúrate de tener este componente
+import React, { useState, useEffect } from "react";
+import { operationQuestions } from "./../../../questions/operation_questions"; // Importación del arreglo de preguntas de operación
+import { questions4_3 as form4_3Questions } from "./../../../questions/questions4/questions4_3"; // Importación del arreglo de preguntas 4.3
+import FormWrapper from "../../../components/FormWrapper"; // Asegúrate de tener este componente
 
-const Formulario4_2 = () => {
+const Formulario4_3 = () => {
   const [formData, setFormData] = useState({
     // Preguntas de Operation
     nombreOperacion: "",
@@ -22,33 +21,32 @@ const Formulario4_2 = () => {
     coberturaGeografica: "",
     periodoReferencia: "",
     metodoRecoleccion: "",
-    // Preguntas 4.2
-    estructuraOrganicaPregunta1: "",
-    estructuraOrganicaEvidencia1: "",
-    estructuraOrganicaEvidencia2: "",
-    estructuraOrganicaEvidencia3: "",
-    documentacionActividadesPregunta1: "",
-    documentacionActividadesPregunta2: "",
-    documentacionActividadesEvidencia1: "",
-    documentacionActividadesEvidencia2: "",
-    documentacionActividadesEvidencia3: "",
-    infraestructuraPregunta1: "",
-    infraestructuraPregunta2: "",
-    infraestructuraEvidencia1: "",
-    infraestructuraEvidencia2: "",
-    infraestructuraEvidencia3: "",
-    mecanismosCooperacionPregunta1: "",
-    mecanismosCooperacionEvidencia1: "",
-    mecanismosCooperacionEvidencia2: "",
-    mecanismosCooperacionEvidencia3: "",
-    documentacionControlesPregunta1: 3,
-    documentacionControlesEvidencia1: "",
-    documentacionControlesEvidencia2: "",
-    documentacionControlesEvidencia3: "",
-    sugerenciasAltaDireccion: "",
-    accion4_2: "",
-    responsableSNS4_2: "",
-    fechaCumplimiento4_2: "",
+
+    // Preguntas 4.3
+    confidencialidad_mecanismos: "",
+    confidencialidad_evidencia1: "",
+    confidencialidad_evidencia2: "",
+    confidencialidad_evidencia3: "",
+    conservacion_segura: "",
+    conservacion_evidencia1: "",
+    conservacion_evidencia2: "",
+    conservacion_evidencia3: "",
+    efectividad_conservacion: 3,
+    efectividad_evidencia1: "",
+    efectividad_evidencia2: "",
+    efectividad_evidencia3: "",
+    cumplimiento_normatividad: 3,
+    cumplimiento_evidencia1: "",
+    cumplimiento_evidencia2: "",
+    cumplimiento_evidencia3: "",
+    prevencion_acceso_perdida: "",
+    prevencion_evidencia1: "",
+    prevencion_evidencia2: "",
+    prevencion_evidencia3: "",
+    sugerencias_confidencialidad: "",
+    accion: "",
+    responsableSNS: "",
+    fechaCumplimiento: "",
   });
 
   // Función para manejar cambios en inputs de tipo texto, radio y checkbox
@@ -81,83 +79,33 @@ const Formulario4_2 = () => {
     });
   };
 
+  // useEffect para monitorear cambios en formData
+  useEffect(() => {
+    console.log("formData actualizado:", formData);
+  }, [formData]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Formulario 4.2 enviado", formData);
+    console.log("Formulario 4.3 enviado", formData);
     // Aquí puedes agregar la lógica para enviar el formulario, por ejemplo, una petición POST a tu backend
   };
 
+  const mainTitle = "Sección 4.3 - Confidencialidad y Conservación de Datos";
+
+  const introductions = [
+    "Introducción",
+    "Esta sección aborda los mecanismos implementados por la entidad para garantizar la confidencialidad y la conservación segura de los datos recolectados. Se enfoca en asegurar que la información estadística producida se maneje conforme a la normatividad vigente y los principios fundamentales establecidos por las Naciones Unidas.",
+  ];
+
   return (
-    <form onSubmit={handleSubmit} className="p-6 bg-white shadow-md rounded">
-      <h1 className="text-3xl font-bold mb-6">
-         Sección 4.2 - Requisitos de la entidad
-      </h1>
-      <h3 className="text-xl font-semibold mb-6">
-      Establece los requisitos fundamentales que deben cumplir las entidades para garantizar la implementación efectiva de los procesos estadísticos con calidad. Esta sección se enfoca en asegurar que la organización cuente con la infraestructura, los procedimientos y los recursos necesarios para soportar las actividades estadísticas de manera eficiente y conforme a los principios establecidos en la norma.
-      </h3>
-
-      <h3 className="text-xl font-semibold mb-6">
-      Entre los aspectos clave, se incluye la importancia de adoptar una política de calidad estadística, documentar procesos, y establecer un sistema de gestión que permita el monitoreo y la mejora continua. La alineación de estos requisitos con los objetivos institucionales asegura una base sólida para cumplir con las demandas de transparencia, confiabilidad y accesibilidad de los datos.
-      </h3>
-      <Divider />
-
-      {/* Operación Estadística */}
-      <h3 className="text-xl font-normal mb-6 text-gray-700">
-        Operación Estadística
-      </h3>
-
-      {operationQuestions(formData, handleChange, handleSelectChange).map((question, index) => (
-        <div key={index} className="mb-6">
-          {question.type === "section" ? (
-            <h3 className="text-xl font-semibold mb-4">{question.label}</h3>
-          ) : (
-            <div
-              className={`p-4 border rounded shadow-sm ${
-                index % 2 === 0 ? "bg-gray-100 border-primary" : "bg-primary_light border-gray-700"
-              }`}
-            >
-              {question.label && (
-                <label className="block text-lg font-medium mb-2 text-black">
-                  {question.label}
-                </label>
-              )}
-              {question.component}
-            </div>
-          )}
-        </div>
-      ))}
-
-      {/* Divider después de las preguntas de Operación Estadística */}
-      <Divider />
-
-      {form4_2Questions(formData, handleChange, handleSelectChange).map((question, index) => (
-        <div key={index} className="mb-6">
-          {question.type === "section" ? (
-            <h3 className="text-xl font-semibold mb-4">{question.label}</h3>
-          ) : (
-            <div
-              className={`p-4 border rounded shadow-sm ${
-                index % 2 === 0 ? "bg-gray-100 border-primary" : "bg-primary_light border-gray-700"
-              }`}
-            >
-              {question.label && (
-                <label className="block text-lg font-medium mb-2 text-black">
-                  {question.label}
-                </label>
-              )}
-              {question.component}
-            </div>
-          )}
-        </div>
-      ))}
-
-      <Divider />
-
-      <Button type="submit" className="mt-6 bg-primary text-white">
-        Enviar
-      </Button>
-    </form>
+    <FormWrapper
+      mainTitle={mainTitle}
+      introductions={introductions}
+      operationQuestions={operationQuestions(formData, handleChange, handleSelectChange)}
+      formQuestions={form4_3Questions(formData, handleChange, handleSelectChange)}
+      handleSubmit={handleSubmit}
+    />
   );
 };
 
-export default Formulario4_2;
+export default Formulario4_3;
