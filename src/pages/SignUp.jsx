@@ -5,11 +5,19 @@ import { supabase } from '../backend/supabaseClient';
 const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState(''); // Added state for password confirmation
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
 
   const handleSignUp = async (e) => {
     e.preventDefault();
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      setErrorMessage('Las contraseñas no coinciden.');
+      return;
+    }
+
     try {
       const { data, error } = await supabase.auth.signUp({ email, password });
       if (error) throw error;
@@ -23,7 +31,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-login-bg bg-cover">
       <form
         onSubmit={handleSignUp}
         className="bg-white p-6 rounded shadow-md w-full max-w-lg"
@@ -43,7 +51,7 @@ const SignUp = () => {
             required
           />
         </div>
-        <div className="mb-6">
+        <div className="mb-4">
           <label className="block mb-1">Contraseña</label>
           <input
             type="password"
@@ -51,6 +59,17 @@ const SignUp = () => {
             onChange={(e) => setPassword(e.target.value)}
             className="w-full px-3 py-2 border rounded"
             placeholder="Crea una contraseña segura"
+            required
+          />
+        </div>
+        <div className="mb-6">
+          <label className="block mb-1">Confirmar Contraseña</label>
+          <input
+            type="password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            className="w-full px-3 py-2 border rounded"
+            placeholder="Confirma tu contraseña"
             required
           />
         </div>
