@@ -2,9 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Pre-running
+
+Before running the project, create a `.env` file at the root of the project directory.
+Set the Supabase credentials in the following way:
+
+```bash
+REACT_APP_SUPABASE_URL=https://your-supabase-url.supabase.co
+REACT_APP_SUPABASE_ANON_KEY=your-anon-key
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+Installs app dependencies.
 
 ### `npm start`
 

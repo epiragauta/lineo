@@ -1,24 +1,30 @@
 // ./src/App.jsx
+import React, { useContext } from 'react';
 
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './layouts/Layout';
 import Login from './pages/Login';
+import SignUp from './pages/SignUp'; // Import Sign-Up Page
 import Dashboard from './pages/Dashboard';
-import Home from './pages/Home';
+import Home from './pages/Home'; // Import Home
+
 import PrivateRoute from './components/PrivateRoute';
 import formsConfig from './config/formsConfig';
 import TestButton from './components/TestButton';
+import { AuthContext } from './context/AuthContext';
 
 function App() {
+  const { user } = useContext(AuthContext);
+
   return (
     <Router>
       <Routes>
-        {/* Ruta de Login sin Layout */}
-        <Route path="/login" element={<Login />} />
+        {/* Public Routes */}
+        <Route path="/login" element={user ? <Navigate to="/home" replace /> : <Login />} />
+        <Route path="/signup" element={user ? <Navigate to="/home" replace /> : <SignUp />} />
         <Route path="/test-button" element={<TestButton />} />
 
-        {/* Rutas protegidas con Layout */}
+        {/* Protected Routes with Layout */}
         <Route
           path="/*"
           element={
