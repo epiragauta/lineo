@@ -1,12 +1,10 @@
-// ./src/components/Sidebar.js
-
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
-} from '@material-tailwind/react';
+} from "@material-tailwind/react";
 import {
   FaHome,
   FaGavel,
@@ -22,10 +20,11 @@ import {
   FaSignOutAlt,
   FaChevronDown,
   FaChevronUp,
-} from 'react-icons/fa';
-import SNSaludLogo from '../assets/SNSaludLogo.png';
-import LineoLogo from '../assets/LogoLineo-02.png';
-import formsConfig from '../config/formsConfig';
+} from "react-icons/fa";
+import SNSaludLogo from "../assets/SNSaludLogo.png";
+import LineoLogo from "../assets/LogoLineo-02.png";
+import formsConfig from "../config/formsConfig";
+import { supabase } from "../backend/supabaseClient"; // Import Supabase client
 
 // Mapeo de nombres de iconos a componentes de react-icons
 const iconMapping = {
@@ -45,12 +44,27 @@ const iconMapping = {
   // Agrega más mapeos según sea necesario
 };
 
-const Sidebar = ({ onLogout }) => {
+const Sidebar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [open, setOpen] = useState(null);
 
   const handleOpen = (section) => {
     setOpen(open === section ? null : section);
+  };
+
+  // Logout function using Supabase
+  const handleLogout = async () => {
+    try {
+      const { error } = await supabase.auth.signOut();
+      if (error) throw error;
+
+      // Redirect to login page after logout
+      navigate("/login");
+    } catch (error) {
+      console.error("Logout error:", error.message);
+      alert("Error al cerrar sesión: " + error.message);
+    }
   };
 
   return (
@@ -63,13 +77,15 @@ const Sidebar = ({ onLogout }) => {
       {/* Navegación */}
       <nav className="mt-6 px-2">
         {/* General */}
-        <h3 className="text-gray-900 text-sm font-bold uppercase mb-2">General</h3>
+        <h3 className="text-gray-900 text-sm font-bold uppercase mb-2">
+          General
+        </h3>
         <ul>
           <li>
             <Link
               to="/home"
               className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
-                location.pathname === '/home' ? 'bg-blue-100 text-blue-600' : ''
+                location.pathname === "/home" ? "bg-blue-100 text-blue-600" : ""
               }`}
             >
               {iconMapping.FaHome}
@@ -79,7 +95,9 @@ const Sidebar = ({ onLogout }) => {
         </ul>
 
         {/* Formularios */}
-        <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">Formularios</h3>
+        <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">
+          Formularios
+        </h3>
         {formsConfig.map((section) => (
           <Accordion
             key={section.section}
@@ -96,7 +114,9 @@ const Sidebar = ({ onLogout }) => {
             <AccordionHeader onClick={() => handleOpen(section.section)}>
               <div className="flex items-center">
                 {iconMapping[section.icon] || <FaRegLightbulb />}
-                <span className="ml-3 text-sm font-normal text-primary">{section.sectionLabel}</span>
+                <span className="ml-3 text-sm font-normal text-primary">
+                  {section.sectionLabel}
+                </span>
               </div>
             </AccordionHeader>
             <AccordionBody>
@@ -106,10 +126,11 @@ const Sidebar = ({ onLogout }) => {
                     <Link
                       to={form.path}
                       className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
-                        location.pathname === form.path ? 'bg-blue-100 text-blue-600' : ''
+                        location.pathname === form.path
+                          ? "bg-blue-100 text-blue-600"
+                          : ""
                       }`}
                     >
-                      {/* Puedes usar un icono diferente para las subsecciones si lo deseas */}
                       {iconMapping[section.icon] || <FaRegLightbulb />}
                       <span className="ml-3">{form.label}</span>
                     </Link>
@@ -121,13 +142,17 @@ const Sidebar = ({ onLogout }) => {
         ))}
 
         {/* Dashboards */}
-        <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">Dashboards</h3>
+        <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">
+          Dashboards
+        </h3>
         <ul>
           <li>
             <Link
               to="/dashboard"
               className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
-                location.pathname === '/dashboard' ? 'bg-blue-100 text-blue-600' : ''
+                location.pathname === "/dashboard"
+                  ? "bg-blue-100 text-blue-600"
+                  : ""
               }`}
             >
               {iconMapping.FaChartPie}
@@ -140,7 +165,7 @@ const Sidebar = ({ onLogout }) => {
       {/* Botón de Cerrar Sesión */}
       <div className="mt-6 px-4">
         <button
-          onClick={onLogout}
+          onClick={handleLogout}
           className="w-full flex items-center justify-center px-4 py-2 bg-primary text-white rounded hover:bg-secondary transition"
         >
           <FaSignOutAlt className="mr-2" />
