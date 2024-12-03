@@ -65,6 +65,16 @@ const Login = () => {
             Regístrate aquí
           </span>
         </p>
+        
+        <p className="text-center mt-4">
+          Olvidaste la contraseña? {' '}
+          <span
+            onClick={() => navigate('/forgot-password')}
+            className="text-blue-500 cursor-pointer hover:underline"
+          >
+            Recuperar contraseña
+          </span>
+        </p>
       </form>
     </div>
   );
