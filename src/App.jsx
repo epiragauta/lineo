@@ -14,6 +14,10 @@ import formsConfig from './data/formsConfig';
 import TestButton from './components/TestButton';
 import { AuthContext } from './context/AuthContext';
 
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
+
+
 function App() {
   const { user } = useContext(AuthContext);
 
@@ -21,9 +25,15 @@ function App() {
     <Router>
       <Routes>
         {/* Public Routes */}
+        {/* Auth Routes */}
         <Route path="/login" element={user ? <Navigate to="/home" replace /> : <Login />} />
         <Route path="/signup" element={user ? <Navigate to="/home" replace /> : <SignUp />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+
+        {/* Other Routes */}
         <Route path="/test-button" element={<TestButton />} />
+
 
         {/* Protected Routes with Layout */}
         <Route
