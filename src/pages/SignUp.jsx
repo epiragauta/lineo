@@ -19,7 +19,7 @@ const SignUp = () => {
     }
 
     try {
-      const { data, error } = await supabase.auth.signUp({ email, password });
+      const { error } = await supabase.auth.signUp({ email, password });
       if (error) throw error;
 
       alert('Registro exitoso. Por favor verifica tu correo electrónico para confirmar tu cuenta.');

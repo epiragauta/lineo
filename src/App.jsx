@@ -5,11 +5,12 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Layout from './layouts/Layout';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp'; // Import Sign-Up Page
+import About from './pages/About'; // Import About Page
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home'; // Import Home
 
 import PrivateRoute from './components/PrivateRoute';
-import formsConfig from './config/formsConfig';
+import formsConfig from './data/formsConfig';
 import TestButton from './components/TestButton';
 import { AuthContext } from './context/AuthContext';
 
@@ -50,6 +51,7 @@ function App() {
                   {/* Redirige cualquier ruta desconocida dentro de '/forms' a '/forms/create' */}
                   <Route path="*" element={<Navigate to="/home" replace />} />
                 </Route>
+                  <Route path="/about" element={<About/>} />
 
                   {/* Redirige cualquier ruta desconocida a /home */}
                   <Route path="*" element={<Navigate to="/home" replace />} />

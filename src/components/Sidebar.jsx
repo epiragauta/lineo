@@ -20,10 +20,11 @@ import {
   FaSignOutAlt,
   FaChevronDown,
   FaChevronUp,
+  FaInfoCircle
 } from "react-icons/fa";
 import SNSaludLogo from "../assets/SNSaludLogo.png";
 import LineoLogo from "../assets/LogoLineo-02.png";
-import formsConfig from "../config/formsConfig";
+import formsConfig from "../data/formsConfig";
 import { supabase } from "../backend/supabaseClient"; // Import Supabase client
 
 // Mapeo de nombres de iconos a componentes de react-icons
@@ -41,6 +42,7 @@ const iconMapping = {
   FaWrench: <FaWrench />,
   FaChevronDown: <FaChevronDown />,
   FaChevronUp: <FaChevronUp />,
+  FaInfoCircle: <FaInfoCircle />
   // Agrega más mapeos según sea necesario
 };
 
@@ -160,6 +162,17 @@ const Sidebar = () => {
             </Link>
           </li>
         </ul>
+        <Link
+          to="/about"
+          className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
+            location.pathname === "/about"
+              ? "bg-blue-100 text-blue-600"
+              : ""
+          }`}
+        >
+          {iconMapping.FaInfoCircle}
+          <span className="ml-3">Acerca de</span>
+        </Link>
       </nav>
 
       {/* Botón de Cerrar Sesión */}
