@@ -50,6 +50,9 @@ const Formulario4_10 = () => {
 
     // Acciones Correctivas y Eficacia
     acciones_correctivas_eficacia_pregunta: "",
+    acciones_correctivas_eficacia_evidencia1: "",
+    acciones_correctivas_eficacia_evidencia2: "",
+    acciones_correctivas_eficacia_evidencia3: "",
 
     // Sugerencias para el Seguimiento y Medición
     sugerencias_seguimiento_medicion_pregunta: "",

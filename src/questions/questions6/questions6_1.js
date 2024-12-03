@@ -66,9 +66,11 @@ export const questions6_1 = (formData, handleChange) => [
   <SectionTitle key="acciones-requeridas-6-1" title="Acciones requeridas" />,
   <AccionesRequeridas
     key="acciones_requeridas_6_1"
-    accion={formData.accion}
-    responsableSNS={formData.responsableSNS}
-    fechaCumplimiento={formData.fechaCumplimiento}
+    accionesData={{
+      accion: formData.accion,
+      responsableSNS: formData.responsableSNS,
+      fechaCumplimiento: formData.fechaCumplimiento,
+    }}
     handleChange={handleChange}
   />,
 ];

@@ -29,6 +29,7 @@ const Formulario5_7 = () => {
     infraestructura_pruebas_diseno_construccion: 3,
     elaboracion_cronograma_asignacion_recursos: 3,
     mejorar_plan_general_operacion_pregunta: "",
+    
     accion: "",
     responsableSNS: "",
     fechaCumplimiento: ""

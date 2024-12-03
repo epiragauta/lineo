@@ -252,9 +252,11 @@ export const questions5_1 = (formData, handleChange, handleSelectChange) => [
   // Componente de Acciones Requeridas
   <AccionesRequeridas
     key="acciones_requeridas_5-1"
-    accion={formData.accion}
-    responsableSNS={formData.responsableSNS}
-    fechaCumplimiento={formData.fechaCumplimiento}
+    accionesData={{
+      accion: formData.accion,
+      responsableSNS: formData.responsableSNS,
+      fechaCumplimiento: formData.fechaCumplimiento,
+    }}
     handleChange={handleChange}
   />,
 ];
