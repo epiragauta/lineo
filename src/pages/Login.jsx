@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../backend/supabaseClient';
+import LogoSuper from '../assets/logos/super/super_blanco.png';
+import LogoLineo from '../assets/logos/lineo/lineo_blbl.png';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -22,7 +24,12 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-login-bg bg-cover">
+    <div className="flex relative items-center justify-center min-h-screen bg-login-bg bg-cover bg-no-repeat">
+      <img src={LogoSuper} alt="Logo Izquierdo" 
+       class="absolute top-10 left-10 h-36">
+      </img>
+      <img src={LogoLineo} alt="Logo Derecho" 
+          class="absolute top-10 right-10 h-36"></img>
       <form
         onSubmit={handleSubmit}
         className="bg-gray-200 p-6 rounded shadow-md w-full max-w-xl"

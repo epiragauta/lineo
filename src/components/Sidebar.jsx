@@ -22,8 +22,8 @@ import {
   FaChevronUp,
   FaInfoCircle
 } from "react-icons/fa";
-import SNSaludLogo from "../assets/SNSaludLogo.png";
-import LineoLogo from "../assets/LogoLineo-02.png";
+import SNSaludLogo from "../assets/logos/super/super_azul.png";
+import LineoLogo from "../assets/logos/lineo/lineo_gris.png";
 import formsConfig from "../data/formsConfig";
 import { supabase } from "../backend/supabaseClient"; // Import Supabase client
 

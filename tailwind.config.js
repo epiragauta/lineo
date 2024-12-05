@@ -9,7 +9,7 @@ module.exports = withMT({
   theme: {
     extend: {
       backgroundImage: {
-        'login-bg': "url('/src/assets/fondo_login.png')", // Path to your image
+        'login-bg': "url('/src/assets/bg/fondo_azul_ancho.png')", // Path to your image
       },
       colors: {
         primary: '#32B4A8',
