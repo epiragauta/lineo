@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { questions5_7 } from "./questions5_7";
-import { operationQuestions } from "./../../../../questions/operation_questions"; // Asegúrate de tener este archivo si aplica
+import { operationQuestions } from "../../../../questions/operationQuestions"; // Asegúrate de tener este archivo si aplica
 import FormWrapper from "../../../../components/FormWrapper";
 
 const Form5_7 = () => {

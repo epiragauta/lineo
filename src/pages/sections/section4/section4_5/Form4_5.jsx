@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { questions4_5 as form4_5Questions } from "./questions4_5"; // Importación del arreglo de preguntas 4.5
-import { operationQuestions } from "./../../../../questions/operation_questions"; // Importación del arreglo de preguntas de operación
+import { operationQuestions } from "../../../../questions/operationQuestions"; // Importación del arreglo de preguntas de operación
 import FormWrapper from "../../../../components/FormWrapper"; // Asegúrate de tener este componente
 
 const Form4_5 = () => {

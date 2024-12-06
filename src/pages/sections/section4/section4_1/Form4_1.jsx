@@ -2,56 +2,14 @@
 
 import React from "react";
 import { questions4_1 as form4_1Questions } from "./questions4_1"; // Importación del arreglo de componentes
-import { operationQuestions } from "../../../../questions/operation_questions"; // Importación del arreglo de componentes
+import { operationQuestions } from "../../../../questions/operationQuestions"; // Importación del arreglo de componentes
 import GeneralForm from "../../../../components/GeneralForm"; // Import the generic form
+import { getInitialFormData } from "../../../../utils/getInitialFormData"; // Import the function to get initial form data
 
 const Form4_1 = ({label, subsection}) => {
   const formId = subsection; // Unique identifier for the form
 
-  const initialFormData = {
-    // Initialize all form fields
-    nombreOperacion: "",
-    dependencia: "",
-    registroAdmin: "",
-    objetivo: "",
-    poblacion: "",
-    anioInicio: "",
-    areaTematica: "",
-    periodicidad: "",
-    unidadEstudio: "",
-    variablesPrincipales: "",
-    coberturaGeografica: "",
-    periodoReferencia: "",
-    metodoRecoleccion: "",
-
-    respRecursosPregunta1: 1,
-    respRecursosPregunta2: [],
-    respRecursosEvidencia1: "",
-    respRecursosEvidencia2: "",
-    respRecursosEvidencia3: "",
-
-    respMejoraPregunta1: 1,
-    evaluacionPregunta1: 2,
-    respMejoraEvidencia1: "",
-    respMejoraEvidencia2: "",
-    respMejoraEvidencia3: "",
-
-    asignacionPregunta1: 1,
-    asignacionPregunta2: [],
-    asignacionEvidencia1: "",
-    asignacionEvidencia2: "",
-    asignacionEvidencia3: "",
-
-    evaluacionPregunta2: 2,
-    evaluacionEvidencia1: "",
-    evaluacionEvidencia2: "",
-    evaluacionEvidencia3: "",
-
-    sugerenciasComentario: "",
-    accion: "",
-    responsableSNS: "",
-    fechaCumplimiento: "",
-  };
+  const initialFormData = getInitialFormData(operationQuestions, form4_1Questions); // Get initial form data
   
   const introductions = [
     "Introducción",

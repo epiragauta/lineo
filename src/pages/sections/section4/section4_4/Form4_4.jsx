@@ -1,7 +1,7 @@
 // ./src/pages/Sections/Section4/Form4_4.js
 
 import React, { useState, useEffect } from "react";
-import { operationQuestions } from "./../../../../questions/operation_questions"; // Importación del arreglo de preguntas de operación
+import { operationQuestions } from "../../../../questions/operationQuestions"; // Importación del arreglo de preguntas de operación
 import { questions4_4 as form4_4Questions } from "./questions4_4"; // Importación del arreglo de preguntas 4.4
 import FormWrapper from "../../../../components/FormWrapper"; // Asegúrate de tener este componente
 

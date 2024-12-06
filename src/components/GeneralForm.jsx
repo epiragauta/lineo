@@ -6,6 +6,7 @@ import { supabase } from "../backend/supabaseClient";
 import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
 import useFormPersistence from "../hooks/useFormPersistence";
+import { renderQuestions } from "../utils/renderQuestions";
 
 /**
  * Generic form component to handle multiple forms with the same structure.
@@ -109,13 +110,17 @@ const GeneralForm = ({ formId, label, initialFormData, operationQuestions, formQ
 
   const mainTitle = label;
 
+  const operationQuestionsComponents = renderQuestions(operationQuestions, formData, handleChange, handleSelectChange);
+  console.log(operationQuestions);
+  const formQuestionsComponents = renderQuestions(formQuestions, formData, handleChange, handleSelectChange);
+  console.log(operationQuestionsComponents);
 
   return (
     <FormWrapper
       mainTitle={mainTitle}
       introductions={introductions}
-      operationQuestions={operationQuestions(formData, handleChange, handleSelectChange)}
-      formQuestions={formQuestions(formData, handleChange, handleSelectChange)}
+      operationQuestions={operationQuestionsComponents}
+      formQuestions={formQuestionsComponents}
       handleSubmit={handleSubmit}
     />
   );

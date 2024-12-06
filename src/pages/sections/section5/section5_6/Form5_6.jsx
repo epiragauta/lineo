@@ -1,7 +1,7 @@
 // ./src/pages/Sections/Section5/Form5_6.js
 
 import React, { useState, useEffect } from "react";
-import { operationQuestions } from "./../../../../questions/operation_questions"; // Asegúrate de tener este archivo si aplica
+import { operationQuestions } from "../../../../questions/operationQuestions"; // Asegúrate de tener este archivo si aplica
 import { questions5_6 as form5_6Questions } from "./questions5_6"; // Importación del arreglo de preguntas 5.6
 import FormWrapper from "../../../../components/FormWrapper"; // Asegúrate de tener este componente
 

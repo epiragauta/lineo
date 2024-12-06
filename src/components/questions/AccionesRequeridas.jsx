@@ -3,7 +3,7 @@
 import React from "react";
 import { Input } from "@material-tailwind/react";
 
-const AccionesRequeridas = ({ accionesData, handleChange }) => {
+const AccionesRequeridas = ({ formData, handleChange }) => {
   return (
     <div className="mb-6">
       <p className="text-lg font-semibold mb-2">Acciones requeridas</p>
@@ -13,7 +13,7 @@ const AccionesRequeridas = ({ accionesData, handleChange }) => {
           <Input
             type="text"
             name="accion"
-            value={accionesData.accion.value}
+            value={formData["accion"]}
             onChange={handleChange}
             placeholder="Ingrese acción"
             color="black"
@@ -24,7 +24,7 @@ const AccionesRequeridas = ({ accionesData, handleChange }) => {
           <Input
             type="text"
             name="responsableSNS"
-            value={accionesData.responsableSNS.value}
+            value={formData["responsableSNS"]}
             onChange={handleChange}
             placeholder="Ingrese responsable"
             color="black"
@@ -35,7 +35,7 @@ const AccionesRequeridas = ({ accionesData, handleChange }) => {
           <Input
             type="date"
             name="fechaCumplimiento"
-            value={accionesData.fechaCumplimiento.value}
+            value={formData["fechaCumplimiento"]}
             onChange={handleChange}
             color="black"
           />

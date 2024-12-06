@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { operationQuestions } from "../../../../questions/operation_questions";
+import { operationQuestions } from "../../../../questions/operationQuestions";
 import { questions6_3 } from "./questions6_3";
 import FormWrapper from "../../../../components/FormWrapper";
 

@@ -9,3 +9,4 @@ export { default as EvidenciasDocumentales } from "./EvidenciasDocumentales";
 export { default as AccionesRequeridas } from "./AccionesRequeridas";
 export { default as Sugerencias } from "./Sugerencias";
 export { default as CheckboxQuestion } from "./CheckboxQuestion";
+export { default as SelectBoxQuestion } from "./SelectBoxQuestion";

@@ -1,7 +1,7 @@
 // ./src/pages/Sections/Section6/Form6_2.js
 
 import React, { useState } from "react";
-import { operationQuestions } from "../../../../questions/operation_questions";
+import { operationQuestions } from "../../../../questions/operationQuestions";
 import { questions6_2 } from "./questions6_2";
 import FormWrapper from "../../../../components/FormWrapper";
 
