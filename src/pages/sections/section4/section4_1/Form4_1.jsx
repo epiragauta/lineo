@@ -7,6 +7,7 @@ import FormWrapper from "../../../../components/FormWrapper"; // Asegúrate de t
 import useFormPersistence from "../../../../hooks/useFormPersistence";
 import { AuthContext } from "../../../../context/AuthContext";
 import { supabase } from "../../../../backend/supabaseClient";
+import { toast } from 'react-toastify'; // Import toast from React Toastify
 
 const Form4_1 = () => {
   const { user } = useContext(AuthContext); // Get user from AuthContext
@@ -95,7 +96,15 @@ const Form4_1 = () => {
     console.log("Formulario 4.1 enviado", formData);
 
     if (!userId) {
-      alert("User not authenticated");
+      // Replace alert with toast.error in Spanish
+      toast.error("Usuario no autenticado. Por favor, inicia sesión.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
       return;
     }
 
@@ -115,14 +124,30 @@ const Form4_1 = () => {
       }
 
       console.log("Form submitted successfully:", data);
-      alert("Form submitted successfully!");
+      // Replace alert with toast.success in Spanish
+      toast.success("Formulario enviado exitosamente!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
 
       // Optionally, clear the form or redirect the user
       setFormData(initialFormData); // Reset form data
-      // Or navigate to another page
+      // Or navigate to another page using useHistory or similar
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("There was an error submitting the form.");
+      // Replace alert with toast.error in Spanish
+      toast.error("Hubo un error al enviar el formulario. Inténtalo de nuevo.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
     }
   };
 

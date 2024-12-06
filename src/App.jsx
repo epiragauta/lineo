@@ -1,6 +1,5 @@
 // ./src/App.jsx
 import React, { useContext } from 'react';
-
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './layouts/Layout';
 import Login from './pages/Login';
@@ -17,6 +16,8 @@ import { AuthContext } from './context/AuthContext';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 
+import { ToastContainer } from 'react-toastify'; // Import ToastContainer
+import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
 
 function App() {
   const { user } = useContext(AuthContext);
@@ -34,7 +35,6 @@ function App() {
         {/* Other Routes */}
         <Route path="/test-button" element={<TestButton />} />
 
-
         {/* Protected Routes with Layout */}
         <Route
           path="/*"
@@ -42,8 +42,8 @@ function App() {
             <PrivateRoute>
               <Layout>
                 <Routes>
-                <Route path="/home" element={<Home />} />
-                <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/home" element={<Home />} />
+                  <Route path="/dashboard" element={<Dashboard />} />
 
                 {/* Rutas para Forms */}
                 {formsConfig.map((section) =>
@@ -59,12 +59,27 @@ function App() {
 
                 {/* Redirige cualquier ruta desconocida a /home */}
                 <Route path="*" element={<Navigate to="/home" replace />} />
+
                 </Routes>
               </Layout>
             </PrivateRoute>
           }
         />
       </Routes>
+
+      {/* Add ToastContainer to make toast notifications available globally */}
+      <ToastContainer
+        position="top-right" // Position of the toast
+        autoClose={5000} // Automatically close after 5 seconds
+        hideProgressBar={false} // Show progress bar
+        newestOnTop={false} // New toasts appear at the bottom
+        closeOnClick // Close toast on click
+        rtl={false} // Left-to-right layout
+        pauseOnFocusLoss // Pause toast timer when window loses focus
+        draggable // Allow dragging to dismiss
+        pauseOnHover // Pause timer on hover
+        theme="colored" // Theme of the toast
+      />
     </Router>
   );
 }
