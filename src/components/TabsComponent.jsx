@@ -9,7 +9,7 @@ import {
   TabPanel,
 } from "@material-tailwind/react"; // Asegúrate de tener instalado Material Tailwind
 
-const TabsComponent = ({ FormComponent, DashboardComponent, label, subsection}) => {
+const TabsComponent = ({ FormComponent, DashboardComponent, label, introductions, subsection}) => {
   const [activeTab, setActiveTab] = useState("Form");
 
   return (
@@ -21,7 +21,7 @@ const TabsComponent = ({ FormComponent, DashboardComponent, label, subsection}) 
         </TabsHeader>
         <TabsBody>
           <TabPanel value="Form">
-            <FormComponent subsection = {subsection} label = {label} />
+            <FormComponent subsection = {subsection} label = {label} introductions = {introductions}/>
           </TabPanel>
           <TabPanel value="dashboard">
             <DashboardComponent label = {label} subsection = {subsection}/>

@@ -46,25 +46,26 @@ function App() {
                   <Route path="/home" element={<Home />} />
                   <Route path="/dashboard" element={<Dashboard />} />
 
-                {/* Rutas para Forms */}
-                {formsConfig.map((section) =>
-                  section.subsections.map((subsection) => (
-                    <Route
-                      key={subsection.path}
-                      path={subsection.path} // Ruta relativa a '/forms'
-                      element={
-                        <TabsComponent
-                          FormComponent={subsection.form}
-                          DashboardComponent={subsection.dashboard}
+                  {/* Rutas para Forms */}
+                  {formsConfig.map((section) =>
+                    section.subsections.map((subsection) => (
+                      <Route
+                        key={subsection.path}
+                        path={subsection.path} // Ruta relativa a '/forms'
+                        element={
+                          <TabsComponent
+                            FormComponent={subsection.form}
+                            DashboardComponent={subsection.dashboard}
 
-                          label={subsection.label}
-                          subsection={subsection.subsection}
-                        />
-                      }
-                    />
-                  ))
-                )}
-                <Route path="/about" element={<About/>} />
+                            label={subsection.label}
+                            introductions={subsection.introductions}
+                            subsection={subsection.subsection}
+                          />
+                        }
+                      />
+                    ))
+                  )}
+                  <Route path="/about" element={<About/>} />
 
                 {/* Redirige cualquier ruta desconocida a /home */}
                 <Route path="*" element={<Navigate to="/home" replace />} />

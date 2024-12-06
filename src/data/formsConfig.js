@@ -149,6 +149,10 @@ const seccionConfig = [
       {
         subsection: "4.1",
         label: "4.1 Responsabilidades de la Alta Dirección",
+        introductions: [
+          "Introducción",
+          "La Alta Dirección desempeña un papel fundamental en la implementación de la Norma Técnica de Calidad del Proceso Estadístico (NTC PE). Esta subsección destaca la necesidad de un liderazgo comprometido para establecer directrices estratégicas que impulsen la calidad estadística. Se subrayan responsabilidades como la asignación adecuada de recursos, la promoción de una cultura organizacional orientada a la calidad, y la garantía del cumplimiento de los principios éticos y legales asociados al proceso estadístico.",
+        ],
         path: "/seccion/4/4.1",
         form: Form4_1,
         dashboard: Dashboard4_1,
@@ -156,6 +160,11 @@ const seccionConfig = [
       {
         subsection: "4.2",
         label: "4.2 Requisitos de la Entidad",
+        introductions: [
+          "Introducción",
+          "Establece los requisitos fundamentales que deben cumplir las entidades para garantizar la implementación efectiva de los procesos estadísticos con calidad. Esta sección se enfoca en asegurar que la organización cuente con la infraestructura, los procedimientos y los recursos necesarios para soportar las actividades estadísticas de manera eficiente y conforme a los principios establecidos en la norma.",
+          "Entre los aspectos clave, se incluye la importancia de adoptar una política de calidad estadística, documentar procesos, y establecer un sistema de gestión que permita el monitoreo y la mejora continua. La alineación de estos requisitos con los objetivos institucionales asegura una base sólida para cumplir con las demandas de transparencia, confiabilidad y accesibilidad de los datos.",
+        ],
         path: "/seccion/4/4.2",
         form: Form4_2,
         dashboard: Dashboard4_2,
