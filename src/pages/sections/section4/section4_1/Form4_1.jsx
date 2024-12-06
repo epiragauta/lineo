@@ -13,7 +13,7 @@ const Form4_1 = () => {
   const { user } = useContext(AuthContext); // Get user from AuthContext
   const userId = user ? user.id : null;
 
-  const localStorageKey = "Form4_1";
+  const formId = "form4_1";
 
   const initialFormData = {
     // Initialize all form fields
@@ -56,7 +56,7 @@ const Form4_1 = () => {
   };
 
   const [formData, setFormData] = useFormPersistence(
-    localStorageKey,
+    formId,
     initialFormData,
     userId
   );
@@ -114,7 +114,7 @@ const Form4_1 = () => {
         .insert([
           {
             user_id: userId,
-            form_id: 'form4_1',
+            form_id: formId,
             responses: formData,
           },
         ]);
