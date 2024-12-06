@@ -123,10 +123,10 @@ export const questions4_1 = (formData, handleChange, handleSelectChange) => [
   <SectionTitle key="evaluacion-responsabilidad" title="Evaluación de la Responsabilidad de la Alta Dirección" />,
   
   <SliderQuestion
-    key="evaluacionPregunta1"
+    key="evaluacionPregunta2"
     label="Califique (1-5) qué tan efectiva es la alta dirección en proporcionar los recursos necesarios y mantener el compromiso con la normativa y el proceso estadístico:"
-    name="evaluacionPregunta1"
-    value={formData.evaluacionPregunta1}
+    name="evaluacionPregunta2"
+    value={formData.evaluacionPregunta2}
     onChange={handleSelectChange}
     min={1}
     max={5}

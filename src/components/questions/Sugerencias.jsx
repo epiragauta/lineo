@@ -9,7 +9,7 @@ const Sugerencias = ({ label, name, value, handleChange }) => {
     <div className="mb-6">
       <QuestionLabel label={label} />
       <TextAreaQuestion
-        name={name}
+        name="sugerenciasComentario"
         value={value.value}
         onChange={handleChange}
         placeholder="Ingrese su sugerencia o comentario"
