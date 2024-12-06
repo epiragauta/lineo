@@ -4,7 +4,7 @@ import TabsComponent from '../components/TabsComponent';
 const Dashboard = () => {
   return (
     <>
-      <TabsComponent />
+      hola
 
     </>
   );

@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Home from './pages/Home'; // Import Home
 
 import PrivateRoute from './components/PrivateRoute';
+import TabsComponent from './components/TabsComponent';
 import formsConfig from './data/formsConfig';
 import TestButton from './components/TestButton';
 import { AuthContext } from './context/AuthContext';
@@ -47,11 +48,16 @@ function App() {
 
                 {/* Rutas para Forms */}
                 {formsConfig.map((section) =>
-                  section.subsections.map((form) => (
+                  section.subsections.map((subsection) => (
                     <Route
-                      key={form.path}
-                      path={form.path} // Ruta relativa a '/section'
-                      element={<form.form />}
+                      key={subsection.path}
+                      path={subsection.path} // Ruta relativa a '/forms'
+                      element={
+                        <TabsComponent
+                          FormComponent={subsection.form}
+                          DashboardComponent={subsection.dashboard}
+                        />
+                      }
                     />
                   ))
                 )}
