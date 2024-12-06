@@ -9,17 +9,28 @@ const RadioQuestion = ({ label, name, options, value, onChange }) => {
     <div className="mb-6">
       {label && <QuestionLabel label={label} />}
       <div className="flex gap-4">
-        {options.map((option, index) => (
-          <Radio
-            key={index}
-            name={name}
-            label={<span className="text-black font-semibold">{option}</span>}
-            value={option}
-            onChange={onChange}
-            checked={value === option}
-            color="black"
-          />
-        ))}
+      {options.map((option, index) =>
+      index === 0 ? (
+        <Radio
+          key={index}
+          name={name}
+          label={<span className="text-black font-semibold">{option}</span>}
+          value={index}
+          onChange={onChange}
+          color="black"
+          defaultChecked
+        />
+      ) : (
+        <Radio
+          key={index}
+          name={name}
+          label={<span className="text-black font-semibold">{option}</span>}
+          value={index}
+          onChange={onChange}
+          color="black"
+        />
+      )
+    )}
       </div>
     </div>
   );

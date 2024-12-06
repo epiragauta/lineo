@@ -12,7 +12,7 @@ const AccionesRequeridas = ({ accionesData, handleChange }) => {
           <p className="font-medium text-black">Acción</p>
           <Input
             type="text"
-            name={accionesData.accion.name}
+            name="accion"
             value={accionesData.accion.value}
             onChange={handleChange}
             placeholder="Ingrese acción"
@@ -23,7 +23,7 @@ const AccionesRequeridas = ({ accionesData, handleChange }) => {
           <p className="font-medium text-black">Responsable SNS</p>
           <Input
             type="text"
-            name={accionesData.responsableSNS.name}
+            name="responsableSNS"
             value={accionesData.responsableSNS.value}
             onChange={handleChange}
             placeholder="Ingrese responsable"
@@ -34,7 +34,7 @@ const AccionesRequeridas = ({ accionesData, handleChange }) => {
           <p className="font-medium text-black">Fecha prevista de cumplimiento</p>
           <Input
             type="date"
-            name={accionesData.fechaCumplimiento.name}
+            name="fechaCumplimiento"
             value={accionesData.fechaCumplimiento.value}
             onChange={handleChange}
             color="black"
