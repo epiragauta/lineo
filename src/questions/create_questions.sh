@@ -7,8 +7,9 @@ for i in {4..13}; do
 
   # Crear archivos sectionX_1.jsx a sectionX_10.jsx dentro de cada carpeta
   for j in {1..10}; do
-    file_path="$section_folder/questions${i}_${j}.js"
-    echo "// file: questions${i}_${j}" > "$file_path"
+    # file_path="$section_folder/questions${i}_${j}.js"
+    # echo "// file: questions${i}_${j}" > "$file_path"
+    mv "../pages/sections/section${i}/section${i}_${j}/question${i}_${j}.js" "../pages/sections/section${i}/section${i}_${j}/questions${i}_${j}.js"
   done
 done
 

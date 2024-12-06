@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 // eslint-disable-next-line
-import Formulario4_1 from '../pages/Sections/Section4/Section4_1';
+import Form4_1 from '../pages/sections/section4/section4_1/Form4_1.jsx';
 import { ResponsiveBar } from '@nivo/bar';
 import {
   Tabs,
@@ -13,7 +13,7 @@ import {
 } from "@material-tailwind/react"; // Asegúrate de tener instalado Material Tailwind
 
 const TabsComponent = () => {
-  const [activeTab, setActiveTab] = useState("formulario");
+  const [activeTab, setActiveTab] = useState("Form");
 
   // Datos de ejemplo para la gráfica de Nivo
   const data = [
@@ -31,12 +31,12 @@ const TabsComponent = () => {
     <div className="w-full max-w-5xl mx-auto p-4">
       <Tabs value={activeTab} onChange={(value) => setActiveTab(value)}>
         <TabsHeader>
-          <Tab value="formulario" className='bg-primary_light'>Formulario 4.1</Tab>
+          <Tab value="Form" className='bg-primary_light'>Form 4.1</Tab>
           <Tab value="dashboard" className='bg-primary_light'>Dashboard</Tab>
         </TabsHeader>
         <TabsBody>
-          <TabPanel value="formulario">
-            <Formulario4_1 />
+          <TabPanel value="Form">
+            <Form4_1 />
           </TabPanel>
           <TabPanel value="dashboard">
             <div className="h-96">

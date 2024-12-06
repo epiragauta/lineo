@@ -45,26 +45,20 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/dashboard" element={<Dashboard />} />
 
-                <Route path="forms">
+                {/* Rutas para Forms */}
+                {formsConfig.map((section) =>
+                  section.subsections.map((form) => (
+                    <Route
+                      key={form.path}
+                      path={form.path} // Ruta relativa a '/section'
+                      element={<form.form />}
+                    />
+                  ))
+                )}
+                <Route path="/about" element={<About/>} />
 
-                  {/* Rutas para Formularios */}
-                  {formsConfig.map((section) =>
-                    section.subsections.map((form) => (
-                      <Route
-                        key={form.path}
-                        path={form.path} // Ruta relativa a '/forms'
-                        element={<form.component />}
-                      />
-                    ))
-                  )}
-
-                  {/* Redirige cualquier ruta desconocida dentro de '/forms' a '/forms/create' */}
-                  <Route path="*" element={<Navigate to="/home" replace />} />
-                </Route>
-                  <Route path="/about" element={<About/>} />
-
-                  {/* Redirige cualquier ruta desconocida a /home */}
-                  <Route path="*" element={<Navigate to="/home" replace />} />
+                {/* Redirige cualquier ruta desconocida a /home */}
+                <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>
               </Layout>
             </PrivateRoute>

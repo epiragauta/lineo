@@ -96,9 +96,9 @@ const Sidebar = () => {
           </li>
         </ul>
 
-        {/* Formularios */}
+        {/* Forms */}
         <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">
-          Formularios
+          Forms
         </h3>
         {formsConfig.map((section) => (
           <Accordion
