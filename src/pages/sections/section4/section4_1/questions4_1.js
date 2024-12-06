@@ -11,6 +11,9 @@ import {
   AccionesRequeridas,
 } from "../../../../components/questions";
 
+
+
+
 export const questions4_1 = (formData, handleChange, handleSelectChange) => [
   // Responsabilidad de Proporcionar Recursos
   <SectionTitle key="resp-proporcionar-recursos" title="Responsabilidad de Proporcionar Recursos" />,

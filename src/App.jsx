@@ -56,6 +56,9 @@ function App() {
                         <TabsComponent
                           FormComponent={subsection.form}
                           DashboardComponent={subsection.dashboard}
+
+                          label={subsection.label}
+                          subsection={subsection.subsection}
                         />
                       }
                     />
