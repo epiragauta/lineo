@@ -4,9 +4,10 @@ import React, { useContext } from "react";
 import { questions4_1 as form4_1Questions } from "./questions4_1"; // Importación del arreglo de componentes
 import { operationQuestions } from "../../../../questions/operation_questions"; // Importación del arreglo de componentes
 import FormWrapper from "../../../../components/FormWrapper"; // Asegúrate de tener este componente
-
 import useFormPersistence from "../../../../hooks/useFormPersistence";
 import { AuthContext } from "../../../../context/AuthContext";
+import { supabase } from "../../../../backend/supabaseClient";
+import { toast } from 'react-toastify'; // Import toast from React Toastify
 
 const Form4_1 = () => {
   const { user } = useContext(AuthContext); // Get user from AuthContext
@@ -14,52 +15,54 @@ const Form4_1 = () => {
 
   const localStorageKey = "Form4_1";
 
+  const initialFormData = {
+    // Initialize all form fields
+    nombreOperacion: "",
+    dependencia: "",
+    registroAdmin: "",
+    objetivo: "",
+    poblacion: "",
+    anioInicio: "",
+    areaTematica: "",
+    periodicidad: "",
+    unidadEstudio: "",
+    variablesPrincipales: "",
+    coberturaGeografica: "",
+    periodoReferencia: "",
+    metodoRecoleccion: "",
+    respRecursosPregunta1: "",
+    respRecursosPregunta2: [],
+    respRecursosEvidencia1: "",
+    respRecursosEvidencia2: "",
+    respRecursosEvidencia3: "",
+    respMejoraPregunta1: "",
+    evaluacionPregunta1: 3,
+    respMejoraEvidencia1: "",
+    respMejoraEvidencia2: "",
+    respMejoraEvidencia3: "",
+    asignacionPregunta1: "",
+    asignacionPregunta2: [],
+    asignacionEvidencia1: "",
+    asignacionEvidencia2: "",
+    asignacionEvidencia3: "",
+    evaluacionPregunta2: 3,
+    evaluacionEvidencia1: "",
+    evaluacionEvidencia2: "",
+    evaluacionEvidencia3: "",
+    sugerenciasComentario: "",
+    accion: "",
+    responsableSNS: "",
+    fechaCumplimiento: "",
+  };
+
   const [formData, setFormData] = useFormPersistence(
     localStorageKey,
-    {
-      nombreOperacion: "",
-      dependencia: "",
-      registroAdmin: "",
-      objetivo: "",
-      poblacion: "",
-      anioInicio: "",
-      areaTematica: "",
-      periodicidad: "",
-      unidadEstudio: "",
-      variablesPrincipales: "",
-      coberturaGeografica: "",
-      periodoReferencia: "",
-      metodoRecoleccion: "",
-      respRecursosPregunta1: "",
-      respRecursosPregunta2: [],
-      respRecursosEvidencia1: "",
-      respRecursosEvidencia2: "",
-      respRecursosEvidencia3: "",
-      respMejoraPregunta1: "",
-      evaluacionPregunta1: 3,
-      respMejoraEvidencia1: "",
-      respMejoraEvidencia2: "",
-      respMejoraEvidencia3: "",
-      asignacionPregunta1: "",
-      asignacionPregunta2: [],
-      asignacionEvidencia1: "",
-      asignacionEvidencia2: "",
-      asignacionEvidencia3: "",
-      evaluacionPregunta2: 3,
-      evaluacionEvidencia1: "",
-      evaluacionEvidencia2: "",
-      evaluacionEvidencia3: "",
-      sugerenciasComentario: "",
-      accion: "",
-      responsableSNS: "",
-      fechaCumplimiento: "",
-    },
+    initialFormData,
     userId
   );
 
-  // Función para manejar cambios en inputs de tipo texto, radio y checkbox
+  // Handle changes for text inputs, radio buttons, and checkboxes
   const handleChange = (e) => {
-    console.log("e", e.target);
     const { name, value, type, checked } = e.target;
 
     if (type === "checkbox") {
@@ -80,7 +83,7 @@ const Form4_1 = () => {
     }
   };
 
-  // Función para manejar cambios en sliders
+  // Handle changes for sliders or other custom inputs
   const handleSelectChange = (name, value) => {
     setFormData({
       ...formData,
@@ -88,10 +91,64 @@ const Form4_1 = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form 4.1 enviado", formData);
-    // Aquí puedes agregar la lógica para enviar el Form, por ejemplo, una petición POST a tu backend
+    console.log("Formulario 4.1 enviado", formData);
+
+    if (!userId) {
+      // Replace alert with toast.error in Spanish
+      toast.error("Usuario no autenticado. Por favor, inicia sesión.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      return;
+    }
+
+    try {
+      const { data, error } = await supabase
+        .from('submissions')
+        .insert([
+          {
+            user_id: userId,
+            form_id: 'form4_1',
+            responses: formData,
+          },
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
+      console.log("Form submitted successfully:", data);
+      // Replace alert with toast.success in Spanish
+      toast.success("Formulario enviado exitosamente!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
+      // Optionally, clear the form or redirect the user
+      setFormData(initialFormData); // Reset form data
+      // Or navigate to another page using useHistory or similar
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      // Replace alert with toast.error in Spanish
+      toast.error("Hubo un error al enviar el formulario. Inténtalo de nuevo.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    }
   };
 
   const mainTitle = "Sección 4.1 - Responsabilidades de la Alta Dirección";
