@@ -1,4 +1,26 @@
-// Archivo: section6_10
-export default function Form6_12() {
-  return <div>Section 6_10</div>;
-}
+// src/pages/sections/section6/section6_10/Form6_10.jsx
+
+import React from "react";
+import { questions6_12 as formQuestions } from "./questions6_12"; 
+import { operationQuestions } from "../../../../questions/operationQuestions"; 
+import GeneralForm from "../../../../components/GeneralForm"; 
+import { getInitialFormData } from "../../../../utils/getInitialFormData"; 
+
+const Form6_12 = ({label, subsection, introductions}) => {
+  const formId = subsection; 
+  const initialFormData = getInitialFormData(operationQuestions, formQuestions);
+
+  return (
+    <GeneralForm
+      formId={formId}
+      label={label}
+      initialFormData={initialFormData}
+      operationQuestions={operationQuestions}
+      formQuestions={formQuestions}
+      introductions={introductions}
+    />
+  );
+};
+
+export default Form6_12;
+
