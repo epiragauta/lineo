@@ -58,6 +58,7 @@ function App() {
                             DashboardComponent={subsection.dashboard}
 
                             label={subsection.label}
+                            formQuestions={subsection.formQuestions}
                             introductions={subsection.introductions}
                             subsection={subsection.subsection}
                           />

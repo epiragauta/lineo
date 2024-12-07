@@ -7,6 +7,8 @@ import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
 import useFormPersistence from "../hooks/useFormPersistence";
 import { renderQuestions } from "../utils/renderQuestions";
+import { operationQuestions } from "../questions/operationQuestions"; 
+import { getInitialFormData } from "../utils/getInitialFormData";
 
 /**
  * Generic form component to handle multiple forms with the same structure.
@@ -18,9 +20,12 @@ import { renderQuestions } from "../utils/renderQuestions";
  * @param {Array} formQuestions - Array of form question components.
  * @param {Array} introductions - Array of introductions.
  */
-const GeneralForm = ({ formId, label, initialFormData, operationQuestions, formQuestions, introductions}) => {
+const GeneralForm = ({ subsection, label, formQuestions, introductions}) => {
   const { user } = useContext(AuthContext);
   const userId = user ? user.id : null;
+
+  const formId = subsection;
+  const initialFormData = getInitialFormData(operationQuestions, formQuestions);
 
   const [formData, setFormData] = useFormPersistence(formId, initialFormData, userId);
 

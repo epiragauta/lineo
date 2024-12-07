@@ -138,7 +138,7 @@ export const renderQuestions = (questions, formData, handleChange, handleSelectC
         );
 
       default:
-        return null;
+        return <div key={question.key}>Tipo de pregunta no reconocido</div>;
     }
   });
 
