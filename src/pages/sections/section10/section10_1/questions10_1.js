@@ -1,25 +1,4 @@
 export const questions10_1 = [
-    // Título de la Sección 10.1
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_10_1",
-      title: "Sección 10.1 - Cálculo de agregaciones (Resultados)",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_10_1",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_10_1",
-      content:
-        "El análisis de cálculo de agregaciones (resultados) es un componente esencial dentro del marco de la norma técnica estadística, ya que asegura que los datos obtenidos sean procesados y presentados de manera coherente y precisa. Conforme a los lineamientos establecidos en la NTC PE 1000:2020, esta fase implica una evaluación detallada de los métodos de agregación utilizados, garantizando que los resultados reflejen fielmente la información contenida en las bases de datos. Es crucial realizar una validación de los cálculos, considerando las fórmulas y procedimientos aplicados, para evitar inconsistencias que puedan comprometer la calidad de la información estadística y su utilidad para los usuarios finales.",
-    },
   
     // Subtítulo: Consistencia de Resultados
     {

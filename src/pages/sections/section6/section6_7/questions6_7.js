@@ -1,24 +1,4 @@
 export const questions6_7 = [
-    // Título de la Sección 6.7
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_6_7",
-      title: "Sección 6.7 - Diseño del Análisis",
-    },
-    
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_6_7",
-      title: "Introducción",
-    },
-    
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_6_7",
-      content: "El diseño del análisis es una etapa fundamental para asegurar que los métodos y técnicas empleadas sean adecuados, consistentes y alineados con los objetivos de la operación estadística. De acuerdo con los lineamientos de la NTC PE 1000:2020, esta fase implica la selección cuidadosa de herramientas analíticas, la definición de criterios de interpretación y la identificación de las variables clave a evaluar. Este diseño debe garantizar la generación de resultados fiables y útiles, además de prever posibles limitaciones técnicas o metodológicas que puedan influir en la calidad del análisis estadístico.",
-    },
     
     // Subtítulo: Diseño y Documentación de la Metodología de Análisis
     {

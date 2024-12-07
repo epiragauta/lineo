@@ -1,25 +1,4 @@
 export const questions8_2 = [
-    // Título de la Sección 8.2
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_8_2",
-      title: "Sección 8.2 - Actividades previas a la Recolección o acopio",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_8_2",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_8_2",
-      content:
-        "La recolección o acopio de datos es una etapa fundamental en el proceso de producción estadística, ya que asegura la obtención de información precisa y confiable para el análisis posterior. De acuerdo con los lineamientos de la NTC PE 1000:2020, esta fase implica la planificación adecuada de los métodos y herramientas para la recopilación de datos, garantizando su calidad y consistencia. Es esencial que se definan claramente las fuentes de información, los procedimientos de recolección y los criterios de validación, con el fin de evitar sesgos y errores. Además, se deben establecer protocolos para la supervisión y el control de calidad durante todo el proceso, asegurando que los datos recopilados sean representativos y aptos para el análisis estadístico.",
-    },
   
     // Subtítulo: Recolección de Datos
     {

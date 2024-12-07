@@ -1,25 +1,4 @@
 export const questions11_4 = [
-    // Título de la Sección 11.4
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_11_4",
-      title: "Sección 11.4 - Continuidad de la operación estadística",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_11_4",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_11_4",
-      content:
-        "La difusión de la continuidad de la operación estadística es un aspecto clave para asegurar la transparencia y accesibilidad de los procesos estadísticos, conforme a los lineamientos establecidos en la NTC PE 1000:2020. Esta fase implica la comunicación clara y oportuna sobre el estado y los avances de la operación estadística, garantizando que los usuarios y partes interesadas estén informados sobre cualquier actualización, ajuste o cambio relevante en el desarrollo de la operación. Además, se requiere un monitoreo constante para asegurar que la difusión de la información mantenga su coherencia, calidad y pertinencia a lo largo del ciclo de la operación.",
-    },
   
     // Subtítulo: Conservación de Series Históricas o de Tiempo
     {

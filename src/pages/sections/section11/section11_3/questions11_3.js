@@ -1,25 +1,4 @@
 export const questions11_3 = [
-    // Título de la Sección 11.3
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_11_3",
-      title: "Sección 11.3 - Puntualidad y oportunidad",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_11_3",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_11_3",
-      content:
-        "La difusión de la puntualidad y la oportunidad en la aplicación de la norma técnica estadística es fundamental para asegurar que los procesos y productos estadísticos sean entregados de manera eficiente y dentro de los plazos establecidos. De acuerdo con los lineamientos de la NTC PE 1000:2020, esta fase implica garantizar que los productos estadísticos sean difundidos en el tiempo adecuado, permitiendo que los usuarios accedan a la información actualizada y relevante sin demoras. La correcta implementación de esta norma asegura que los datos sean difundidos con precisión y en el momento oportuno, optimizando la toma de decisiones y el uso de la información estadística en diversas áreas.",
-    },
   
     // Subtítulo: Puntualidad en la Difusión de Información Estadística
     {

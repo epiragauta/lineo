@@ -1,25 +1,4 @@
 export const questions11_1 = [
-    // Título de la Sección 11.1
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_11_1",
-      title: "Sección 11.1 - Productos, canales y medios de difusión",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_11_1",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_11_1",
-      content:
-        "La difusión de productos estadísticos es un proceso clave para asegurar que la información generada sea accesible y útil para los usuarios finales. De acuerdo con los lineamientos establecidos en la NTC PE 1000:2020, esta etapa involucra la selección adecuada de canales y medios de difusión, garantizando que los productos sean distribuidos de manera efectiva y oportuna. La norma establece que la información debe ser accesible a través de plataformas digitales, como sitios web institucionales, bases de datos abiertas y servicios de datos en línea, además de considerar otros medios tradicionales cuando sea necesario. Es esencial que la difusión de productos cumpla con los principios de transparencia y claridad, permitiendo a los usuarios interpretar correctamente los datos y tomar decisiones informadas.",
-    },
   
     // Subtítulo: Difusión de Información Estadística
     {

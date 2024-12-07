@@ -1,25 +1,4 @@
 export const questions7_1 = [
-    // Título de la Sección 7.1
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_7_1",
-      title: "Sección 7.1 - Marco estadístico",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_7_1",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_7_1",
-      content:
-        "La construcción del Marco Estadístico es una fase esencial en la implementación de la Norma Técnica Estadística, ya que establece las bases para el desarrollo y la organización de los procesos estadísticos. Según los lineamientos de la NTC PE 1000:2020, esta etapa implica la creación de un marco estructurado que defina claramente los conceptos, métodos y herramientas necesarios para garantizar la coherencia y la calidad en la producción de estadísticas. Es fundamental asegurar que el marco estadístico sea flexible y adaptable, permitiendo su actualización constante en función de los avances tecnológicos y las necesidades de los usuarios, además de facilitar la integración de nuevas fuentes de datos e información.",
-    },
   
     // Subtítulo: Conformación y Mantenimiento del Marco Estadístico
     {

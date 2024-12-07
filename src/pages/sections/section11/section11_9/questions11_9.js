@@ -1,25 +1,4 @@
 export const questions11_9 = [
-    // Título de la Sección 11.9
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_11_9",
-      title: "Sección 11.9 - Soporte a usuarios de la información estadística",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_11_9",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_11_9",
-      content:
-        "La difusión de soporte a los usuarios de la información estadística es un proceso esencial para garantizar que los datos producidos sean accesibles, comprensibles y útiles para los usuarios finales. Según los lineamientos establecidos en la norma técnica estadística, esta fase implica proporcionar un acceso claro y eficiente a la información, incluyendo la publicación de resultados, metadatos y documentos explicativos, así como el establecimiento de canales de comunicación para resolver dudas o solicitudes adicionales. Es fundamental asegurar que el soporte ofrecido esté alineado con las necesidades de los usuarios, facilitando su comprensión y el uso adecuado de la información estadística para la toma de decisiones.",
-    },
   
     // Subtítulo: Disponibilidad de Mecanismos de Soporte
     {

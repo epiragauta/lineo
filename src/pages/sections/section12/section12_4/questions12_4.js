@@ -1,25 +1,4 @@
 export const questions12_4 = [
-  // Título de la Sección 12.1
-  {
-    type: "sectionTitle",
-    key: "titulo_seccion_12_1",
-    title: "Sección 12.1 - Análisis de la evaluación del desempeño",
-  },
-
-  // Subtítulo: Introducción
-  {
-    type: "sectionTitle",
-    key: "introduccion_12_1",
-    title: "Introducción",
-  },
-
-  // Texto de Introducción
-  {
-    type: "text",
-    key: "texto_introduccion_12_1",
-    content:
-      "La evaluación del desempeño de la norma técnica estadística es un proceso esencial para garantizar la efectividad y la calidad de las operaciones estadísticas. De acuerdo con los lineamientos establecidos en la NTC PE 1000:2020, esta fase implica un análisis exhaustivo de la implementación de la norma, evaluando su impacto en la calidad de los datos y su alineación con los objetivos establecidos. La evaluación debe incluir la identificación de fortalezas y áreas de mejora, permitiendo ajustar y optimizar los procedimientos estadísticos, a fin de asegurar que los resultados sean consistentes, confiables y pertinentes para la toma de decisiones.",
-  },
 
   // Subtítulo: Evaluación de las Fases del Proceso Estadístico
   {

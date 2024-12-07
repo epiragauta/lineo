@@ -1,25 +1,4 @@
 export const questions12_5 = [
-    // Título de la Sección 12.2
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_12_2",
-      title: "Sección 12.2 - Auditoría interna",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_12_2",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_12_2",
-      content:
-        "La evaluación del desempeño de la Auditoría Interna según la norma técnica estadística es un proceso esencial para asegurar la efectividad y la eficiencia de los sistemas de gestión estadística. De acuerdo con los lineamientos de la NTC PE 1000:2020, esta evaluación implica una revisión exhaustiva de los procedimientos y prácticas implementadas en la auditoría interna, con el fin de verificar que se cumplan los estándares de calidad y los requisitos establecidos en la normativa. Además, se debe analizar el grado de cumplimiento de los objetivos, identificar áreas de mejora y garantizar que las recomendaciones de auditoría sean adecuadamente implementadas para optimizar el proceso estadístico y asegurar la fiabilidad de los resultados obtenidos.",
-    },
   
     // Subtítulo: Frecuencia de las Auditorías Internas
     {

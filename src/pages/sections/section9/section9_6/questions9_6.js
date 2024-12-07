@@ -1,25 +1,4 @@
 export const questions9_6 = [
-    // Título de la Sección 9.6
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_9_6",
-      title: "Sección 9.6 - Finalización de los Archivos de Datos",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_9_6",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_9_6",
-      content:
-        "El procesamiento de finalización de los archivos de datos es una fase crucial en el ciclo de la operación estadística, según los lineamientos establecidos en la NTC PE 1000:2020. Esta etapa implica la revisión y consolidación de los datos recolectados, asegurando su integridad, coherencia y calidad antes de ser almacenados y difundidos. Es necesario realizar una depuración de posibles errores, validar las inconsistencias y aplicar procedimientos estadísticos adecuados para garantizar que los archivos finales sean completos y aptos para su uso en el análisis. Además, se debe verificar que los metadatos estén debidamente documentados, permitiendo una interpretación clara y precisa de los datos procesados.",
-    },
   
     // Subtítulo: Confidencialidad de los Datos
     {

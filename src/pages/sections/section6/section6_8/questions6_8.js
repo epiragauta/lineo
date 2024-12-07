@@ -1,25 +1,5 @@
 export const questions6_8 = [
-    // Título de la Sección 6.8
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_6_8",
-      title: "Sección 6.8 - Diseño de la Difusión",
-    },
-    
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_6_8",
-      title: "Introducción",
-    },
-    
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_6_8",
-      content: "El diseño de la difusión es una etapa esencial para garantizar que la información estadística generada sea accesible, comprensible y útil para los diferentes grupos de interés. De acuerdo con los lineamientos de la NTC PE 1000:2020, esta fase implica establecer estrategias y canales efectivos para la comunicación de los resultados, asegurando que cumplan con los principios de transparencia, oportunidad y relevancia. Además, se deben considerar aspectos como la adaptación del contenido a las necesidades de los usuarios y la implementación de formatos estandarizados que faciliten la interpretación y el aprovechamiento de la información publicada.",
-    },
-    
+
     // Subtítulo: Estrategia de Difusión
     {
       type: "sectionTitle",

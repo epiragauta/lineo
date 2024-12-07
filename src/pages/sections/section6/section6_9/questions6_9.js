@@ -1,24 +1,5 @@
 export const questions6_9 = [
-    // Título de la Sección 6.9
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_6_9",
-      title: "Sección 6.9 - Diseño de Flujos de Trabajo",
-    },
-    
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_6_9",
-      title: "Introducción",
-    },
-    
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_6_9",
-      content: "El diseño de flujos de trabajo es una etapa fundamental para asegurar que los procesos estadísticos se desarrollen de manera eficiente, coherente y alineada con los objetivos de la operación. Según los lineamientos de la NTC PE 1000:2020, esta etapa implica establecer una secuencia clara y lógica de actividades, definiendo las interacciones entre los actores involucrados, los recursos necesarios y los tiempos estimados. Además, permite identificar posibles cuellos de botella y áreas de mejora, asegurando una integración adecuada de los procedimientos técnicos y administrativos para el éxito de la operación estadística.",
-    },
+
     
     // Subtítulo: Determinación y Documentación del Flujo de Trabajo
     {

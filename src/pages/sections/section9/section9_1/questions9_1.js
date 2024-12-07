@@ -1,25 +1,4 @@
 export const questions9_1 = [
-    // Título de la Sección 9.1
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_9_1",
-      title: "Sección 9.1 - Integración de Datos",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_9_1",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_9_1",
-      content:
-        "El procesamiento e integración de datos es un componente clave para asegurar la calidad y coherencia de la información en las operaciones estadísticas. Según la NTC PE 1000:2020, esta fase implica la recopilación, validación y consolidación de datos provenientes de diversas fuentes, garantizando su compatibilidad y fiabilidad. Se debe realizar un proceso riguroso de verificación y ajuste, asegurando que los datos integrados sean consistentes y estén alineados con los requisitos definidos en la operación estadística. Además, es fundamental establecer procedimientos claros para la gestión de inconsistencias y la optimización de la base de datos antes de proceder con el análisis y la difusión de los resultados.",
-    },
   
     // Subtítulo: Implementación de Actividades para la Integración de Datos
     {

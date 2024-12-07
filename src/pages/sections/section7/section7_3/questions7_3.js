@@ -1,25 +1,4 @@
 export const questions7_3 = [
-    // Título de la Sección 7.3
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_7_3",
-      title: "Sección 7.3 - Desarrollo del Software aplicativo de la Operación estadística",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_7_3",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_7_3",
-      content:
-        "El desarrollo del software aplicativo para la operación estadística, conforme a los lineamientos establecidos en la norma técnica estadística, es un proceso clave para asegurar la eficiencia y precisión en la recolección, procesamiento y difusión de datos. Según lo estipulado en la NTC PE 1000:2020, esta etapa involucra la creación de herramientas digitales que faciliten la implementación de las metodologías estadísticas definidas, permitiendo la automatización de procesos y la integración de los flujos de trabajo. Es crucial que el software sea diseñado de manera flexible y escalable, considerando las necesidades específicas de cada operación estadística y garantizando su compatibilidad con los sistemas existentes, a la vez que se prioriza la calidad y seguridad de los datos.",
-    },
   
     // Subtítulo: Desarrollo y Mantenimiento del Software Aplicativo
     {

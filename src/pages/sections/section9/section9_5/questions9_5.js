@@ -1,25 +1,4 @@
 export const questions9_5 = [
-    // Título de la Sección 9.5
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_9_5",
-      title: "Sección 9.5 - Cálculo de Ponderadores",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_9_5",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_9_5",
-      content:
-        "El procesamiento de cálculo de ponderadores es una fase esencial en la producción de estadísticas confiables, ya que asegura que los datos obtenidos reflejen adecuadamente la estructura poblacional o muestral. Según lo establecido en la norma técnica estadística NTC PE 1000:2020, esta etapa implica la aplicación de métodos matemáticos y estadísticos para ajustar los resultados de la encuesta o censo, con el fin de corregir sesgos y representar de manera precisa las características de la población objetivo. El proceso requiere una revisión minuciosa de las variables de ponderación y de los criterios utilizados, garantizando que los ponderadores sean adecuados y permitan obtener estimaciones que cumplan con los estándares de calidad y fiabilidad requeridos por los usuarios de la información.",
-    },
   
     // Subtítulo: Cálculo de Factores de Expansión y Ajustes
     {

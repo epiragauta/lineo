@@ -1,26 +1,4 @@
 export const questions13_3 = [
-    // Título de la Sección 13.3
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_13_3",
-      title: "Sección 13.3 - Mejora continua",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_13_3",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_13_3",
-      content:
-        "La mejora continua de la norma técnica estadística es fundamental para asegurar que los procesos de producción, análisis y difusión de información mantengan su relevancia y calidad frente a las necesidades cambiantes de los usuarios. Según los lineamientos de la NTC PE 1000:2020, este enfoque implica una revisión periódica de los estándares establecidos, incorporando innovaciones metodológicas, ajustes regulatorios y aprendizajes derivados de experiencias previas. Este proceso garantiza que la norma técnica evolucione de manera dinámica, respondiendo a los retos emergentes y promoviendo la excelencia en la gestión estadística.",
-    },
-  
     // Subtítulo: Mejora Continua del Proceso Estadístico
     {
       type: "sectionTitle",

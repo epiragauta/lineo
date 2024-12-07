@@ -1,25 +1,4 @@
 export const questions9_4 = [
-    // Título de la Sección 9.4
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_9_4",
-      title: "Sección 9.4 - Edición e Imputación",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_9_4",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_9_4",
-      content:
-        "El procesamiento de edición e imputación es un componente esencial en el manejo de datos estadísticos, ya que permite garantizar la calidad y fiabilidad de la información antes de su análisis y difusión. Según los lineamientos establecidos en la NTC PE 1000:2020, esta fase implica la identificación y corrección de errores, inconsistencias o valores faltantes en los datos recolectados, a través de procedimientos técnicos adecuados. La imputación de datos faltantes y la edición de valores erróneos aseguran que los resultados obtenidos sean representativos y no se vean distorsionados por fallos en la calidad de los registros, lo que facilita una toma de decisiones más precisa y basada en datos confiables.",
-    },
   
     // Subtítulo: Aplicación de Reglas de Edición e Imputación
     {

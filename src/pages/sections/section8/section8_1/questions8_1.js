@@ -1,25 +1,4 @@
 export const questions8_1 = [
-    // Título de la Sección 8.1
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_8_1",
-      title: "Sección 8.1 - Actividades previas a la Recolección o acopio",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_8_1",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_8_1",
-      content:
-        "La recolección o acopio de actividades previas es una fase crucial en el proceso estadístico, ya que sienta las bases para una recopilación de datos eficiente y coherente con los objetivos de la operación. De acuerdo con los lineamientos establecidos en la NTC PE 1000:2020, esta etapa implica la planificación meticulosa de las actividades necesarias antes de la recolección de datos, incluyendo la identificación de fuentes de información, la determinación de los métodos de recolección y la definición de los recursos requeridos. Además, se debe asegurar que todas las actividades previas estén alineadas con las necesidades de calidad y consistencia de los datos, con el fin de evitar errores o limitaciones que puedan comprometer la validez de la operación estadística.",
-    },
   
     // Subtítulo: Entrenamiento del Personal
     {

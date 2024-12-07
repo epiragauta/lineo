@@ -1,25 +1,4 @@
 export const questions11_8 = [
-    // Título de la Sección 11.8
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_11_8",
-      title: "Sección 11.8 - Autorización de publicación de información estadística",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_11_8",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_11_8",
-      content:
-        "La difusión de la autorización de publicación de información estadística es un proceso clave para asegurar la transparencia y el cumplimiento de las normativas en el manejo de datos públicos. De acuerdo con la NTC PE 1000:2020, esta etapa establece los procedimientos y criterios necesarios para garantizar que la información estadística sea publicada de manera adecuada y bajo la debida autorización. Implica una revisión exhaustiva de los datos, asegurando que solo la información validada y aprobada sea difundida, cumpliendo con los estándares de calidad y confidencialidad establecidos. Este proceso también permite gestionar la disponibilidad y accesibilidad de los datos, promoviendo la confianza pública en la calidad y el uso responsable de la información estadística.",
-    },
   
     // Subtítulo: Proceso de Aprobación para la Difusión
     {

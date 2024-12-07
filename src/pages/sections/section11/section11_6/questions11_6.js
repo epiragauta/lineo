@@ -1,25 +1,4 @@
 export const questions11_6 = [
-    // Título de la Sección 11.6
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_11_6",
-      title: "Sección 11.6 - Series históricas",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_11_6",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_11_6",
-      content:
-        "La difusión de series históricas es un componente esencial para asegurar la transparencia y el acceso a la información estadística de calidad. Según la NTC PE 1000:2020, esta etapa implica la correcta publicación y divulgación de las series históricas, garantizando que los datos sean comprensibles, accesibles y actualizados. La norma establece que se debe asegurar la disponibilidad de las series en formatos adecuados y en plataformas accesibles para los usuarios, promoviendo el uso de estándares internacionales para la transmisión de datos. Además, se deben considerar aspectos como la periodicidad y la continuidad de la difusión, con el fin de facilitar el seguimiento y análisis de las tendencias a lo largo del tiempo.",
-    },
   
     // Subtítulo: Difusión de Series Históricas
     {

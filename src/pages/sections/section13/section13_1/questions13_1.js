@@ -1,25 +1,4 @@
 export const questions13_1 = [
-    // Título de la Sección 13.1
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_13_1",
-      title: "Sección 13.1 - Generalidades",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_13_1",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_13_1",
-      content:
-        "La Norma Técnica de Calidad Estadística establece un marco fundamental para garantizar la confiabilidad, pertinencia y transparencia en la producción de información estadística. Este estándar, alineado con principios internacionales, proporciona directrices que abarcan desde la planificación hasta la difusión de las operaciones estadísticas, promoviendo prácticas homogéneas y sistemáticas. Su implementación asegura que los procesos estadísticos cumplan con criterios de calidad, minimizando errores y fortaleciendo la confianza de los usuarios en los datos generados, al mismo tiempo que fomenta la mejora continua en las metodologías aplicadas.",
-    },
   
     // Subtítulo: Determinación de Oportunidades de Mejora
     {

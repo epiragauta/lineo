@@ -1,25 +1,4 @@
 export const questions8_3 = [
-    // Título de la Sección 8.3
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_8_3",
-      title: "Sección 8.3 - Control en la Recolección o acopio de Datos",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_8_3",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_8_3",
-      content:
-        "La recolección o acopio de datos es un componente esencial en la ejecución de una operación estadística, ya que establece las bases para obtener información precisa y confiable. Según la NTC PE 1000:2020, esta etapa debe estar regida por un proceso de control riguroso que garantice la calidad y la integridad de los datos recolectados. Se requiere un diseño detallado de los métodos y técnicas de recolección, con mecanismos de verificación que aseguren la consistencia y exactitud de los datos en cada fase del proceso. Asimismo, es fundamental establecer protocolos claros para la supervisión y el seguimiento de la recolección, con el fin de identificar y corregir cualquier error o inconsistencia de manera temprana, antes de su procesamiento y análisis.",
-    },
   
     // Subtítulo: Control en la Recolección de Datos
     {

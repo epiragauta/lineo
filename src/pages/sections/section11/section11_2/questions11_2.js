@@ -1,25 +1,4 @@
 export const questions11_2 = [
-    // Título de la Sección 11.2
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_11_2",
-      title: "Sección 11.2 - Metadatos",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_11_2",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_11_2",
-      content:
-        "La difusión de metadatos es un proceso esencial para garantizar la transparencia y accesibilidad de la información estadística, permitiendo a los usuarios comprender el contexto, la metodología y las fuentes de los datos. Según los lineamientos establecidos en la NTC PE 1000:2020, esta fase debe ser implementada de manera estructurada, asegurando que los metadatos sean completos, claros y fácilmente accesibles. Es fundamental que los metadatos se difundan de forma sistemática, cumpliendo con los estándares técnicos establecidos, para facilitar el uso adecuado de los datos y promover su reutilización en diversas aplicaciones estadísticas.",
-    },
   
     // Subtítulo: Difusión de Metadatos
     {

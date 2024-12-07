@@ -1,25 +1,4 @@
 export const questions9_3 = [
-    // Título de la Sección 9.3
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_9_3",
-      title: "Sección 9.3 - Cálculo de agregaciones (Resultados)",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_9_3",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_9_3",
-      content:
-        "El procesamiento de revisión y validación de datos es una etapa crucial para asegurar la calidad y confiabilidad de la información utilizada en las operaciones estadísticas. De acuerdo con los lineamientos establecidos en la NTC PE 1000:2020, este proceso implica una evaluación exhaustiva de los datos recolectados, verificando su integridad, consistencia y precisión. Es necesario aplicar técnicas y procedimientos estandarizados para identificar y corregir posibles errores, inconsistencias o anomalías antes de su utilización en el análisis y la toma de decisiones. Además, se debe garantizar que los datos validados sean aptos para cumplir con los objetivos específicos de la operación estadística, respetando los criterios de calidad definidos previamente.",
-    },
   
     // Subtítulo: Consulta en Caso de Omisiones o Inconsistencias
     {

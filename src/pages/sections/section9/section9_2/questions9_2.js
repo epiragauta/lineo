@@ -1,25 +1,4 @@
 export const questions9_2 = [
-    // Título de la Sección 9.2
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_9_2",
-      title: "Sección 9.2 - Clasificación y Codificación",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_9_2",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_9_2",
-      content:
-        "El procesamiento de clasificación y codificación es un componente esencial en la implementación de la norma técnica estadística, ya que garantiza la organización y la estandarización de los datos recolectados. Según la NTC PE 1000:2020, esta fase involucra la asignación de códigos y categorías a las variables para facilitar su análisis y comparabilidad. Este proceso requiere una atención detallada para asegurar que las categorías sean consistentes, coherentes y alineadas con los estándares internacionales, lo que permite una interpretación precisa y una integración eficiente de la información en las operaciones estadísticas. La correcta clasificación y codificación también contribuyen a la mejora de la calidad de los datos y a la transparencia en su manejo.",
-    },
   
     // Subtítulo: Clasificación y Codificación de Datos
     {

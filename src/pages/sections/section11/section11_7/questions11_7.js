@@ -1,25 +1,4 @@
 export const questions11_7 = [
-    // Título de la Sección 11.7
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_11_7",
-      title: "Sección 11.7 - Condiciones de uso de la información estadística",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_11_7",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_11_7",
-      content:
-        "La difusión de las condiciones de uso de la información estadística es un aspecto clave para garantizar la transparencia, la accesibilidad y la correcta utilización de los datos producidos. Según los lineamientos establecidos en la NTC PE 1000:2020, esta fase implica la comunicación clara y detallada de las restricciones, derechos y responsabilidades asociados con el uso de la información estadística. Es esencial que se definan y se difundan de manera oportuna las condiciones de acceso, uso y distribución de los datos, para asegurar que los usuarios comprendan los parámetros legales y éticos que regulan su manejo y para promover una utilización adecuada que respete la confidencialidad y la integridad de los datos.",
-    },
   
     // Subtítulo: Descripción de Condiciones de Uso
     {

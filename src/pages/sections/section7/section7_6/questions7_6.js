@@ -1,25 +1,4 @@
 export const questions7_6 = [
-    // Título de la Sección 7.6
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_7_6",
-      title: "Sección 7.6 - Construcción de los Flujos de Trabajo",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_7_6",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_7_6",
-      content:
-        "La construcción de los flujos de trabajo es una etapa esencial en la implementación de la norma técnica estadística, ya que asegura la eficiencia y coherencia en la ejecución de las operaciones estadísticas. De acuerdo con los lineamientos establecidos por la NTC PE 1000:2020, esta fase implica la definición clara de las actividades, responsabilidades y secuencias de tareas dentro de la operación estadística. Es crucial que los flujos de trabajo sean diseñados de manera que optimicen los recursos disponibles, minimicen errores y faciliten la trazabilidad de los procesos, garantizando que todos los pasos se realicen de acuerdo con los estándares técnicos establecidos y los objetivos definidos.",
-    },
   
     // Subtítulo: Elaboración de Flujos de Trabajo
     {

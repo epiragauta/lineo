@@ -1,25 +1,4 @@
 export const questions7_7 = [
-    // Título de la Sección 7.7
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_7_7",
-      title: "Sección 7.7 - Pruebas",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_7_7",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_7_7",
-      content:
-        "La construcción de pruebas según la norma técnica estadística es fundamental para asegurar la validez y confiabilidad de los procesos estadísticos. Conforme a lo establecido en la NTC PE 1000:2020, esta fase implica diseñar pruebas que evalúen la exactitud, consistencia y aplicabilidad de los métodos estadísticos utilizados. Es crucial que las pruebas sean adecuadas para verificar los procedimientos, asegurando que los datos y los resultados obtenidos sean precisos y representativos. Además, se debe considerar la integración de diversas variables y escenarios que permitan detectar posibles errores o desviaciones, con el fin de implementar las correcciones necesarias antes de la aplicación definitiva de las metodologías.",
-    },
   
     // Subtítulo: Plan de Pruebas
     {

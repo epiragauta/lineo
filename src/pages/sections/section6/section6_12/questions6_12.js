@@ -1,24 +1,4 @@
 export const questions6_12 = [
-    // Título de la Sección 6.12
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_6_12",
-      title: "Sección 6.12 - Diseño de la Evaluación de Desempeño",
-    },
-    
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_6_12",
-      title: "Introducción",
-    },
-    
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_6_12",
-      content: "El diseño de la Evaluación de Desempeño, según lo estipulado en la norma técnica estadística, es un proceso clave para asegurar que los sistemas y métodos de producción estadística cumplan con los estándares de calidad establecidos. De acuerdo con los lineamientos de la NTC PE 1000:2020, esta fase implica la elaboración de un plan detallado que especifique los criterios y métodos de evaluación, los indicadores de desempeño a medir y los procedimientos de recolección y análisis de datos. Además, se deben considerar las necesidades y expectativas de los usuarios de la información estadística, garantizando que la evaluación sea pertinente, objetiva y útil para la mejora continua de los procesos estadísticos.",
-    },
     
     // Subtítulo: Metodología y Mecanismos de Evaluación del Desempeño
     {

@@ -1,25 +1,4 @@
 export const questions7_2 = [
-    // Título de la Sección 7.2
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_7_2",
-      title: "Sección 7.2 - Instrumento de Recolección",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_7_2",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_7_2",
-      content:
-        "La construcción del Instrumento de Recolección es una etapa clave en el proceso de producción estadística, ya que define las herramientas y métodos que se utilizarán para captar los datos necesarios. De acuerdo con la NTC PE 1000:2020, esta fase debe seguir un diseño riguroso que asegure la claridad, precisión y relevancia de las preguntas o variables a recolectar, garantizando que los datos obtenidos sean confiables y útiles para los fines estadísticos previstos. Además, es esencial que el instrumento esté alineado con los objetivos de la operación estadística, considerando aspectos como la facilidad de uso, la accesibilidad para los encuestados y la capacidad de obtener información de calidad.",
-    },
   
     // Subtítulo: Elaboración del Cuestionario
     {

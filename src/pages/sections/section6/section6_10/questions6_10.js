@@ -1,24 +1,4 @@
 export const questions6_10 = [
-    // Título de la Sección 6.10
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_6_10",
-      title: "Sección 6.10 - Finalización de Archivos de Datos",
-    },
-    
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_6_10",
-      title: "Introducción",
-    },
-    
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_6_10",
-      content: "La finalización de archivos de datos es un proceso clave para asegurar que los datos estadísticos sean completos, consistentes y estén listos para su difusión o análisis. De acuerdo con los lineamientos de la NTC PE 1000:2020, esta etapa implica una revisión exhaustiva de los archivos, garantizando que todos los elementos necesarios, como variables, metadatos y registros, estén correctamente definidos y validados. Además, se deben aplicar procedimientos de calidad para verificar la integridad de los datos y resolver cualquier inconsistencia antes de su almacenamiento o publicación, asegurando que cumplan con los estándares requeridos para su uso en operaciones estadísticas futuras.",
-    },
     
     // Subtítulo: Determinación de Criterios de Cierre de Archivos de Datos
     {

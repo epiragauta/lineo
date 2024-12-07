@@ -1,26 +1,4 @@
 export const questions13_2 = [
-    // Título de la Sección 13.2
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_13_2",
-      title: "Sección 13.2 - No conformidad y acción correctiva",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_13_2",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_13_2",
-      content:
-        "La gestión de no conformidades y acciones correctivas es fundamental para mantener la calidad en las operaciones estadísticas, garantizando que los procesos se ajusten a los estándares establecidos. De acuerdo con los lineamientos de la NTC PE 1000:2020, esta etapa implica identificar, documentar y analizar las desviaciones respecto a los requisitos establecidos, permitiendo establecer medidas correctivas que mitiguen las causas raíz. Este enfoque sistemático asegura la mejora continua, evitando la recurrencia de errores y fortaleciendo la fiabilidad de los datos producidos.",
-    },
-  
     // Subtítulo: Control y Corrección de No Conformidades
     {
       type: "sectionTitle",

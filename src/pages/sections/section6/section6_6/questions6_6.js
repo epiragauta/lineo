@@ -2,27 +2,6 @@ export const questions6_6 = [
     // Título de la Sección 6.6
     {
       type: "sectionTitle",
-      key: "titulo_seccion_6_6",
-      title: "Sección 6.6 - Diseño del Procesamiento de los Datos",
-    },
-    
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_6_6",
-      title: "Introducción",
-    },
-    
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_6_6",
-      content: "El diseño del procesamiento de los datos es una etapa esencial para asegurar que la información recopilada sea transformada de manera eficiente en resultados estadísticos útiles y confiables. De acuerdo con los lineamientos de la NTC PE 1000:2020, esta fase implica la definición de procedimientos claros para la depuración, validación y análisis de los datos, garantizando la calidad y consistencia de la información procesada. Además, considera la implementación de herramientas y metodologías adecuadas para mitigar posibles errores y optimizar el flujo de trabajo, alineando cada paso con los objetivos de la operación estadística.",
-    },
-    
-    // Subtítulo: Determinación y Documentación de Procesos
-    {
-      type: "sectionTitle",
       key: "determinacion_documentacion_procesos",
       title: "Determinación y Documentación de Procesos",
     },

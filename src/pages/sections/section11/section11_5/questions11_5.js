@@ -1,25 +1,4 @@
 export const questions11_5 = [
-    // Título de la Sección 11.5
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_11_5",
-      title: "Sección 11.5 - Publicación de medidas de calidad",
-    },
-  
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_11_5",
-      title: "Introducción",
-    },
-  
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_11_5",
-      content:
-        "La difusión de la publicación de las medidas de calidad en la norma técnica estadística es un proceso esencial para garantizar la transparencia y la fiabilidad de las estadísticas producidas. De acuerdo con los lineamientos establecidos en la NTC PE 1000:2020, esta etapa implica la divulgación clara y accesible de los indicadores de calidad utilizados para evaluar las operaciones estadísticas. Es crucial que la información sobre estos indicadores sea compartida de manera sistemática y precisa, permitiendo a los usuarios y partes interesadas entender el proceso de calidad detrás de los datos, así como identificar áreas de mejora y asegurar la confianza en la información estadística.",
-    },
   
     // Subtítulo: Difusión de Medidas de Calidad
     {
