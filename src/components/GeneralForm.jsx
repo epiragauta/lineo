@@ -111,9 +111,8 @@ const GeneralForm = ({ formId, label, initialFormData, operationQuestions, formQ
   const mainTitle = label;
 
   const operationQuestionsComponents = renderQuestions(operationQuestions, formData, handleChange, handleSelectChange);
-  console.log(operationQuestions);
   const formQuestionsComponents = renderQuestions(formQuestions, formData, handleChange, handleSelectChange);
-  console.log(operationQuestionsComponents);
+  console.log(formQuestions);
 
   return (
     <FormWrapper

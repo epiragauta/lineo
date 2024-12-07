@@ -11,6 +11,7 @@ import {
   AccionesRequeridas,
   InputQuestion,
   SelectBoxQuestion,
+  TextareaQuestion,
 } from "../components/questions";
 
 export const renderQuestions = (questions, formData, handleChange, handleSelectChange) => {
@@ -52,6 +53,18 @@ export const renderQuestions = (questions, formData, handleChange, handleSelectC
             name={question.name}
             value={formData[question.name]}
             onChange={handleSelectChange}
+            options={question.options}
+          />
+        );
+
+      case "textarea":
+        return (
+          <TextareaQuestion
+            key={question.key}
+            label={question.label}
+            name={question.name}
+            value={formData[question.name]}
+            onChange={handleChange}
             options={question.options}
           />
         );
