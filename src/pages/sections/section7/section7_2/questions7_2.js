@@ -1,1 +1,178 @@
-// file: questions7_2
+export const questions7_2 = [
+    // Título de la Sección 7.2
+    {
+      type: "sectionTitle",
+      key: "titulo_seccion_7_2",
+      title: "Sección 7.2 - Instrumento de Recolección",
+    },
+  
+    // Subtítulo: Introducción
+    {
+      type: "sectionTitle",
+      key: "introduccion_7_2",
+      title: "Introducción",
+    },
+  
+    // Texto de Introducción
+    {
+      type: "text",
+      key: "texto_introduccion_7_2",
+      content:
+        "La construcción del Instrumento de Recolección es una etapa clave en el proceso de producción estadística, ya que define las herramientas y métodos que se utilizarán para captar los datos necesarios. De acuerdo con la NTC PE 1000:2020, esta fase debe seguir un diseño riguroso que asegure la claridad, precisión y relevancia de las preguntas o variables a recolectar, garantizando que los datos obtenidos sean confiables y útiles para los fines estadísticos previstos. Además, es esencial que el instrumento esté alineado con los objetivos de la operación estadística, considerando aspectos como la facilidad de uso, la accesibilidad para los encuestados y la capacidad de obtener información de calidad.",
+    },
+  
+    // Subtítulo: Elaboración del Cuestionario
+    {
+      type: "sectionTitle",
+      key: "elaboracion_cuestionario_7_2",
+      title: "Elaboración del Cuestionario",
+    },
+  
+    // Pregunta de Tipo Radio: Elaboración del Cuestionario
+    {
+      type: "radio",
+      key: "elaboracion_cuestionario_pregunta_7_2",
+      label: "¿La operación estadística elabora el cuestionario (físico o electrónico) de acuerdo con el diseño establecido?",
+      name: "elaboracion_cuestionario_pregunta_7_2",
+      options: ["Si", "No"],
+      initialValue: "",
+    },
+  
+    // Evidencias Documentales para Elaboración del Cuestionario
+    {
+      type: "evidencias",
+      key: "evidencias_elaboracion_cuestionario_7_2",
+      namePrefix: "elaboracion_cuestionario_7_2",
+      fields: [
+        { name: "elaboracion_cuestionario_evidencia1_7_2", initialValue: "" },
+        { name: "elaboracion_cuestionario_evidencia2_7_2", initialValue: "" },
+        { name: "elaboracion_cuestionario_evidencia3_7_2", initialValue: "" },
+      ],
+    },
+  
+    // Subtítulo: Disponibilidad y Mantenimiento de Equipos
+    {
+      type: "sectionTitle",
+      key: "disponibilidad_mantenimiento_equipos_7_2",
+      title: "Disponibilidad y Mantenimiento de Equipos",
+    },
+  
+    // Pregunta de Tipo Radio: Disponibilidad y Mantenimiento de Equipos
+    {
+      type: "radio",
+      key: "disponibilidad_mantenimiento_equipos_pregunta_7_2",
+      label: "¿La entidad asegura la disponibilidad, el mantenimiento y la calibración de los equipos de recolección automática?",
+      name: "disponibilidad_mantenimiento_equipos_pregunta_7_2",
+      options: ["Si", "No"],
+      initialValue: "",
+    },
+  
+    // Evidencias Documentales para Disponibilidad y Mantenimiento de Equipos
+    {
+      type: "evidencias",
+      key: "evidencias_disponibilidad_mantenimiento_equipos_7_2",
+      namePrefix: "disponibilidad_mantenimiento_equipos_7_2",
+      fields: [
+        { name: "disponibilidad_mantenimiento_equipos_evidencia1_7_2", initialValue: "" },
+        { name: "disponibilidad_mantenimiento_equipos_evidencia2_7_2", initialValue: "" },
+        { name: "disponibilidad_mantenimiento_equipos_evidencia3_7_2", initialValue: "" },
+      ],
+    },
+  
+    // Subtítulo: Eficiencia en la Elaboración del Cuestionario
+    {
+      type: "sectionTitle",
+      key: "eficiencia_elaboracion_cuestionario_7_2",
+      title: "Eficiencia en la Elaboración del Cuestionario",
+    },
+  
+    // Pregunta de Tipo Range: Eficiencia en la Elaboración del Cuestionario
+    {
+      type: "range",
+      key: "eficiencia_elaboracion_cuestionario_pregunta_7_2",
+      label: "Califique de 1-5. ¿Qué tan efectiva es la dependencia encargada de la operación estadística en la elaboración del cuestionario (físico o electrónico) de acuerdo con el diseño?",
+      name: "eficiencia_elaboracion_cuestionario_pregunta_7_2",
+      min: 1,
+      max: 5,
+      step: 1,
+      initialValue: 3,
+    },
+  
+    // Evidencias Documentales para Eficiencia en la Elaboración del Cuestionario
+    {
+      type: "evidencias",
+      key: "evidencias_eficiencia_elaboracion_cuestionario_7_2",
+      namePrefix: "eficiencia_elaboracion_cuestionario_7_2",
+      fields: [
+        { name: "eficiencia_elaboracion_cuestionario_evidencia1_7_2", initialValue: "" },
+        { name: "eficiencia_elaboracion_cuestionario_evidencia2_7_2", initialValue: "" },
+        { name: "eficiencia_elaboracion_cuestionario_evidencia3_7_2", initialValue: "" },
+      ],
+    },
+  
+    // Subtítulo: Evaluación de la Implementación
+    {
+      type: "sectionTitle",
+      key: "evaluacion_implementacion_7_2",
+      title: "Evaluación de la Implementación",
+    },
+  
+    // Pregunta de Tipo Range: Evaluación de la Implementación
+    {
+      type: "range",
+      key: "evaluacion_implementacion_pregunta_7_2",
+      label: "Califique 1 a 5, ¿cómo evalúa a la dependencia encargada de la operación estadística en la implementación de los cuestionarios y equipos de recolección automática en el proceso estadístico?",
+      name: "evaluacion_implementacion_pregunta_7_2",
+      min: 1,
+      max: 5,
+      step: 1,
+      initialValue: 3,
+    },
+  
+    // Evidencias Documentales para Evaluación de la Implementación
+    {
+      type: "evidencias",
+      key: "evidencias_evaluacion_implementacion_7_2",
+      namePrefix: "evaluacion_implementacion_7_2",
+      fields: [
+        { name: "evaluacion_implementacion_evidencia1_7_2", initialValue: "" },
+        { name: "evaluacion_implementacion_evidencia2_7_2", initialValue: "" },
+        { name: "evaluacion_implementacion_evidencia3_7_2", initialValue: "" },
+      ],
+    },
+  
+    // Subtítulo: Sugerencias para la mejora del Instrumento de Recolección
+    {
+      type: "sectionTitle",
+      key: "sugerencias_mejora_instrumento_recoleccion_7_2",
+      title: "Sugerencias para la mejora del Instrumento de Recolección",
+    },
+  
+    // Pregunta de Tipo Text Area: Sugerencias
+    {
+      type: "sugerencias",
+      key: "sugerencias_mejora_instrumento_recoleccion_pregunta_7_2",
+      label: "Pendiente Pregunta",
+      name: "sugerencias_mejora_instrumento_recoleccion_pregunta_7_2",
+      initialValue: "",
+    },
+  
+    // Subtítulo: Acciones requeridas
+    {
+      type: "sectionTitle",
+      key: "acciones_requeridas_7_2",
+      title: "Acciones requeridas",
+    },
+  
+    // Componente de Acciones Requeridas
+    {
+      type: "accionesRequeridas",
+      key: "acciones_requeridas_7_2",
+      fields: [
+        { name: "accion", initialValue: "" },
+        { name: "responsableSNS", initialValue: "" },
+        { name: "fechaCumplimiento", initialValue: "" },
+      ],
+    },
+  ];
+  
