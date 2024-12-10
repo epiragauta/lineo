@@ -13,8 +13,8 @@ export const questions7_2 = [
       key: "elaboracion_cuestionario_pregunta_7_2",
       label: "¿La operación estadística elabora el cuestionario (físico o electrónico) de acuerdo con el diseño establecido?",
       name: "elaboracion_cuestionario_pregunta_7_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Elaboración del Cuestionario
@@ -42,8 +42,8 @@ export const questions7_2 = [
       key: "disponibilidad_mantenimiento_equipos_pregunta_7_2",
       label: "¿La entidad asegura la disponibilidad, el mantenimiento y la calibración de los equipos de recolección automática?",
       name: "disponibilidad_mantenimiento_equipos_pregunta_7_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Disponibilidad y Mantenimiento de Equipos
@@ -67,14 +67,14 @@ export const questions7_2 = [
   
     // Pregunta de Tipo Range: Eficiencia en la Elaboración del Cuestionario
     {
-      type: "range",
+      type: "slider",
       key: "eficiencia_elaboracion_cuestionario_pregunta_7_2",
       label: "Califique de 1-5. ¿Qué tan efectiva es la dependencia encargada de la operación estadística en la elaboración del cuestionario (físico o electrónico) de acuerdo con el diseño?",
       name: "eficiencia_elaboracion_cuestionario_pregunta_7_2",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Eficiencia en la Elaboración del Cuestionario
@@ -98,14 +98,14 @@ export const questions7_2 = [
   
     // Pregunta de Tipo Range: Evaluación de la Implementación
     {
-      type: "range",
+      type: "slider",
       key: "evaluacion_implementacion_pregunta_7_2",
       label: "Califique 1 a 5, ¿cómo evalúa a la dependencia encargada de la operación estadística en la implementación de los cuestionarios y equipos de recolección automática en el proceso estadístico?",
       name: "evaluacion_implementacion_pregunta_7_2",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Evaluación de la Implementación

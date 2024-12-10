@@ -13,8 +13,8 @@ export const questions7_3 = [
       key: "desarrollo_mantenimiento_pregunta_7_3",
       label: "¿La dependencia encargada de la operación estadística desarrolla y mantiene el software aplicativo de acuerdo con las especificaciones del diseño?",
       name: "desarrollo_mantenimiento_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Preguntas de Tipo Radio: Si la respuesta es Sí, el software aplicativo incluye:
@@ -23,48 +23,48 @@ export const questions7_3 = [
       key: "software_aplicativo_diseno_muestral_pregunta_7_3",
       label: "a) Diseño Muestral",
       name: "software_aplicativo_diseno_muestral_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     {
       type: "radio",
       key: "software_aplicativo_recoleccion_datos_pregunta_7_3",
       label: "b) Recolección de Datos",
       name: "software_aplicativo_recoleccion_datos_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     {
       type: "radio",
       key: "software_aplicativo_transmision_datos_pregunta_7_3",
       label: "c) transmisión de datos",
       name: "software_aplicativo_transmision_datos_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     {
       type: "radio",
       key: "software_aplicativo_procesamiento_datos_pregunta_7_3",
       label: "d) procesamiento de datos",
       name: "software_aplicativo_procesamiento_datos_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     {
       type: "radio",
       key: "software_aplicativo_analisis_datos_pregunta_7_3",
       label: "e) análisis de datos",
       name: "software_aplicativo_analisis_datos_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     {
       type: "radio",
       key: "software_aplicativo_difusion_resultados_pregunta_7_3",
       label: "f) difusión de resultados",
       name: "software_aplicativo_difusion_resultados_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Desarrollo y Mantenimiento del Software Aplicativo
@@ -92,8 +92,8 @@ export const questions7_3 = [
       key: "implementacion_reglas_validacion_consistencia_pregunta_7_3",
       label: "¿La dependencia encargada de la operación estadística implementa las reglas de validación y consistencia en el desarrollo del software aplicativo?",
       name: "implementacion_reglas_validacion_consistencia_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Implementación de Reglas de Validación y Consistencia
@@ -121,8 +121,8 @@ export const questions7_3 = [
       key: "acopio_datos_no_estructurados_pregunta_7_3",
       label: "¿La dependencia encargada de la operación estadística determina el algoritmo de búsqueda o el script para la clasificación y el acopio de datos no estructurados en el software aplicativo?",
       name: "acopio_datos_no_estructurados_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Acopio de Datos No Estructurados
@@ -146,14 +146,14 @@ export const questions7_3 = [
   
     // Pregunta de Tipo Range: Documentación del Software Aplicativo
     {
-      type: "range",
+      type: "slider",
       key: "documentacion_software_aplicativo_pregunta_7_3",
       label: "Califique de 1-5. ¿Qué tan efectiva es la dependencia encargada de la operación estadística en documentar los manuales de uso y mantenimiento del software aplicativo?",
       name: "documentacion_software_aplicativo_pregunta_7_3",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Documentación del Software Aplicativo
@@ -181,8 +181,8 @@ export const questions7_3 = [
       key: "desarrollo_modulos_adicionales_pregunta_7_3",
       label: "¿La dependencia encargada de la operación estadística desarrolla módulos adicionales para el entrenamiento, seguimiento, control y evaluación del desempeño del software aplicativo, así como macros para reportes o gráficos?",
       name: "desarrollo_modulos_adicionales_pregunta_7_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Desarrollo de Módulos Adicionales

@@ -137,7 +137,7 @@ export const questions6_5 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Documentación y Conservación de Datos
@@ -168,7 +168,7 @@ export const questions6_5 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Sensibilización
@@ -199,7 +199,7 @@ export const questions6_5 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Entrenamiento

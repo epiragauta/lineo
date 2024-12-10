@@ -13,8 +13,8 @@ export const questions12_5 = [
       key: "frecuencia_auditorias_internas_pregunta_12_2",
       label: "¿La dependencia encargada de la operación estadística realiza auditorías internas a intervalos planificados para verificar la eficacia y eficiencia del proceso estadístico?",
       name: "frecuencia_auditorias_internas_pregunta_12_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Cumplimiento de Requisitos en las Auditorías
@@ -51,8 +51,8 @@ export const questions12_5 = [
       key: "conservacion_documentacion_auditorias_internas_pregunta_12_2",
       label: "¿La dependencia encargada de la operación estadística conserva la información documentada de las auditorías internas?",
       name: "conservacion_documentacion_auditorias_internas_pregunta_12_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Competencia e Imparcialidad en las Auditorías
@@ -68,8 +68,8 @@ export const questions12_5 = [
       key: "competencia_imparcialidad_auditorias_pregunta_12_2",
       label: "¿La dependencia encargada de la operación estadística asegura la competencia y la imparcialidad de las auditorías internas?",
       name: "competencia_imparcialidad_auditorias_pregunta_12_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Cumplimiento de Directrices ISO 19011
@@ -85,8 +85,8 @@ export const questions12_5 = [
       key: "cumplimiento_directrices_iso19011_pregunta_12_2",
       label: "¿La dependencia encargada de la operación estadística sigue las directrices proporcionadas por la Norma ISO 19011 para la realización de las auditorías internas?",
       name: "cumplimiento_directrices_iso19011_pregunta_12_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Sugerencias para Mejorar la Determinación y Confirmación del Tipo de Fuente de Datos
@@ -98,7 +98,7 @@ export const questions12_5 = [
   
     // Pregunta de Tipo Text Area: Sugerencias para Mejorar
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_12_2",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_12_2",

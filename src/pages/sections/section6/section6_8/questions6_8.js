@@ -9,7 +9,7 @@ export const questions6_8 = [
     
     // Pregunta de Tipo Range: Estrategia de Difusión
     {
-      type: "range",
+      type: "slider",
       key: "estrategia_difusion_pregunta",
       label: "¿La dependencia encargada de la operación estadística ha determinado y documentado una estrategia de difusión de los resultados que considere los siguientes aspectos?:",
       name: "estrategia_difusion_pregunta",
@@ -91,14 +91,14 @@ export const questions6_8 = [
     
     // Pregunta de Tipo Range: Efectividad en la Documentación de la Estrategia de Difusión
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_documentacion_estrategia_difusion_pregunta",
       label: "Califique de 1-5. ¿Qué tan efectiva es la dependencia encargada de la operación estadística en documentar la estrategia de difusión de los resultados?",
       name: "efectividad_documentacion_estrategia_difusion_pregunta",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Documentación de la Estrategia de Difusión
@@ -122,14 +122,14 @@ export const questions6_8 = [
     
     // Pregunta de Tipo Range: Implementación de Actividades de Difusión
     {
-      type: "range",
+      type: "slider",
       key: "implementacion_actividades_difusion_pregunta",
       label: "Califique de 1-5. ¿En qué medida la dependencia encargada de la operación estadística implementa las actividades planificadas para la difusión de la información estadística?",
       name: "implementacion_actividades_difusion_pregunta",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Implementación de Actividades de Difusión
@@ -153,7 +153,7 @@ export const questions6_8 = [
     
     // Pregunta de Tipo Text Area: Revisión y Actualización de la Estrategia de Difusión
     {
-      type: "textArea",
+      type: "textarea",
       key: "revision_actualizacion_estrategia_difusion_pregunta",
       label: "¿Cómo evalúa la dependencia encargada de la operación estadística la revisión y actualización periódica de la estrategia de difusión de acuerdo con las necesidades de los usuarios y los objetivos de la operación estadística?",
       name: "revision_actualizacion_estrategia_difusion_pregunta",
@@ -181,7 +181,7 @@ export const questions6_8 = [
     
     // Pregunta de Tipo Text Area: Calendario de Difusión
     {
-      type: "textArea",
+      type: "textarea",
       key: "calendario_difusion_pregunta",
       label: "¿Cómo socializa la dependencia encargada de la operación estadística la publicación del calendario de difusión y cuál es su periodicidad?",
       name: "calendario_difusion_pregunta",

@@ -13,8 +13,8 @@ export const questions11_9 = [
       key: "disponibilidad_mecanismos_soporte_pregunta_11_9",
       label: "¿La dependencia encargada de la operación estadística dispone de mecanismos actualizados para brindar soporte a los usuarios de la información estadística?",
       name: "disponibilidad_mecanismos_soporte_pregunta_11_9",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Tipos de Mecanismos de Soporte
@@ -49,14 +49,14 @@ export const questions11_9 = [
   
     // Pregunta de Tipo Range: Efectividad del soporte
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_soporte_pregunta_11_9",
       label: "¿Qué tan efectiva es la dependencia encargada de la operación estadística en brindar soporte a los usuarios de la información estadística? Califique (1-5)",
       name: "efectividad_soporte_pregunta_11_9",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Actualización de los Mecanismos de Soporte
@@ -72,8 +72,8 @@ export const questions11_9 = [
       key: "revision_actualizacion_mecanismos_soporte_pregunta_11_9",
       label: "¿La dependencia encargada de la operación estadística revisa y actualiza regularmente los mecanismos de soporte para garantizar su efectividad y pertinencia?",
       name: "revision_actualizacion_mecanismos_soporte_pregunta_11_9",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Satisfacción del Usuario
@@ -85,19 +85,19 @@ export const questions11_9 = [
   
     // Pregunta de Tipo Range: Satisfacción del usuario con el soporte
     {
-      type: "range",
+      type: "slider",
       key: "satisfaccion_usuario_pregunta_11_9",
       label: "¿Cómo evalúa la dependencia encargada de la operación estadística la satisfacción de los usuarios con respecto al soporte brindado para la información estadística? Califique (1-5)",
       name: "satisfaccion_usuario_pregunta_11_9",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Pregunta de Tipo Text Area: Sugerencias
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_11_9",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_11_9",

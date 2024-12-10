@@ -12,8 +12,8 @@ export const questions13_2 = [
       key: "acciones_control_correcion_no_conformidades_pregunta_13_2",
       label: "Cuando ocurre una “no conformidad” en el proceso estadístico, ¿la dependencia encargada de la operación estadística toma acciones para controlarla y corregirla?",
       name: "acciones_control_correcion_no_conformidades_pregunta_13_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Evaluación de Necesidad de Acciones Correctivas
@@ -29,8 +29,8 @@ export const questions13_2 = [
       key: "evaluacion_necesidad_acciones_correctivas_pregunta_13_2",
       label: "¿La dependencia encargada de la operación estadística evalúa la necesidad de acciones para eliminar las causas de la no conformidad, incluyendo la revisión y el análisis de la no conformidad, la determinación de las causas de la no conformidad o la identificación de no conformidades similares o potenciales?",
       name: "evaluacion_necesidad_acciones_correctivas_pregunta_13_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Implementación de Acciones Correctivas
@@ -46,8 +46,8 @@ export const questions13_2 = [
       key: "implementacion_acciones_correctivas_pregunta_13_2",
       label: "¿La dependencia encargada de la operación estadística implementa las acciones necesarias para corregir la no conformidad?",
       name: "implementacion_acciones_correctivas_pregunta_13_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Verificación de la Eficacia de las Acciones Implementadas
@@ -63,8 +63,8 @@ export const questions13_2 = [
       key: "verificacion_eficacia_acciones_correctivas_pregunta_13_2",
       label: "¿La dependencia encargada de la operación estadística verifica la eficacia de las acciones correctivas implementadas?",
       name: "verificacion_eficacia_acciones_correctivas_pregunta_13_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Documentación de No Conformidades y Acciones Correctivas
@@ -80,13 +80,13 @@ export const questions13_2 = [
       key: "conservacion_documentacion_no_conformidades_pregunta_13_2",
       label: "¿La dependencia encargada de la operación estadística conserva información documentada sobre la naturaleza de las no conformidades y las acciones tomadas o los resultados de las acciones correctivas?",
       name: "conservacion_documentacion_no_conformidades_pregunta_13_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_13_2",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_13_2",

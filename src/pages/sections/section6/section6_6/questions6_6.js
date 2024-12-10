@@ -243,7 +243,7 @@ export const questions6_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Efectividad en el Diseño del Procesamiento de Datos
@@ -274,7 +274,7 @@ export const questions6_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Efectividad en la Infraestructura y Software Aplicativo
@@ -305,7 +305,7 @@ export const questions6_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Documentación y Conservación de Datos

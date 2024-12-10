@@ -13,13 +13,13 @@ export const questions9_6 = [
       key: "confidencialidad_datos_pregunta_9_6",
       label: "¿La dependencia encargada de la operación estadística asegura la confidencialidad de los datos recolectados o acopiados?",
       name: "confidencialidad_datos_pregunta_9_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Text Area: Garantía de confidencialidad
     {
-      type: "textArea",
+      type: "textarea",
       key: "garantia_confidencialidad_pregunta_9_6",
       label: "Si la respuesta es Sí, ¿cómo se garantiza esta confidencialidad?",
       name: "garantia_confidencialidad_pregunta_9_6",
@@ -39,13 +39,13 @@ export const questions9_6 = [
       key: "disponibilidad_datos_pregunta_9_6",
       label: "¿La dependencia encargada de la operación estadística garantiza la disponibilidad de los datos almacenados?",
       name: "disponibilidad_datos_pregunta_9_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Text Area: Medidas para asegurar la disponibilidad
     {
-      type: "textArea",
+      type: "textarea",
       key: "medidas_asegurar_disponibilidad_pregunta_9_6",
       label: "Si la respuesta es Sí, ¿qué medidas se implementan para asegurar la disponibilidad?",
       name: "medidas_asegurar_disponibilidad_pregunta_9_6",
@@ -65,8 +65,8 @@ export const questions9_6 = [
       key: "control_acceso_pregunta_9_6",
       label: "¿La dependencia encargada de la operación estadística implementa controles de acceso adecuados para los datos almacenados?",
       name: "control_acceso_pregunta_9_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Ratio: Tipo de controles utilizados
@@ -75,8 +75,8 @@ export const questions9_6 = [
       key: "tipo_controles_pregunta_9_6",
       label: "Si la respuesta es Sí, ¿qué tipo de controles se utilizan?",
       name: "tipo_controles_pregunta_9_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Copia de Seguridad
@@ -92,20 +92,20 @@ export const questions9_6 = [
       key: "realizacion_copias_seguridad_pregunta_9_6",
       label: "¿La dependencia encargada de la operación estadística realiza copias de seguridad de los datos?",
       name: "realizacion_copias_seguridad_pregunta_9_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Range: Frecuencia de copias de seguridad
     {
-      type: "range",
+      type: "slider",
       key: "frecuencia_copias_seguridad_pregunta_9_6",
       label: "Si la respuesta es Sí, ¿con qué frecuencia se realizan estas copias de seguridad? Califique (1-5)",
       name: "frecuencia_copias_seguridad_pregunta_9_6",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Versiones y Protección de Datos
@@ -121,13 +121,13 @@ export const questions9_6 = [
       key: "proteccion_datos_versiones_pregunta_9_6",
       label: "¿La dependencia encargada de la operación estadística asegura la protección contra la pérdida, modificación o alteración de los datos, y mantiene versiones con fecha y hora?",
       name: "proteccion_datos_versiones_pregunta_9_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Text Area: Medidas para proteger datos y mantener versiones
     {
-      type: "textArea",
+      type: "textarea",
       key: "medidas_proteccion_datos_versiones_pregunta_9_6",
       label: "Si la respuesta es Sí, ¿qué medidas se toman para proteger los datos y mantener las versiones?",
       name: "medidas_proteccion_datos_versiones_pregunta_9_6",
@@ -136,7 +136,7 @@ export const questions9_6 = [
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_9_6",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_9_6",

@@ -29,7 +29,6 @@ export const getInitialFormData = (operationQuestions, sectionQuestions) => {
           return acc;
         }, {})
     }
-    console.log(questions);
     return questions;
   };
   

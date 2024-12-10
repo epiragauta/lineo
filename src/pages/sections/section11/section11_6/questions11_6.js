@@ -13,8 +13,8 @@ export const questions11_6 = [
       key: "difusion_conservacion_series_historicas_pregunta_11_6",
       label: "¿La dependencia encargada de la operación estadística difunde y conserva las series históricas de la información estadística producida?",
       name: "difusion_conservacion_series_historicas_pregunta_11_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Ratio: Publicación de notas explicativas sobre diferencias en las series
@@ -23,8 +23,8 @@ export const questions11_6 = [
       key: "publicacion_notas_explicativas_diferencias_series_pregunta_11_6",
       label: "Si la respuesta es sí, ¿se publican notas explicativas sobre las diferencias que puedan presentarse en las series?",
       name: "publicacion_notas_explicativas_diferencias_series_pregunta_11_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Claridad y Comprensión de las Notas Explicativas
@@ -40,20 +40,20 @@ export const questions11_6 = [
       key: "claridad_comprension_notas_explicativas_pregunta_11_6",
       label: "¿Las notas explicativas sobre las series históricas son presentadas de manera clara, comprensible, con la debida orientación y de fácil interpretación?",
       name: "claridad_comprension_notas_explicativas_pregunta_11_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Range: Calidad de las notas explicativas
     {
-      type: "range",
+      type: "slider",
       key: "calidad_notas_explicativas_pregunta_11_6",
       label: "Si la respuesta es sí, califique (1-5) la calidad de las notas en términos de claridad y comprensión.",
       name: "calidad_notas_explicativas_pregunta_11_6",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Empalme de Series Históricas en Rediseños
@@ -69,8 +69,8 @@ export const questions11_6 = [
       key: "empalme_series_historicas_pregunta_11_6",
       label: "¿La dependencia encargada de la operación estadística realiza, documenta y difunde el empalme de las series históricas en casos de rediseño, retropolación o proyección?",
       name: "empalme_series_historicas_pregunta_11_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Notas Explicativas y Diferencias en las Series
@@ -82,14 +82,14 @@ export const questions11_6 = [
   
     // Pregunta de Tipo Range: Comprensión de diferencias en las series históricas
     {
-      type: "range",
+      type: "slider",
       key: "comprension_diferencias_series_pregunta_11_6",
       label: "¿En qué medida las notas explicativas permiten comprender las diferencias en las series históricas frente a la temática del fenómeno de estudio? Califique (1-5)",
       name: "comprension_diferencias_series_pregunta_11_6",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Documentación del Empalme de Series
@@ -101,7 +101,7 @@ export const questions11_6 = [
   
     // Pregunta de Tipo Text Area: Evaluación de la documentación del empalme de series históricas
     {
-      type: "textArea",
+      type: "textarea",
       key: "evaluacion_documentacion_empalme_series_pregunta_11_6",
       label: "¿Cómo evalúa la dependencia encargada de la operación estadística la documentación y disposición del empalme de las series históricas para los usuarios en casos de rediseño o proyección?",
       name: "evaluacion_documentacion_empalme_series_pregunta_11_6",
@@ -110,7 +110,7 @@ export const questions11_6 = [
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_11_6",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_11_6",

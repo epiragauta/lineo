@@ -13,8 +13,8 @@ export const questions6_10 = [
       key: "determinacion_documentacion_criterios_cierre_pregunta",
       label: "¿La dependencia encargada de la operación estadística ha determinado y documentado criterios claros para el cierre de los archivos de datos?",
       name: "determinacion_documentacion_criterios_cierre_pregunta",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     
     // Preguntas de Tipo Radio: Aspectos Incluidos en la Documentación de Criterios de Cierre
@@ -23,24 +23,24 @@ export const questions6_10 = [
       key: "documentacion_criterios_cierre_recoleccion_pregunta",
       label: "¿Recolección o acopio de datos?",
       name: "documentacion_criterios_cierre_recoleccion_pregunta",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     {
       type: "radio",
       key: "documentacion_criterios_cierre_procesamiento_pregunta",
       label: "¿Procesamiento de datos?",
       name: "documentacion_criterios_cierre_procesamiento_pregunta",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     {
       type: "radio",
       key: "documentacion_criterios_cierre_analisis_pregunta",
       label: "¿Análisis de datos?",
       name: "documentacion_criterios_cierre_analisis_pregunta",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     
     // Evidencias Documentales para Determinación de Criterios de Cierre de Archivos de Datos
@@ -68,8 +68,8 @@ export const questions6_10 = [
       key: "aplicacion_cierre_archivos_datos_pregunta",
       label: "¿La dependencia encargada de la operación estadística aplica el cierre de los archivos de datos a las fases de recolección, procesamiento y análisis?",
       name: "aplicacion_cierre_archivos_datos_pregunta",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     
     // Pregunta de Tipo Checkbox: Métodos para Evitar la Incorporación de Nuevos Datos Durante el Cierre
@@ -114,7 +114,7 @@ export const questions6_10 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Documentación del Cierre de Archivos de Datos
@@ -145,7 +145,7 @@ export const questions6_10 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Eficiencia en la Implementación del Cierre de Archivos
@@ -169,7 +169,7 @@ export const questions6_10 = [
     
     // Pregunta de Tipo Text Area: Prevención de Reprocesos
     {
-      type: "textArea",
+      type: "textarea",
       key: "prevencion_reprocesos_pregunta",
       label: "¿Cómo evalúa la dependencia encargada de la operación estadística la efectividad del cierre de archivos de datos en la prevención de reprocesos debido a la incorporación de nuevos datos?",
       name: "prevencion_reprocesos_pregunta",

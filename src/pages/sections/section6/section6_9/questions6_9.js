@@ -119,7 +119,7 @@ export const questions6_9 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Documentación del Diseño de Flujos de Trabajo
@@ -150,7 +150,7 @@ export const questions6_9 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Eficiencia del Cronograma de Actividades

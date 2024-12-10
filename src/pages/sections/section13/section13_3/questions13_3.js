@@ -12,8 +12,8 @@ export const questions13_3 = [
       key: "mejora_continua_eficacia_eficiencia_efectividad_pregunta_13_3",
       label: "¿La dependencia encargada de la operación estadística trabaja en la mejora continua de la eficacia, eficiencia y efectividad del proceso estadístico?",
       name: "mejora_continua_eficacia_eficiencia_efectividad_pregunta_13_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Consideración de Resultados para la Mejora Continua
@@ -29,8 +29,8 @@ export const questions13_3 = [
       key: "consideracion_resultados_seguimientos_mejora_continua_pregunta_13_3",
       label: "¿La dependencia encargada de la operación estadística considera los resultados de los seguimientos para la mejora continua del proceso estadístico?",
       name: "consideracion_resultados_seguimientos_mejora_continua_pregunta_13_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Consideración de Revisiones para la Mejora Continua
@@ -46,8 +46,8 @@ export const questions13_3 = [
       key: "consideracion_resultados_revisiones_mejora_continua_pregunta_13_3",
       label: "¿La dependencia encargada de la operación estadística considera los resultados de las revisiones para la mejora continua del proceso estadístico?",
       name: "consideracion_resultados_revisiones_mejora_continua_pregunta_13_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Consideración de Evaluaciones para la Mejora Continua
@@ -63,8 +63,8 @@ export const questions13_3 = [
       key: "consideracion_resultados_evaluaciones_mejora_continua_pregunta_13_3",
       label: "¿La dependencia encargada de la operación estadística considera los resultados de las evaluaciones para la mejora continua del proceso estadístico?",
       name: "consideracion_resultados_evaluaciones_mejora_continua_pregunta_13_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Implementación de Acciones para la Mejora Continua
@@ -80,13 +80,13 @@ export const questions13_3 = [
       key: "implementacion_acciones_mejora_continua_pregunta_13_3",
       label: "¿La dependencia encargada de la operación estadística implementa acciones basadas en los resultados de seguimientos, revisiones y evaluaciones para mejorar el proceso estadístico?",
       name: "implementacion_acciones_mejora_continua_pregunta_13_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_13_3",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_13_3",

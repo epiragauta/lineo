@@ -12,8 +12,8 @@ export const questions7_4 = [
       key: "aplicacion_metodologia_pregunta_7_4",
       label: "¿La operación estadística aplica adecuadamente la metodología para la selección y conformación de la muestra?",
       name: "aplicacion_metodologia_pregunta_7_4",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Radio: Documentación de la metodología
@@ -22,8 +22,8 @@ export const questions7_4 = [
       key: "documentacion_metodologia_pregunta_7_4",
       label: "Si la respuesta es Sí, ¿Se asegura de que esta metodología esté claramente documentada y detallada?",
       name: "documentacion_metodologia_pregunta_7_4",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Metodología de Selección de Muestra
@@ -51,8 +51,8 @@ export const questions7_4 = [
       key: "implementacion_mantenimiento_muestreo_pregunta_7_4",
       label: "¿La entidad implementa y mantiene la metodología de muestreo en todas las etapas del proceso estadístico?",
       name: "implementacion_mantenimiento_muestreo_pregunta_7_4",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Aspectos de la metodología de muestreo
@@ -92,14 +92,14 @@ export const questions7_4 = [
   
     // Pregunta de Tipo Range: Efectividad en la documentación de la metodología y procesos de selección de muestra
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_documentacion_metodologia_pregunta_7_4",
       label: "Califique de 1-5. ¿Qué tan efectiva es la dependencia encargada de la operación estadística en documentar la metodología y los procesos de selección de muestra?",
       name: "efectividad_documentacion_metodologia_pregunta_7_4",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Documentación de la Selección de Muestra
@@ -123,14 +123,14 @@ export const questions7_4 = [
   
     // Pregunta de Tipo Range: Aseguramiento de la conformación de la muestra
     {
-      type: "range",
+      type: "slider",
       key: "aseguramiento_conformacion_muestra_pregunta_7_4",
       label: "Califique de 1-5. ¿En qué medida la dependencia encargada de la operación estadística asegura que la muestra esté conformada de acuerdo con la metodología establecida?",
       name: "aseguramiento_conformacion_muestra_pregunta_7_4",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Conformación de la Muestra
@@ -154,14 +154,14 @@ export const questions7_4 = [
   
     // Pregunta de Tipo Range: Evaluación de la revisión y actualización periódica de la metodología de muestreo
     {
-      type: "range",
+      type: "slider",
       key: "evaluacion_revision_actualizacion_pregunta_7_4",
       label: "Califique de 1-5. ¿Cómo evalúa la dependencia encargada de la operación estadística la revisión y actualización periódica de la metodología de muestreo según lo especificado en el documento metodológico de la operación estadística?",
       name: "evaluacion_revision_actualizacion_pregunta_7_4",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Revisión de la Metodología de Muestreo

@@ -13,8 +13,8 @@ export const questions7_6 = [
       key: "elaboracion_flujos_trabajo_pregunta_7_6",
       label: "¿La operación estadística elabora y documenta adecuadamente el(los) flujo(s) de trabajo que indican las principales actividades?",
       name: "elaboracion_flujos_trabajo_pregunta_7_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Aspectos incluidos en la documentación
@@ -57,8 +57,8 @@ export const questions7_6 = [
       key: "mantenimiento_documentacion_flujos_trabajo_pregunta_7_6",
       label: "¿La operación estadística mantiene actualizada la documentación de los flujos de trabajo?",
       name: "mantenimiento_documentacion_flujos_trabajo_pregunta_7_6",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Elementos actualizados regularmente
@@ -97,14 +97,14 @@ export const questions7_6 = [
   
     // Pregunta de Tipo Range: Claridad y precisión de la documentación
     {
-      type: "range",
+      type: "slider",
       key: "claridad_precision_documentacion_pregunta_7_6",
       label: "Califique de 1-5. ¿Qué tan clara y precisa es la documentación de los flujos de trabajo en la operación estadística?",
       name: "claridad_precision_documentacion_pregunta_7_6",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Claridad y Precisión en la Documentación
@@ -128,14 +128,14 @@ export const questions7_6 = [
   
     // Pregunta de Tipo Range: Cumplimiento de los flujos de trabajo
     {
-      type: "range",
+      type: "slider",
       key: "cumplimiento_flujos_trabajo_pregunta_7_6",
       label: "Califique de 1-5. ¿En qué medida la operación estadística sigue y aplica los flujos de trabajo documentados en la práctica?",
       name: "cumplimiento_flujos_trabajo_pregunta_7_6",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Cumplimiento de los Flujos de Trabajo
@@ -159,7 +159,7 @@ export const questions7_6 = [
   
     // Pregunta de Tipo Text Area: Evaluación de la revisión y actualización
     {
-      type: "textArea",
+      type: "textarea",
       key: "evaluacion_revision_actualizacion_flujos_trabajo_pregunta_7_6",
       label: "¿Cómo evalúa la entidad la revisión y actualización periódica de los flujos de trabajo, según lo especificado en el proceso de la operación estadística?",
       name: "evaluacion_revision_actualizacion_flujos_trabajo_pregunta_7_6",

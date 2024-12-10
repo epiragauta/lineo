@@ -125,7 +125,7 @@ export const questions6_7 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Variables a Anonimizar y Técnicas de Anonimización
@@ -149,7 +149,7 @@ export const questions6_7 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Técnicas de Anonimización Utilizadas
@@ -173,7 +173,7 @@ export const questions6_7 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Coherencia y Consistencia en el Análisis
@@ -197,7 +197,7 @@ export const questions6_7 = [
     
     // Pregunta de Tipo Text Area: Revisión de la Metodología de Análisis
     {
-      type: "textArea",
+      type: "textarea",
       key: "revision_metodologia_analisis_pregunta",
       label: "¿Cómo evalúa la dependencia encargada de la operación estadística la revisión periódica de la metodología para realizar el análisis de la información estadística?",
       name: "revision_metodologia_analisis_pregunta",

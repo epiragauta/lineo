@@ -77,14 +77,14 @@ export const questions8_1 = [
   
     // Pregunta de Tipo Range: Efectividad en conservar evidencias del entrenamiento
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_conservacion_evidencias_entrenamiento_pregunta_8_1",
       label: "Califique de 1-5. ¿Qué tan efectiva es la operación estadística en conservar las evidencias del entrenamiento del personal?",
       name: "efectividad_conservacion_evidencias_entrenamiento_pregunta_8_1",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Efectividad en conservar evidencias de entrenamiento
@@ -108,26 +108,26 @@ export const questions8_1 = [
   
     // Pregunta de Tipo Range: Medida de realización de actividades de sensibilización
     {
-      type: "range",
+      type: "slider",
       key: "medida_realizacion_actividades_sensibilizacion_pregunta_8_1",
       label: "Califique de 1-5. ¿En qué medida la operación estadística realiza actividades de sensibilización para informar a la fuente sobre la recolección o acopio de los datos?",
       name: "medida_realizacion_actividades_sensibilizacion_pregunta_8_1",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Pregunta de Tipo Range: Nivel de calidad de las actividades de sensibilización
     {
-      type: "range",
+      type: "slider",
       key: "nivel_calidad_actividades_sensibilizacion_pregunta_8_1",
       label: "Califique de 1-5. ¿Qué nivel de calidad tienen las actividades de sensibilización?",
       name: "nivel_calidad_actividades_sensibilizacion_pregunta_8_1",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Realización de Actividades de Sensibilización
@@ -151,7 +151,7 @@ export const questions8_1 = [
   
     // Pregunta de Tipo Text Area: Evaluación de la revisión y actualización de actividades de sensibilización
     {
-      type: "textArea",
+      type: "textarea",
       key: "evaluacion_revision_actualizacion_actividades_sensibilizacion_pregunta_8_1",
       label: "¿Cómo evalúa la entidad la revisión y actualización de las actividades de sensibilización, si corresponde, según lo especificado en los procedimientos de la operación estadística?",
       name: "evaluacion_revision_actualizacion_actividades_sensibilizacion_pregunta_8_1",
@@ -189,7 +189,7 @@ export const questions8_1 = [
   
     // Pregunta de Tipo Text Area: Mecanismos y protocolos para acuerdos de intercambio de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "mecanismos_protocolos_acuerdos_intercambio_datos_pregunta_8_1",
       label: "Si la respuesta es Sí, ¿Qué mecanismos y protocolos han sido implementados para garantizar que los acuerdos de intercambio de datos se formalicen de manera eficiente y segura?",
       name: "mecanismos_protocolos_acuerdos_intercambio_datos_pregunta_8_1",
@@ -198,7 +198,7 @@ export const questions8_1 = [
   
     // Pregunta de Tipo Text Area: Coordinación para facilitar el intercambio de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "coordinacion_intercambio_datos_pregunta_8_1",
       label: "¿Cómo se ha llevado a cabo la coordinación, para facilitar el intercambio de datos en tiempo real o dentro de los plazos establecidos?",
       name: "coordinacion_intercambio_datos_pregunta_8_1",

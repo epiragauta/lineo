@@ -13,8 +13,8 @@ export const questions9_4 = [
       key: "aplicacion_reglas_edicion_imputacion_pregunta_9_4",
       label: "¿La operación estadística aplica adecuadamente las reglas de edición (para validación y consistencia) e imputación al conjunto de datos para disponer de un archivo de datos depurado?",
       name: "aplicacion_reglas_edicion_imputacion_pregunta_9_4",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Ratio: Aplicación de imputación solo en operaciones que lo requieren
@@ -23,8 +23,8 @@ export const questions9_4 = [
       key: "aplicacion_imputacion_operaciones_requieren_pregunta_9_4",
       label: "Si la respuesta es Sí, ¿se aplica la imputación solo en las operaciones estadísticas que requieren dicha técnica?",
       name: "aplicacion_imputacion_operaciones_requieren_pregunta_9_4",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Cálculo de Indicadores y Tasas de Imputación
@@ -40,8 +40,8 @@ export const questions9_4 = [
       key: "calculo_indicadores_tasas_imputacion_pregunta_9_4",
       label: "¿La operación estadística calcula los indicadores de las variables identificadas con valores no válidos y las tasas de imputación por variable, según lo definido en el diseño?",
       name: "calculo_indicadores_tasas_imputacion_pregunta_9_4",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Efectividad en la Aplicación de Reglas de Edición e Imputación
@@ -53,14 +53,14 @@ export const questions9_4 = [
   
     // Pregunta de Tipo Range: Efectividad en la aplicación de reglas de edición e imputación
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_aplicacion_reglas_edicion_imputacion_pregunta_9_4",
       label: "Califique (1-5) qué tan efectiva es la operación estadística en la aplicación de las reglas de edición e imputación para obtener un archivo de datos depurado.",
       name: "efectividad_aplicacion_reglas_edicion_imputacion_pregunta_9_4",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Cumplimiento del Diseño para Cálculo de Indicadores
@@ -72,14 +72,14 @@ export const questions9_4 = [
   
     // Pregunta de Tipo Range: Cumplimiento con el diseño al calcular indicadores y tasas de imputación
     {
-      type: "range",
+      type: "slider",
       key: "cumplimiento_diseno_calculo_indicadores_pregunta_9_4",
       label: "Califique (1-5) en qué medida la operación estadística cumple con el diseño al calcular los indicadores de las variables con valores no válidos y las tasas de imputación por variable.",
       name: "cumplimiento_diseno_calculo_indicadores_pregunta_9_4",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Evaluación del Proceso de Imputación
@@ -91,7 +91,7 @@ export const questions9_4 = [
   
     // Pregunta de Tipo Text Area: Evaluación del proceso de imputación y cálculo de indicadores
     {
-      type: "textArea",
+      type: "textarea",
       key: "evaluacion_proceso_imputacion_calculo_indicadores_pregunta_9_4",
       label: "¿Cómo evalúa la operación estadística el proceso de imputación y cálculo de indicadores y tasas de imputación para asegurar la calidad de los datos?",
       name: "evaluacion_proceso_imputacion_calculo_indicadores_pregunta_9_4",
@@ -100,7 +100,7 @@ export const questions9_4 = [
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_9_4",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_9_4",

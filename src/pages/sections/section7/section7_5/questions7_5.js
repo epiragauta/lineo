@@ -12,8 +12,8 @@ export const questions7_5 = [
       key: "generacion_productos_cartograficos_pregunta_7_5",
       label: "¿La operación estadística genera los productos cartográficos necesarios para la recolección de acuerdo con lo diseñado?",
       name: "generacion_productos_cartograficos_pregunta_7_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Preguntas de Tipo Radio: Si la respuesta es Sí, los productos incluyen:
@@ -22,16 +22,16 @@ export const questions7_5 = [
       key: "productos_cartograficos_mapas_detallados_pregunta_7_5",
       label: "a) mapas detallados para la recolección",
       name: "productos_cartograficos_mapas_detallados_pregunta_7_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
     {
       type: "radio",
       key: "productos_cartograficos_integracion_marco_geoestadistico_pregunta_7_5",
       label: "b) integración con el marco geoestadístico nacional",
       name: "productos_cartograficos_integracion_marco_geoestadistico_pregunta_7_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Elaboración de Productos Cartográficos
@@ -59,13 +59,13 @@ export const questions7_5 = [
       key: "construccion_rutas_recoleccion_pregunta_7_5",
       label: "¿La operación estadística construye las rutas de recolección sobre los productos cartográficos utilizando el marco geoestadístico nacional?",
       name: "construccion_rutas_recoleccion_pregunta_7_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Text Area: Aseguramiento de conformidad con el marco geoestadístico
     {
-      type: "textArea",
+      type: "textarea",
       key: "aseguramiento_conformidad_marco_geoestadistico_pregunta_7_5",
       label: "Si la respuesta es Sí, ¿cómo se asegura la conformidad con el marco geoestadístico?",
       name: "aseguramiento_conformidad_marco_geoestadistico_pregunta_7_5",
@@ -97,13 +97,13 @@ export const questions7_5 = [
       key: "elaboracion_formatos_control_supervision_pregunta_7_5",
       label: "¿La operación estadística elabora los formatos de control y supervisión conforme a lo diseñado?",
       name: "elaboracion_formatos_control_supervision_pregunta_7_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Text Area: Tipos de formatos utilizados para control y supervisión
     {
-      type: "textArea",
+      type: "textarea",
       key: "tipos_formatos_control_supervision_pregunta_7_5",
       label: "Si la respuesta es Sí, ¿qué tipos de formatos se utilizan para el control y supervisión?",
       name: "tipos_formatos_control_supervision_pregunta_7_5",
@@ -135,8 +135,8 @@ export const questions7_5 = [
       key: "elaboracion_productos_sensibilizacion_entrenamiento_pregunta_7_5",
       label: "¿La operación estadística elabora productos para la sensibilización y materiales para el entrenamiento del personal encargado de la recolección o el acopio?",
       name: "elaboracion_productos_sensibilizacion_entrenamiento_pregunta_7_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Productos elaborados para sensibilización y entrenamiento

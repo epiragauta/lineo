@@ -117,14 +117,14 @@ export const questions6_12 = [
     
     // Pregunta de Tipo Range: Efectividad en la Evaluación de Desempeño
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_evaluacion_desempeno_pregunta",
       label: "Califique de 1-5. ¿Qué tan efectiva es la dependencia encargada de la operación estadística en determinar y documentar la metodología y los mecanismos para la evaluación del desempeño en las distintas fases de la operación estadística?",
       name: "efectividad_evaluacion_desempeno_pregunta",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Efectividad en la Evaluación de Desempeño
@@ -148,14 +148,14 @@ export const questions6_12 = [
     
     // Pregunta de Tipo Range: Documentación y Seguimiento de la Evaluación
     {
-      type: "range",
+      type: "slider",
       key: "documentacion_seguimiento_evaluacion_pregunta",
       label: "Califique de 1-5. ¿En qué medida la dependencia encargada de la operación estadística documenta y realiza el seguimiento a la evaluación del desempeño en las fases de la operación estadística?",
       name: "documentacion_seguimiento_evaluacion_pregunta",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Documentación y Seguimiento de la Evaluación
@@ -179,7 +179,7 @@ export const questions6_12 = [
     
     // Pregunta de Tipo Text Area: Contribución al Mejoramiento Continuo
     {
-      type: "textArea",
+      type: "textarea",
       key: "contribucion_mejoramiento_continuo_pregunta",
       label: "¿Cómo evalúa la dependencia encargada de la operación estadística la contribución de la evaluación del desempeño al mejoramiento continuo de la operación estadística, según los criterios establecidos en el diseño o los requisitos de la norma?",
       name: "contribucion_mejoramiento_continuo_pregunta",

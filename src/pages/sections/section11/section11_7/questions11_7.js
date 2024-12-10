@@ -13,8 +13,8 @@ export const questions11_7 = [
       key: "descripcion_condiciones_uso_pregunta_11_7",
       label: "¿La dependencia encargada de la operación estadística describe claramente las condiciones de uso de la información estadística difundida?",
       name: "descripcion_condiciones_uso_pregunta_11_7",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Ratio: Disponibilidad pública de las condiciones de uso
@@ -23,8 +23,8 @@ export const questions11_7 = [
       key: "disponibilidad_publica_condiciones_uso_pregunta_11_7",
       label: "Si la respuesta es sí, ¿las condiciones de uso están disponibles públicamente?",
       name: "disponibilidad_publica_condiciones_uso_pregunta_11_7",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Políticas de Confidencialidad
@@ -40,20 +40,20 @@ export const questions11_7 = [
       key: "cumplimiento_politicas_confidencialidad_pregunta_11_7",
       label: "¿La dependencia encargada de la operación estadística garantiza que la información estadística difundida cumple con las políticas de confidencialidad establecidas?",
       name: "cumplimiento_politicas_confidencialidad_pregunta_11_7",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Range: Claridad de las políticas de confidencialidad
     {
-      type: "range",
+      type: "slider",
       key: "claridad_politicas_confidencialidad_pregunta_11_7",
       label: "Si la respuesta es sí, califique (1-5) el nivel de claridad de las políticas de confidencialidad publicadas.",
       name: "claridad_politicas_confidencialidad_pregunta_11_7",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Acceso a la Información con Restricciones
@@ -69,8 +69,8 @@ export const questions11_7 = [
       key: "mecanismos_acceso_restricciones_pregunta_11_7",
       label: "¿La dependencia encargada de la operación estadística establece mecanismos claros para que los usuarios accedan a la información estadística bajo condiciones de uso o restricciones específicas?",
       name: "mecanismos_acceso_restricciones_pregunta_11_7",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Comunicación de Restricciones a los Usuarios
@@ -82,14 +82,14 @@ export const questions11_7 = [
   
     // Pregunta de Tipo Range: Efectividad en la comunicación de restricciones
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_comunicacion_restricciones_pregunta_11_7",
       label: "¿En qué medida la dependencia encargada de la operación estadística comunica de manera efectiva las restricciones y condiciones de uso de la información estadística a los usuarios? Califique (1-5)",
       name: "efectividad_comunicacion_restricciones_pregunta_11_7",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Revisión y Actualización de Condiciones de Uso
@@ -105,13 +105,13 @@ export const questions11_7 = [
       key: "revision_actualizacion_condiciones_uso_pregunta_11_7",
       label: "¿La dependencia encargada de la operación estadística revisa y actualiza periódicamente las condiciones de uso y las políticas de confidencialidad de la información estadística?",
       name: "revision_actualizacion_condiciones_uso_pregunta_11_7",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_11_7",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_11_7",

@@ -13,8 +13,8 @@ export const questions9_3 = [
       key: "consulta_omisiones_inconsistencias_pregunta_9_3",
       label: "¿En los casos de omisión o inconsistencias detectadas, la operación estadística consulta la unidad de observación o la fuente de datos?",
       name: "consulta_omisiones_inconsistencias_pregunta_9_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Acciones en caso de consulta
@@ -53,14 +53,14 @@ export const questions9_3 = [
   
     // Pregunta de Tipo Range: Efectividad en la revisión y validación de datos
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_revision_validacion_pregunta_9_3",
       label: "Califique (1-5) qué tan efectiva es la operación estadística en la revisión y validación de los datos recolectados o acopiados.",
       name: "efectividad_revision_validacion_pregunta_9_3",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Efectividad en la Revisión y Validación
@@ -84,14 +84,14 @@ export const questions9_3 = [
   
     // Pregunta de Tipo Range: Documentación de omisiones e inconsistencias
     {
-      type: "range",
+      type: "slider",
       key: "documentacion_omisiones_inconsistencias_pregunta_9_3",
       label: "Califique (1-5) en qué medida la operación estadística documenta las omisiones y las inconsistencias detectadas durante la revisión de los datos.",
       name: "documentacion_omisiones_inconsistencias_pregunta_9_3",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Documentación de Omisiones e Inconsistencias
@@ -115,19 +115,19 @@ export const questions9_3 = [
   
     // Pregunta de Tipo Range: Evaluación de acciones para evitar sesgos
     {
-      type: "range",
+      type: "slider",
       key: "evaluacion_acciones_prevencion_sesgos_pregunta_9_3",
       label: "¿Cómo evalúa (1-5) la operación estadística las acciones tomadas para evitar sesgos en los datos debido a omisiones e inconsistencias?",
       name: "evaluacion_acciones_prevencion_sesgos_pregunta_9_3",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_9_3",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_9_3",

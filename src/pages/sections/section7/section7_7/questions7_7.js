@@ -13,8 +13,8 @@ export const questions7_7 = [
       key: "plan_pruebas_ejecuta_pregunta_7_7",
       label: "¿La operación estadística ejecuta un plan de pruebas que permita identificar las afectaciones en el desarrollo de la operación estadística?",
       name: "plan_pruebas_ejecuta_pregunta_7_7",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Componentes del plan de pruebas
@@ -57,8 +57,8 @@ export const questions7_7 = [
       key: "tipos_pruebas_incluye_pregunta_7_7",
       label: "¿La operación estadística incluye pruebas unitarias, funcionales o no funcionales al software aplicativo para comprobar que las validaciones están operando de acuerdo con las especificaciones establecidas?",
       name: "tipos_pruebas_incluye_pregunta_7_7",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Tipos de Pruebas
@@ -82,14 +82,14 @@ export const questions7_7 = [
   
     // Pregunta de Tipo Range: Efectividad en la documentación e implementación de acciones
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_documentacion_acciones_pregunta_7_7",
       label: "Califique de 1-5. ¿Qué tan efectiva es la operación estadística en documentar e implementar las acciones necesarias a partir de los resultados de las pruebas?",
       name: "efectividad_documentacion_acciones_pregunta_7_7",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Documentación de Acciones
@@ -113,14 +113,14 @@ export const questions7_7 = [
   
     // Pregunta de Tipo Range: Aseguramiento de pruebas al cambiar aspectos metodológicos u operativos
     {
-      type: "range",
+      type: "slider",
       key: "aseguramiento_pruebas_cambios_pregunta_7_7",
       label: "Califique de 1-5. ¿En qué medida la operación estadística asegura que cada vez que cambien o actualicen los aspectos metodológicos y operativos se realicen las pruebas correspondientes?",
       name: "aseguramiento_pruebas_cambios_pregunta_7_7",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Implementación de Pruebas
@@ -144,7 +144,7 @@ export const questions7_7 = [
   
     // Pregunta de Tipo Text Area: Evaluación de la conservación de la información documentada
     {
-      type: "textArea",
+      type: "textarea",
       key: "evaluacion_conservacion_informacion_evidencia_pregunta_7_7",
       label: "¿Cómo evalúa la operación estadística la conservación de la información documentada como evidencia del proceso de pruebas?",
       name: "evaluacion_conservacion_informacion_evidencia_pregunta_7_7",
@@ -172,7 +172,7 @@ export const questions7_7 = [
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_pruebas_pregunta_7_7",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_pruebas_pregunta_7_7",

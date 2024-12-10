@@ -20,13 +20,13 @@ export const questions10_3 = [
       key: "consistencia_resultados_pregunta_10_1",
       label: "¿La operación estadística garantiza la consistencia de los resultados obtenidos?",
       name: "consistencia_resultados_pregunta_10_1",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Text Area: Cómo asegurar la consistencia
     {
-      type: "textArea",
+      type: "textarea",
       key: "asegurar_consistencia_pregunta_10_1",
       label: "Si la respuesta es Sí, ¿cómo se asegura esta consistencia en los resultados generados?",
       name: "asegurar_consistencia_pregunta_10_1",
@@ -46,8 +46,8 @@ export const questions10_3 = [
       key: "documentacion_limitaciones_pregunta_10_1",
       label: "¿La operación estadística documenta adecuadamente las limitaciones de los resultados, teniendo en cuenta las medidas de calidad implementadas?",
       name: "documentacion_limitaciones_pregunta_10_1",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Medidas de calidad consideradas
@@ -75,14 +75,14 @@ export const questions10_3 = [
   
     // Pregunta de Tipo Range: Efectividad en generación de cuadros
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_generacion_cuadros_pregunta_10_1",
       label: "Califique (1-5) qué tan efectiva es la operación estadística en generar los cuadros de salida o resultados incorporando el cálculo de ponderaciones (cuando aplique)",
       name: "efectividad_generacion_cuadros_pregunta_10_1",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Anonimización de Microdatos
@@ -94,14 +94,14 @@ export const questions10_3 = [
   
     // Pregunta de Tipo Range: Implementación de técnicas de anonimización
     {
-      type: "range",
+      type: "slider",
       key: "implementacion_tecnicas_anonimizacion_pregunta_10_1",
       label: "Califique (1-5) ¿En qué medida la operación estadística implementa las técnicas de anonimización de los microdatos?",
       name: "implementacion_tecnicas_anonimizacion_pregunta_10_1",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Revisión de Limitaciones y Medidas de Calidad
@@ -113,7 +113,7 @@ export const questions10_3 = [
   
     // Pregunta de Tipo Text Area: Evaluación de la revisión y actualización
     {
-      type: "textArea",
+      type: "textarea",
       key: "evaluacion_revision_actualizacion_limitaciones_pregunta_10_1",
       label: "¿Cómo evalúa la operación estadística la revisión y actualización de las limitaciones de los resultados, en relación con las medidas de calidad implementadas?",
       name: "evaluacion_revision_actualizacion_limitaciones_pregunta_10_1",
@@ -122,7 +122,7 @@ export const questions10_3 = [
   
     // Pregunta de Tipo Text Area: Sugerencias para mejora de determinación y confirmación de fuentes de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_10_1",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_10_1",

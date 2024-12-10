@@ -117,7 +117,6 @@ const GeneralForm = ({ subsection, label, formQuestions, introductions}) => {
 
   const operationQuestionsComponents = renderQuestions(operationQuestions, formData, handleChange, handleSelectChange);
   const formQuestionsComponents = renderQuestions(formQuestions, formData, handleChange, handleSelectChange);
-  console.log(formQuestions);
 
   return (
     <FormWrapper

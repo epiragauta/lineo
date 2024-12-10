@@ -4,7 +4,7 @@ import React from "react";
 import Slider from "@mui/material/Slider";
 import QuestionLabel from "./QuestionLabel";
 
-const SliderQuestion = ({ label, name, value, onChange, min = 1, max = 5, step = 1 }) => {
+const SliderQuestion = ({ label, name, value = 2, onChange, min = 1, max = 5, step = 1 }) => {
   return (
     <div className="mb-6">
       {label && <QuestionLabel label={label} />}

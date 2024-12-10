@@ -154,7 +154,7 @@ export const questions6_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Diseño Muestral
@@ -195,7 +195,7 @@ export const questions6_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Control de Sesgo
@@ -236,7 +236,7 @@ export const questions6_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
     
     // Evidencias Documentales para Métodos Estadísticos

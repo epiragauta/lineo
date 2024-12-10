@@ -58,7 +58,7 @@ export const questions7_1 = [
   
     // Pregunta de Tipo Text Area
     {
-      type: "textArea",
+      type: "textarea",
       key: "cumplimiento_diseno_marco_estadistico_pregunta_7_1",
       label: "¿Cómo evalúa la operación estadística el cumplimiento del diseño del marco estadístico, incluyendo la identificación de la población objetivo y el uso de códigos geográficos adecuados?",
       name: "cumplimiento_diseno_marco_estadistico_pregunta_7_1",
@@ -86,14 +86,14 @@ export const questions7_1 = [
   
     // Pregunta de Tipo Range
     {
-      type: "range",
+      type: "slider",
       key: "documentacion_conservacion_marco_estadistico_pregunta_7_1",
       label: "Califique de 1-5. ¿Qué tan efectiva es la operación estadística en documentar, conservar y actualizar el marco estadístico?",
       name: "documentacion_conservacion_marco_estadistico_pregunta_7_1",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Documentación y Conservación del Marco Estadístico

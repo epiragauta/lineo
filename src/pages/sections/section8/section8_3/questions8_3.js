@@ -13,8 +13,8 @@ export const questions8_3 = [
       key: "control_seguimiento_recoleccion_pregunta_8_3",
       label: "¿La operación estadística realiza el control y seguimiento adecuados a la recolección o acopio de los datos?",
       name: "control_seguimiento_recoleccion_pregunta_8_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Radio: Verificación de datos válidos y consistentes
@@ -23,8 +23,8 @@ export const questions8_3 = [
       key: "verificacion_datos_pregunta_8_3",
       label: "Si la respuesta es Sí, ¿la operación estadística verifica que los datos recibidos sean válidos y consistentes y controla la pérdida de datos?",
       name: "verificacion_datos_pregunta_8_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Control en la Recolección de Datos
@@ -52,8 +52,8 @@ export const questions8_3 = [
       key: "consolidacion_archivo_datos_pregunta_8_3",
       label: "¿La dependencia encargada de la operación estadística consolida en un archivo los datos recolectados o acopiados?",
       name: "consolidacion_archivo_datos_pregunta_8_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Consolidación de Datos
@@ -81,8 +81,8 @@ export const questions8_3 = [
       key: "controles_completitud_pregunta_8_3",
       label: "¿La operación estadística implementa controles para garantizar la completitud de la recolección o acopio de los datos?",
       name: "controles_completitud_pregunta_8_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Completitud de Datos
@@ -110,8 +110,8 @@ export const questions8_3 = [
       key: "implementacion_supervision_recoleccion_pregunta_8_3",
       label: "¿La operación estadística implementa y mantiene la supervisión y el seguimiento durante el proceso de recolección de datos?",
       name: "implementacion_supervision_recoleccion_pregunta_8_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Supervisión del Proceso de Recolección
@@ -139,8 +139,8 @@ export const questions8_3 = [
       key: "calculo_reporte_indicadores_pregunta_8_3",
       label: "¿La operación estadística calcula el porcentaje de cobertura y el porcentaje de no respuesta de acuerdo con lo diseñado y elabora informes operativos que recopilan el desempeño de la recolección de datos?",
       name: "calculo_reporte_indicadores_pregunta_8_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Radio: Evaluación de la efectividad de los informes operativos
@@ -149,8 +149,8 @@ export const questions8_3 = [
       key: "evaluacion_efectividad_informes_pregunta_8_3",
       label: "Si la respuesta es Sí, ¿cómo evalúa la dependencia encargada de la operación estadística la efectividad de estos informes operativos en la toma de decisiones durante y al finalizar la recolección?",
       name: "evaluacion_efectividad_informes_pregunta_8_3",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Cálculo y Reporte de Indicadores

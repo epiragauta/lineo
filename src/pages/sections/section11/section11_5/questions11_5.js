@@ -13,8 +13,8 @@ export const questions11_5 = [
       key: "difusion_medidas_calidad_pregunta_11_5",
       label: "¿La dependencia encargada de la operación estadística difunde las medidas de calidad asociadas a las operaciones estadísticas conforme el diseño estadístico?",
       name: "difusion_medidas_calidad_pregunta_11_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Elementos incluidos en la difusión de medidas de calidad
@@ -46,8 +46,8 @@ export const questions11_5 = [
       key: "publicacion_intervalos_coeficientes_muestreo_pregunta_11_5",
       label: "Para las operaciones estadísticas por muestreo probabilístico, ¿la dependencia encargada de la operación estadística publica los intervalos de confianza y coeficientes de variación?",
       name: "publicacion_intervalos_coeficientes_muestreo_pregunta_11_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Tasa de Imputación
@@ -63,8 +63,8 @@ export const questions11_5 = [
       key: "difusion_tasa_imputacion_pregunta_11_5",
       label: "¿La dependencia encargada de la operación estadística difunde la tasa de imputación para las principales variables en operaciones estadísticas que realizan imputación?",
       name: "difusion_tasa_imputacion_pregunta_11_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Subtítulo: Calidad de la Difusión de Medidas Estadísticas
@@ -76,14 +76,14 @@ export const questions11_5 = [
   
     // Pregunta de Tipo Range: Efectividad en la difusión de medidas de calidad
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_difusion_medidas_calidad_pregunta_11_5",
       label: "Califique (1-5) qué tan efectiva es la dependencia encargada de la operación estadística en difundir las medidas de calidad de la operación estadística, conforme a los criterios establecidos en el diseño.",
       name: "efectividad_difusion_medidas_calidad_pregunta_11_5",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Notas de Interpretación
@@ -95,7 +95,7 @@ export const questions11_5 = [
   
     // Pregunta de Tipo Text Area: Evaluación de la generación de notas de interpretación
     {
-      type: "textArea",
+      type: "textarea",
       key: "evaluacion_notas_interpretacion_pregunta_11_5",
       label: "¿Cómo evalúa la dependencia encargada de la operación estadística la generación de notas de interpretación para facilitar la comprensión de las medidas de calidad indicadas en el diseño estadístico?",
       name: "evaluacion_notas_interpretacion_pregunta_11_5",
@@ -104,7 +104,7 @@ export const questions11_5 = [
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_11_5",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_11_5",

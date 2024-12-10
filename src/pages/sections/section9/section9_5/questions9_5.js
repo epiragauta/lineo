@@ -13,8 +13,8 @@ export const questions9_5 = [
       key: "calculo_factores_expansion_ajustes_pregunta_9_5",
       label: "¿La operación estadística por muestreo probabilístico calcula adecuadamente los factores de expansión, ajustes por no cobertura y no respuesta, y errores de muestreo (coeficientes de variación) según lo establecido en el diseño?",
       name: "calculo_factores_expansion_ajustes_pregunta_9_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Cálculos realizados
@@ -45,8 +45,8 @@ export const questions9_5 = [
       key: "calculo_ajustes_no_cobertura_respuesta_pregunta_9_5",
       label: "¿La operación estadística realiza el cálculo de ajustes por no cobertura y no respuesta, de acuerdo con lo establecido en su metodología?",
       name: "calculo_ajustes_no_cobertura_respuesta_pregunta_9_5",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Cálculos efectuados
@@ -71,14 +71,14 @@ export const questions9_5 = [
   
     // Pregunta de Tipo Range: Efectividad en el cálculo de ponderadores
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_calculo_ponderadores_pregunta_9_5",
       label: "Califique (1-5) qué tan efectiva es la operación estadística en calcular los factores de expansión, ajustes por no cobertura y no respuesta, y errores de muestreo (coeficientes de variación) según lo establecido en el diseño.",
       name: "efectividad_calculo_ponderadores_pregunta_9_5",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Documentación de Cálculos de Ponderadores
@@ -90,14 +90,14 @@ export const questions9_5 = [
   
     // Pregunta de Tipo Range: Documentación y conservación de cálculos de ponderadores
     {
-      type: "range",
+      type: "slider",
       key: "documentacion_calculos_ponderadores_pregunta_9_5",
       label: "¿Califique (1-5) en qué medida la operación estadística documenta y conserva los cálculos de los factores de expansión, ajustes por no cobertura y no respuesta, y errores de muestreo (coeficientes de variación)?",
       name: "documentacion_calculos_ponderadores_pregunta_9_5",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Subtítulo: Revisión y Actualización de los Cálculos
@@ -109,7 +109,7 @@ export const questions9_5 = [
   
     // Pregunta de Tipo Text Area: Evaluación de la revisión y actualización de cálculos
     {
-      type: "textArea",
+      type: "textarea",
       key: "evaluacion_revision_actualizacion_calculos_pregunta_9_5",
       label: "¿Cómo evalúa la operación estadística la revisión y actualización periódica de los cálculos de factores de expansión, ajustes por no cobertura y no respuesta, y errores de muestreo, según lo especificado en el diseño metodológico?",
       name: "evaluacion_revision_actualizacion_calculos_pregunta_9_5",
@@ -118,7 +118,7 @@ export const questions9_5 = [
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos
     {
-      type: "textArea",
+      type: "textarea",
       key: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_9_5",
       label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la determinación y confirmación del tipo de fuente de datos en sus operaciones estadísticas?",
       name: "sugerencias_mejora_determinacion_confirmacion_fuente_datos_pregunta_9_5",

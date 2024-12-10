@@ -13,8 +13,8 @@ export const questions8_2 = [
       key: "recoleccion_datos_pregunta_8_2",
       label: "¿La operación estadística recolecta o acopia los datos de acuerdo con el diseño previamente establecido?",
       name: "recoleccion_datos_pregunta_8_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Radio: Uso de instrumentos y herramientas definidas
@@ -23,8 +23,8 @@ export const questions8_2 = [
       key: "uso_instrumentos_herramientas_pregunta_8_2",
       label: "Si la respuesta es Sí, ¿se utilizan los instrumentos y herramientas definidos en el plan de trabajo?",
       name: "uso_instrumentos_herramientas_pregunta_8_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Evidencias Documentales para Recolección de Datos
@@ -52,8 +52,8 @@ export const questions8_2 = [
       key: "aplicacion_correcta_instrumentos_pregunta_8_2",
       label: "¿La operación estadística aplica correctamente los instrumentos definidos para la recolección o acopio de datos?",
       name: "aplicacion_correcta_instrumentos_pregunta_8_2",
-      options: ["Si", "No"],
-      initialValue: "",
+      options: ["Sí", "No"],
+      initialValue: 0,
     },
   
     // Pregunta de Tipo Checkbox: Instrumentos utilizados
@@ -74,7 +74,7 @@ export const questions8_2 = [
   
     // Pregunta de Tipo Text Area: Especificar otras herramientas
     {
-      type: "textArea",
+      type: "textarea",
       key: "especificar_otras_herramientas_pregunta_8_2",
       label: "¿Cuáles?",
       name: "especificar_otras_herramientas_pregunta_8_2",
@@ -102,14 +102,14 @@ export const questions8_2 = [
   
     // Pregunta de Tipo Range: Efectividad en seguir el plan de trabajo
     {
-      type: "range",
+      type: "slider",
       key: "efectividad_seguir_plan_trabajo_pregunta_8_2",
       label: "Califique de 1-5. ¿Qué tan efectivamente se sigue el plan de trabajo establecido para la recolección o acopio de datos?",
       name: "efectividad_seguir_plan_trabajo_pregunta_8_2",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Plan de Trabajo
@@ -133,14 +133,14 @@ export const questions8_2 = [
   
     // Pregunta de Tipo Range: Cumplimiento con el diseño de recolección o acopio
     {
-      type: "range",
+      type: "slider",
       key: "cumplimiento_diseno_recoleccion_pregunta_8_2",
       label: "Califique de 1-5. ¿En qué medida la operación estadística cumple con el diseño previsto para la recolección o acopio de datos?",
       name: "cumplimiento_diseno_recoleccion_pregunta_8_2",
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 3,
+      initialValue: 2,
     },
   
     // Evidencias Documentales para Cumplimiento del Diseño
@@ -164,7 +164,7 @@ export const questions8_2 = [
   
     // Pregunta de Tipo Text Area: Evaluación de la efectividad de las herramientas
     {
-      type: "textArea",
+      type: "textarea",
       key: "evaluacion_efectividad_herramientas_pregunta_8_2",
       label: "¿Cómo evalúa la operación estadística la efectividad de las herramientas utilizadas para la recolección o acopio de datos, de acuerdo con el plan de trabajo?",
       name: "evaluacion_efectividad_herramientas_pregunta_8_2",

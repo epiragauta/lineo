@@ -67,7 +67,7 @@ export const questions4_10 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 3,
+    initialValue: 2,
   },
   {
     type: "evidencias",
