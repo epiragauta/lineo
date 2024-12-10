@@ -4,16 +4,19 @@ import React, { useEffect, useState } from "react";
 import { getNumberOfSubmissions } from "../backend/api/numberOfSubmissions";
 import { FaClipboardList, FaChartBar } from "react-icons/fa"; // Example icons
 import DashboardCard from "./dashboard/DashboardCard";
+import { countQuestions } from "../utils/countQuestions";
 
 import PieChart from "./dashboard/PieChart";
 import Histogram from "./dashboard/Histogram";
 
-const Dashboard = ({ subsection, label }) => {
+const Dashboard = ({ subsection, label, formQuestions }) => {
   const [submissionCount, setSubmissionCount] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const formId = subsection;
+
+  const scores = countQuestions(formQuestions);
 
   const histogramData = [
     { category: "A", Si: 30, No: 20 },
@@ -78,16 +81,26 @@ const Dashboard = ({ subsection, label }) => {
         />
       </div>
 
-      <div className="p-6 bg-gray-100">
-        <h2 className="text-xl font-semibold mb-4">Respuesta Sí/No</h2>
-        <PieChart data={pieData} />
-      </div>
-      <div className="p-6 bg-gray-100">
-        <h2 className="text-xl font-semibold mb-4">
-          Distribución por Categoría
-        </h2>
-        <Histogram data={histogramData} keys={keys} indexBy={indexBy} />
-      </div>
+      {/* Charts */}
+
+      {
+        formQuestions.map((question, index) => {
+          const isRadio = question.type === "radio";
+          const isSlider = question.type === "slider";
+
+          if (isRadio && question.options.length === 2 && question.options.includes("Sí") && question.options.includes("No")) {
+            // Renderizar la sección sin estilos de fondo
+            return (
+              <PieChart key={index} data={pieData} label={question.label} />
+            );
+          } else if (isSlider) {
+
+            return (
+              <Histogram key={index} data={histogramData} keys={keys} indexBy={indexBy} label={question.label} />
+            );
+          }
+        })
+      }
     </div>
   );
 };

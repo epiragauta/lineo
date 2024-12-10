@@ -25,7 +25,7 @@ const TabsComponent = ({ formQuestions, DashboardComponent, label, introductions
             <GeneralForm subsection = {subsection} label = {label} formQuestions = {formQuestions} introductions = {introductions}/>
           </TabPanel>
           <TabPanel value="dashboard">
-            <DashboardComponent label = {label} subsection = {subsection}/>
+            <DashboardComponent label = {label} subsection = {subsection} formQuestions = {formQuestions}/>
           </TabPanel>
         </TabsBody>
       </Tabs>
