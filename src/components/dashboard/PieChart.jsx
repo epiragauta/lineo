@@ -3,6 +3,7 @@
 import React from 'react';
 import { ResponsivePie } from '@nivo/pie';
 import PropTypes from 'prop-types';
+import { customBlueGreenPalette } from './colorConfig';
 
 const PieChart = ({ data }) => {
   return (
@@ -13,7 +14,8 @@ const PieChart = ({ data }) => {
         innerRadius={0.5}
         padAngle={0.7}
         cornerRadius={3}
-        colors={{ scheme: 'nivo' }}
+        colors={customBlueGreenPalette}
+        // colors={{ scheme: colorScheme }}
         borderWidth={1}
         borderColor={{ from: 'color', modifiers: [['darker', 0.2]] }}
         enableRadialLabels={true}
