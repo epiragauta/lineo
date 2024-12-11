@@ -22,11 +22,11 @@ export const getSliderQuestionScore = async (formId, field) => {
     }
 
     const frequencies = {
-      0: 0,
       1: 0,
       2: 0,
       3: 0,
       4: 0,
+      5: 0,
     };
 
     // Calculate frequencies for the slider field
@@ -34,7 +34,7 @@ export const getSliderQuestionScore = async (formId, field) => {
       const value = Number(entry[field]);
       // Check in range of slider
       if (value >= 0 && value <= 4) {
-        frequencies[value] += 1;
+        frequencies[value + 1] += 1;
       }
     });
 
