@@ -107,7 +107,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
           // Slider Question Histogram
           const frequencies = sliderFrequencies[question.key] || {};
           const histogramData = Object.entries(frequencies).map(
-            ([value, count]) => ({ value, Frequency: count })
+            ([Puntaje, count]) => ({ Puntaje, Frequency: count })
           );
 
           return (
@@ -115,7 +115,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
               key={index}
               data={histogramData}
               keys={["Frequency"]}
-              indexBy="value"
+              indexBy="Puntaje"
               label={question.label}
             />
           );
