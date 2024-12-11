@@ -15,8 +15,8 @@ export function getScore(answers, maxScore, sumScore) {
     ];
   
     return { 
-      percentage, 
-      level, 
+      percentage: percentage, 
+      level: level, 
       description: levelDescriptions[level] 
     };
   }
