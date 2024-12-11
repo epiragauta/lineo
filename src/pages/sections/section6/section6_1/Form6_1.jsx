@@ -1,64 +1,26 @@
-// ./src/pages/Sections/Section6/Form6_1.js
+// src/pages/sections/section6/section6_1/Form6_1.jsx
 
-import React, { useState } from "react";
-import { operationQuestions } from "../../../../questions/operation_questions";
-import { questions6_1 } from "./questions6_1";
-import FormWrapper from "../../../../components/FormWrapper";
+import React from "react";
+import { questions6_1 as formQuestions } from "./questions6_1"; 
+import { operationQuestions } from "../../../../questions/operationQuestions"; 
+import GeneralForm from "../../../../components/GeneralForm"; 
+import { getInitialFormData } from "../../../../utils/getInitialFormData"; 
 
-const Form6_1 = () => {
-  const [formData, setFormData] = useState({
-    // Preguntas de operación
-    nombreOperacion: "",
-    dependencia: "",
-    registroAdmin: "",
-    objetivo: "",
-    poblacion: "",
-    anioInicio: "",
-    areaTematica: "",
-    periodicidad: "",
-    unidadEstudio: "",
-    variablesPrincipales: "",
-    coberturaGeografica: "",
-    periodoReferencia: "",
-    metodoRecoleccion: "",
-
-    // Preguntas específicas de la sección 6.1
-    verificacion_necesidades_vigencia: "",
-    verificacion_brecha_tiempo: "",
-    verificacion_necesidades_evidencia1: "",
-    verificacion_necesidades_evidencia2: "",
-    verificacion_necesidades_evidencia3: "",
-    sugerencias_verificacion: "",
-    accion: "",
-    responsableSNS: "",
-    fechaCumplimiento: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form 6.1 enviado", formData);
-  };
-
-  const mainTitle = "Sección 6.1 - Verificar las Necesidades";
-
-  const introductions = [
-    "La verificación de las necesidades es un paso primordial para garantizar que las demandas de información identificadas sean precisas, viables y alineadas con los objetivos de la operación estadística. Según los lineamientos de la NTC PE 1000:2020, esta etapa requiere una revisión sistemática de los requisitos recogidos, asegurando su pertinencia y priorización, además de identificar cualquier posible discrepancia o limitación que deba ser abordada antes del diseño de la operación.",
-  ];
+const Form6_1 = ({label, subsection, introductions}) => {
+  const formId = subsection; 
+  const initialFormData = getInitialFormData(operationQuestions, formQuestions);
 
   return (
-    <FormWrapper
-      mainTitle={mainTitle}
+    <GeneralForm
+      formId={formId}
+      label={label}
+      initialFormData={initialFormData}
+      operationQuestions={operationQuestions}
+      formQuestions={formQuestions}
       introductions={introductions}
-      operationQuestions={operationQuestions(formData, handleChange)}
-      formQuestions={questions6_1(formData, handleChange)}
-      handleSubmit={handleSubmit}
     />
   );
 };
 
 export default Form6_1;
+

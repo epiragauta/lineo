@@ -5,7 +5,7 @@ import Divider from "./Divider";
 import { Button } from "@material-tailwind/react";
 import SectionTitle from "./questions/SectionTitle";
 
-const FormWrapper = ({ mainTitle, introductions, operationQuestions, formQuestions, handleSubmit }) => {
+const FormWrapper = ({ mainTitle, introductions = [], operationQuestions, formQuestions, handleSubmit }) => {
   let questionIndex = 0; // Contador para alternar colores solo en preguntas
 
   return (

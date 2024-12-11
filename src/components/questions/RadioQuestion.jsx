@@ -17,7 +17,7 @@ const RadioQuestion = ({ label, name, options, value, onChange }) => {
           label={<span className="text-black font-semibold">{option}</span>}
           value={index}
           onChange={onChange}
-          color="black"
+          // color="black"
           defaultChecked
         />
       ) : (
@@ -27,7 +27,7 @@ const RadioQuestion = ({ label, name, options, value, onChange }) => {
           label={<span className="text-black font-semibold">{option}</span>}
           value={index}
           onChange={onChange}
-          color="black"
+          // color="black"
         />
       )
     )}

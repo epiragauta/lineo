@@ -8,8 +8,9 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react"; // Asegúrate de tener instalado Material Tailwind
+import GeneralForm from './GeneralForm';
 
-const TabsComponent = ({ FormComponent, DashboardComponent, label, subsection}) => {
+const TabsComponent = ({ formQuestions, DashboardComponent, label, introductions, subsection}) => {
   const [activeTab, setActiveTab] = useState("Form");
 
   return (
@@ -21,10 +22,10 @@ const TabsComponent = ({ FormComponent, DashboardComponent, label, subsection}) 
         </TabsHeader>
         <TabsBody>
           <TabPanel value="Form">
-            <FormComponent subsection = {subsection} label = {label} />
+            <GeneralForm subsection = {subsection} label = {label} formQuestions = {formQuestions} introductions = {introductions}/>
           </TabPanel>
           <TabPanel value="dashboard">
-            <DashboardComponent label = {label} subsection = {subsection}/>
+            <DashboardComponent label = {label} subsection = {subsection} formQuestions = {formQuestions}/>
           </TabPanel>
         </TabsBody>
       </Tabs>
