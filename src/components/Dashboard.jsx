@@ -83,7 +83,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
         <DashboardCard
           icon={<FaChartBar className="text-green-600 w-6 h-6" />}
           title="Nivel"
-          value={submissionCount > 50 ? "Avanzado" : "Básico"} // Example level logic
+          value={2} // Example level logic
           loading={loading}
         />
       </div>
