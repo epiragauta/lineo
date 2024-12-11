@@ -61,18 +61,16 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
             const yesCount = frequencies[0] || 0;
             const noCount = frequencies[1] || 0;
 
-            answers += yesCount + noCount;
-            maxScore += yesCount + noCount; // Each "Sí" counts as 1 point
+            maxScore += 1; // Each "Sí" counts as 1 point
             sumScore += yesCount;
           } else if (question.type === "slider") {
             const frequencies = await getSliderQuestionScore(formId, question.key);
             newSliderFrequencies[question.key] = frequencies;
 
+            maxScore += 4; // Max slider score is 4
             // Slider logic: iterate over all possible slider values
             for (let i = 0; i <= 4; i++) {
               const count = frequencies[i] || 0;
-              answers += count;
-              maxScore += count * 4; // Max slider score is 4
               sumScore += count * i; // Weighted score
             }
           }
@@ -82,7 +80,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
         setSliderFrequencies(newSliderFrequencies);
 
         // Compute section level using getScore utility
-        const score = getScore(answers, maxScore, sumScore);
+        const score = getScore(count, maxScore, sumScore);
         if (score !== null) {
           setSectionLevel(score);
         } else {
@@ -118,6 +116,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
           icon={<FaChartBar className="text-green-600 w-6 h-6" />}
           title="Nivel"
           value={submissionCount && sectionLevel.description ? sectionLevel.description : "N/A"} // Level logic
+          color={sectionLevel.color}
           loading={loading}
         />
       </div>

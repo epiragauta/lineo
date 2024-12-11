@@ -17,7 +17,6 @@ const CheckboxQuestion = ({ label, name, options, values, onChange }) => {
             value={option}
             onChange={onChange}
             checked={values?.includes(option)}
-            color="black"
           />
         ))}
       </div>

@@ -59,6 +59,10 @@ const Histogram = ({ data, keys, indexBy, margin = { top: 50, right: 130, bottom
           animate={true}
           motionStiffness={90}
           motionDamping={15}
+          theme={
+            { legends: { text: { fontSize: 15 } } ,
+            axis :{ legend: { text: { fontSize: 20 } } }}
+          }
         />
       </div>
     </div>

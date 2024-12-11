@@ -40,6 +40,7 @@ const PieChart = ({ data, label }) => {
               symbolShape: 'circle',
             },
           ]}
+          theme={{ legends: { text: { fontSize: 30 } } }}
         />
       </div>
     </div>
