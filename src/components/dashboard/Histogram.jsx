@@ -3,6 +3,7 @@
 import React from 'react';
 import { ResponsiveBar } from '@nivo/bar';
 import PropTypes from 'prop-types';
+import {customBlueGreenPalette} from './colorConfig';
 
 const Histogram = ({ data, keys, indexBy, margin = { top: 50, right: 130, bottom: 50, left: 60 }, label}) => {
   return (
@@ -16,7 +17,7 @@ const Histogram = ({ data, keys, indexBy, margin = { top: 50, right: 130, bottom
           margin={margin}
           padding={0.3}
           groupMode="grouped"
-          colors={{ scheme: 'nivo' }}
+          colors={customBlueGreenPalette}
           borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
           axisTop={null}
           axisRight={null}
