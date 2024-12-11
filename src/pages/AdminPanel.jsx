@@ -1,5 +1,3 @@
-// src/components/AdminPanel.jsx
-
 import React, { useState, useEffect } from "react";
 import {
   Accordion,
@@ -10,12 +8,20 @@ import { getAllSubmissions } from "../backend/api/allSubmissions";
 
 const AdminPanel = () => {
   const [submissions, setSubmissions] = useState([]);
-  const [open, setOpen] = useState(null); // Track which accordion is open
+  const [openSection, setOpenSection] = useState(null);
+  const [openSubmissions, setOpenSubmissions] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const handleOpen = (id) => {
-    setOpen(open === id ? null : id); // Toggle open accordion
+  const handleSectionToggle = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
+
+  const handleSubmissionToggle = (section, id) => {
+    setOpenSubmissions((prevState) => ({
+      ...prevState,
+      [section]: prevState[section] === id ? null : id,
+    }));
   };
 
   useEffect(() => {
@@ -67,51 +73,69 @@ const AdminPanel = () => {
       <h1 className="text-2xl font-bold mb-4">Admin Panel</h1>
 
       {Object.entries(groupedSubmissions).map(([section, submissions]) => (
-        <div key={section} className="mb-6">
-          <h2 className="text-xl font-semibold mb-4">{section}</h2>
-          <div className="space-y-4">
-            {submissions.map((submission) => (
-              <Accordion
-                key={submission.id}
-                open={open === submission.id}
-                onClick={() => handleOpen(submission.id)}
-                className="border rounded-lg"
-              >
-                <AccordionHeader>
-                  <div className="flex justify-between w-full">
-                    <span className="font-semibold">
-                      Usuario: <span className="font-medium text-lg">
-                        {submission.profile.email}
+        <Accordion
+          key={section}
+          open={openSection === section}
+          onClick={(e) => {
+            e.stopPropagation();
+            handleSectionToggle(section);
+          }}
+          className="border rounded-lg mb-4"
+        >
+          <AccordionHeader>
+            <h2 className="text-xl font-semibold">Sección: {section}</h2>
+          </AccordionHeader>
+          <AccordionBody>
+            <div className="space-y-4 ml-6"> {/* Add indentation for submissions */}
+              {submissions.map((submission) => (
+                <Accordion
+                  key={submission.id}
+                  open={openSubmissions[section] === submission.id}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleSubmissionToggle(section, submission.id);
+                  }}
+                  className="border rounded-lg"
+                >
+                  <AccordionHeader>
+                    <div className="flex justify-between w-full">
+                      <span className="font-semibold">
+                        Usuario:{" "}
+                        <span className="font-medium text-lg">
+                          {submission.profile?.email || "No Email"}
+                        </span>
                       </span>
-                    </span>
-                    <span className="text-sm text-gray-500">
-                      {formatDate(submission.created_at)}
-                    </span>
-                  </div>
-                </AccordionHeader>
-                <AccordionBody>
-                  <div className="bg-gray-50 p-4 rounded-md">
-                    <h3 className="text-lg font-semibold mb-2">Datos enviados</h3>
-                    <table className="min-w-full table-auto">
-                      <tbody>
-                        {Object.entries(submission.responses || {}).map(
-                          ([key, value]) => (
-                            <tr key={key} className="border-t">
-                              <th className="text-left px-4 py-2 capitalize">
-                                {key}
-                              </th>
-                              <td className="px-4 py-2">{value || "N/A"}</td>
-                            </tr>
-                          )
-                        )}
-                      </tbody>
-                    </table>
-                  </div>
-                </AccordionBody>
-              </Accordion>
-            ))}
-          </div>
-        </div>
+                      <span className="text-sm text-gray-500">
+                        {formatDate(submission.created_at)}
+                      </span>
+                    </div>
+                  </AccordionHeader>
+                  <AccordionBody>
+                    <div className="bg-gray-50 p-4 rounded-md shadow-sm">
+                      <h3 className="text-lg font-semibold mb-2">Datos enviados</h3>
+                      <table className="min-w-full table-auto">
+                        <tbody>
+                          {Object.entries(submission.responses || {}).map(
+                            ([key, value]) => (
+                              <tr key={key} className="border-t">
+                                <th className="text-left px-4 py-2 capitalize text-gray-700">
+                                  {key}
+                                </th>
+                                <td className="px-4 py-2 text-gray-600">
+                                  {value || "N/A"}
+                                </td>
+                              </tr>
+                            )
+                          )}
+                        </tbody>
+                      </table>
+                    </div>
+                  </AccordionBody>
+                </Accordion>
+              ))}
+            </div>
+          </AccordionBody>
+        </Accordion>
       ))}
     </div>
   );
