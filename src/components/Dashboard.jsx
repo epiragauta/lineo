@@ -6,59 +6,65 @@ import { FaClipboardList, FaChartBar } from "react-icons/fa"; // Example icons
 import DashboardCard from "./dashboard/DashboardCard";
 import { countQuestions } from "../utils/countQuestions";
 
+import { getRadioQuestionScore } from "../backend/api/radioQuestionScore";
+import { getSliderQuestionScore } from "../backend/api/sliderQuestionScore";
+
 import PieChart from "./dashboard/PieChart";
 import Histogram from "./dashboard/Histogram";
+
 
 const Dashboard = ({ subsection, label, formQuestions }) => {
   const [submissionCount, setSubmissionCount] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [radioFrequencies, setRadioFrequencies] = useState({});
+  const [sliderFrequencies, setSliderFrequencies] = useState({});
 
   const formId = subsection;
 
-  const scores = countQuestions(formQuestions);
-
-  const histogramData = [
-    { category: "A", Si: 30, No: 20 },
-    { category: "B", Si: 50, No: 40 },
-    { category: "C", Si: 70, No: 60 },
-    { category: "D", Si: 90, No: 80 },
-  ];
-
-  const keys = ["Si", "No"];
-  const indexBy = "category";
-
-  const pieData = [
-    {
-      id: "Si",
-      label: "Si",
-      value: 70,
-    },
-    {
-      id: "No",
-      label: "No",
-      value: 30,
-    },
-  ];
-
   useEffect(() => {
-    const fetchSubmissionCount = async () => {
+    const fetchDashboardData = async () => {
+      setLoading(true);
+
       try {
+        // Fetch the number of submissions
         const count = await getNumberOfSubmissions(formId);
         if (count !== null) {
           setSubmissionCount(count);
         } else {
-          setError("No se pudo obtener el número de envíos.");
+          setError("Failed to fetch the number of submissions.");
         }
+
+        // Fetch frequencies for radio and slider questions
+        const newRadioFrequencies = {};
+        const newSliderFrequencies = {};
+
+        for (const question of formQuestions) {
+          if (
+            question.type === "radio" &&
+            question.options.includes("Sí") &&
+            question.options.includes("No")
+          ) {
+            const frequencies = await getRadioQuestionScore(formId, question.key);
+            newRadioFrequencies[question.key] = frequencies;
+          } else if (question.type === "slider") {
+            const frequencies = await getSliderQuestionScore(formId, question.key);
+            newSliderFrequencies[question.key] = frequencies;
+          }
+        }
+
+        setRadioFrequencies(newRadioFrequencies);
+        setSliderFrequencies(newSliderFrequencies);
       } catch (err) {
-        setError("Ocurrió un error inesperado.");
+        setError("An unexpected error occurred.");
+        console.error(err);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchSubmissionCount();
-  }, [formId]);
+    fetchDashboardData();
+  }, [formId, formQuestions]);
 
   return (
     <div className="p-6">
@@ -73,34 +79,49 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
           error={error}
         />
 
-        {/* Second Card: Nivel (Static Value) */}
+        {/* Second Card: Nivel */}
         <DashboardCard
           icon={<FaChartBar className="text-green-600 w-6 h-6" />}
           title="Nivel"
-          value={2} // TODO: Define formula to calculate level
+          value={2} // Example level logic
+          loading={loading}
         />
       </div>
 
-      {/* Charts */}
+      {/* Render Charts */}
+      {formQuestions.map((question, index) => {
+        if (
+          question.type === "radio" &&
+          question.options.includes("Sí") &&
+          question.options.includes("No")
+        ) {
+          // Radio Question Pie Chart
+          const frequencies = radioFrequencies[question.key] || { Sí: 0, No: 0 };
+          const pieData = [
+            { id: "Sí", label: "Sí", value: frequencies[0] || 0 },
+            { id: "No", label: "No", value: frequencies[1] || 0 },
+          ];
 
-      {
-        formQuestions.map((question, index) => {
-          const isRadio = question.type === "radio";
-          const isSlider = question.type === "slider";
+          return <PieChart key={index} data={pieData} label={question.label} />;
+        } else if (question.type === "slider") {
+          // Slider Question Histogram
+          const frequencies = sliderFrequencies[question.key] || {};
+          const histogramData = Object.entries(frequencies).map(
+            ([value, count]) => ({ value, Frequency: count })
+          );
 
-          if (isRadio && question.options.length === 2 && question.options.includes("Sí") && question.options.includes("No")) {
-            // Renderizar la sección sin estilos de fondo
-            return (
-              <PieChart key={index} data={pieData} label={question.label} />
-            );
-          } else if (isSlider) {
-
-            return (
-              <Histogram key={index} data={histogramData} keys={keys} indexBy={indexBy} label={question.label} />
-            );
-          }
-        })
-      }
+          return (
+            <Histogram
+              key={index}
+              data={histogramData}
+              keys={["Frequency"]}
+              indexBy="value"
+              label={question.label}
+            />
+          );
+        }
+        return null;
+      })}
     </div>
   );
 };
