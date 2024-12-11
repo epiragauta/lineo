@@ -88,6 +88,9 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
         />
       </div>
 
+      {/* Centered Title for Charts */}
+      <h2 className="text-center text-xl font-bold mt-8 mb-6">Análisis de Preguntas</h2>
+      
       {/* Render Charts */}
       {formQuestions.map((question, index) => {
         if (
