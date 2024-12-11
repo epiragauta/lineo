@@ -23,8 +23,8 @@ export const getRadioQuestionScore = async (formId, field) => {
 
     // Initialize a frequency object (assuming slider values range from 1 to 5)
     const frequencies = {
-      0: 0,
-      1: 0,
+      0: 0, // Yes
+      1: 0, // No
     };
 
     // Calculate frequencies for the slider field

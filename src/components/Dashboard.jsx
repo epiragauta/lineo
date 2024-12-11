@@ -8,9 +8,11 @@ import { countQuestions } from "../utils/countQuestions";
 
 import { getRadioQuestionScore } from "../backend/api/radioQuestionScore";
 import { getSliderQuestionScore } from "../backend/api/sliderQuestionScore";
+import { getScore } from "../utils/getScore";
 
 import PieChart from "./dashboard/PieChart";
 import Histogram from "./dashboard/Histogram";
+
 
 
 const Dashboard = ({ subsection, label, formQuestions }) => {
@@ -19,6 +21,8 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
   const [error, setError] = useState(null);
   const [radioFrequencies, setRadioFrequencies] = useState({});
   const [sliderFrequencies, setSliderFrequencies] = useState({});
+
+  const [sectionLevel, setSectionLevel] = useState({});
 
   const formId = subsection;
 
@@ -39,6 +43,10 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
         const newRadioFrequencies = {};
         const newSliderFrequencies = {};
 
+        let answers = 0;
+        let maxScore = 0;
+        let sumScore = 0;
+
         for (const question of formQuestions) {
           if (
             question.type === "radio" &&
@@ -47,14 +55,39 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
           ) {
             const frequencies = await getRadioQuestionScore(formId, question.key);
             newRadioFrequencies[question.key] = frequencies;
+
+            // Radio logic: only consider "Sí" responses
+            // frequncies[0] -> yes frequence
+            const yesCount = frequencies[0] || 0;
+            const noCount = frequencies[1] || 0;
+
+            answers += yesCount + noCount;
+            maxScore += yesCount + noCount; // Each "Sí" counts as 1 point
+            sumScore += yesCount;
           } else if (question.type === "slider") {
             const frequencies = await getSliderQuestionScore(formId, question.key);
             newSliderFrequencies[question.key] = frequencies;
+
+            // Slider logic: iterate over all possible slider values
+            for (let i = 0; i <= 4; i++) {
+              const count = frequencies[i] || 0;
+              answers += count;
+              maxScore += count * 4; // Max slider score is 4
+              sumScore += count * i; // Weighted score
+            }
           }
         }
 
         setRadioFrequencies(newRadioFrequencies);
         setSliderFrequencies(newSliderFrequencies);
+
+        // Compute section level using getScore utility
+        const score = getScore(answers, maxScore, sumScore);
+        if (score !== null) {
+          setSectionLevel(score);
+        } else {
+          setError("Failed to compute score of the section.");
+        }
       } catch (err) {
         setError("An unexpected error occurred.");
         console.error(err);
@@ -65,6 +98,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
 
     fetchDashboardData();
   }, [formId, formQuestions]);
+
 
   return (
     <div className="p-6">
@@ -83,7 +117,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
         <DashboardCard
           icon={<FaChartBar className="text-green-600 w-6 h-6" />}
           title="Nivel"
-          value={2} // Example level logic
+          value={submissionCount && sectionLevel.description ? sectionLevel.description : "N/A"} // Level logic
           loading={loading}
         />
       </div>
