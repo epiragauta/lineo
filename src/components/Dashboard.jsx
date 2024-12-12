@@ -22,7 +22,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [radioFrequencies, setRadioFrequencies] = useState([]);
-  const [sliderFrequencies, setSliderFrequencies] = useState({});
+  const [sliderFrequencies, setSliderFrequencies] = useState([]);
 
   const [sectionLevel, setSectionLevel] = useState({});
 
@@ -161,13 +161,13 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
       <PieChart key = "PieChart" data={radioFrequencies} label="Respuestas Sí/No" />
 
       {/* Histogram */}
-      {/* <Histogram 
+      <Histogram 
         key = {"HistogramChart"} 
         data={sliderFrequencies} 
         keys={["Frecuencia"]} 
         indexBy="Puntaje" 
         label={"Preguntas cuantitativas"}
-        /> */}
+        />
       
       {/* grafica con datos de si y nos, es decir cantidad de si y nos sobre todas las preguntas usando newradio */}
       {/* grafica con de conteo de uno, dos tres usando los datos de newslider*/}

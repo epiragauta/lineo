@@ -68,7 +68,7 @@ const FormWrapper = ({ mainTitle, introductions = [], operationQuestions, formQu
 
       {/* Botón de Envío */}
       <Button type="submit" className="mt-6 bg-primary text-white">
-        Enviar
+        Actualizar
       </Button>
     </form>
   );
