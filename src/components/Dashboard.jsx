@@ -77,7 +77,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
                 sumScore += 1;
                 newRadioFrequencies["Sí"] += 1;
               }
-              if(answer === 1) {
+              if(answer === "1") {
                 newRadioFrequencies["No"] += 1;
               }
             }
