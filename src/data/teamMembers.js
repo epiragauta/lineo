@@ -1,6 +1,6 @@
 // src/data/teamMembers.js
 
-import DanielPerez from "../assets/team/DanielPerez.jpeg";
+import DanielPerez from "../assets/team/DanielPerez2.jpeg";
 import DanielDiaz from "../assets/team/DanielDiaz.jpg";
 // import JuanLopez from "../assets/team/JuanLopez.jpeg";
 // Importa más imágenes según sea necesario
