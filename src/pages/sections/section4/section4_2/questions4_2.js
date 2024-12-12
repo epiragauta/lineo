@@ -10,7 +10,7 @@ export const questions4_2 = [
     label: "¿La entidad cuenta con una estructura orgánica documentada?",
     name: "estructuraOrganicaPregunta1",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",
@@ -33,7 +33,7 @@ export const questions4_2 = [
     label: "¿La entidad tiene documentada, implementada y actualizada la información requerida para desarrollar las diferentes actividades conforme a los requisitos de esta norma?",
     name: "documentacionActividadesPregunta1",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "radio",
@@ -41,7 +41,7 @@ export const questions4_2 = [
     label: "Si la respuesta es Sí, ¿incluye esta documentación evidencia de los controles para asegurar la calidad del proceso estadístico?",
     name: "documentacionActividadesPregunta2",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",
@@ -64,7 +64,7 @@ export const questions4_2 = [
     label: "¿La entidad cuenta con la infraestructura necesaria para el proceso estadístico, incluyendo edificios, equipos, recursos de transporte, tecnologías de la información y comunicación, y otros recursos?",
     name: "infraestructuraPregunta1",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "radio",
@@ -72,7 +72,7 @@ export const questions4_2 = [
     label: "Si la respuesta es Sí, ¿están documentados, implementados y actualizados todos estos aspectos?",
     name: "infraestructuraPregunta2",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",
@@ -95,7 +95,7 @@ export const questions4_2 = [
     label: "¿La entidad desarrolla y gestiona mecanismos de cooperación con organismos pares para fortalecer la producción estadística?",
     name: "mecanismosCooperacionPregunta1",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",

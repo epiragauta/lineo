@@ -10,7 +10,7 @@ export const questions4_7 = [
     label: "¿La entidad identifica y analiza adecuadamente los riesgos del proceso estadístico?",
     name: "identificacionRiesgosPregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "radio",
@@ -18,7 +18,7 @@ export const questions4_7 = [
     label: "Si la respuesta es Sí, ¿la identificación de riesgos incluye una evaluación detallada de los posibles riesgos?",
     name: "identificacionRiesgosDetalleA",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "radio",
@@ -26,7 +26,7 @@ export const questions4_7 = [
     label: "Si la respuesta es Sí, ¿la identificación de riesgos incluye un análisis de la probabilidad y el impacto de cada riesgo?",
     name: "identificacionRiesgosDetalleB",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "radio",
@@ -34,7 +34,7 @@ export const questions4_7 = [
     label: "Si la respuesta es Sí, ¿la identificación de riesgos incluye una clasificación de los riesgos en función de su gravedad?",
     name: "identificacionRiesgosDetalleC",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",
@@ -57,7 +57,7 @@ export const questions4_7 = [
     label: "¿La entidad implementa controles para minimizar los riesgos identificados en el proceso estadístico?",
     name: "implementacionControlesPregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "checkbox",

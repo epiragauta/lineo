@@ -10,7 +10,7 @@ export const questions4_5 = [
     label: "¿La dependencia encargada de la operación estadística determina y proporciona el personal necesario para cumplir los objetivos de la operación estadística, así como para la implementación, el mantenimiento y la mejora continua del proceso estadístico?",
     name: "determinacionProvisionPersonalPregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",
@@ -33,7 +33,7 @@ export const questions4_5 = [
     label: "¿La dependencia encargada de la operación estadística determina los perfiles necesarios para desarrollar el proceso estadístico y conserva los registros que demuestran que el personal cumple con dichos perfiles?",
     name: "competenciaPersonalPregunta1",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "radio",
@@ -41,7 +41,7 @@ export const questions4_5 = [
     label: "Si la respuesta es Sí, ¿la dependencia encargada de la operación estadística también implementa y documenta acciones de entrenamiento para asegurar la competencia del personal involucrado en el desarrollo de la operación estadística?",
     name: "competenciaPersonalPregunta2",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",

@@ -76,11 +76,11 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
               const answer = data.responses[question.name];
               maxScore += 1;
               if(answer) {
-                if(answer === "0") {
+                if(answer === "Sí") {
                   sumScore += 1;
                   newRadioFrequencies["Sí"] += 1;
                 }
-                if(answer === "1") {
+                if(answer === "No") {
                   newRadioFrequencies["No"] += 1;
                 }
               }
@@ -98,7 +98,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
             { id: "Sí", label: "Sí", value: newRadioFrequencies["Sí"] ? newRadioFrequencies["Sí"] : 0 },
             { id: "No", label: "No", value: newRadioFrequencies["No"] ? newRadioFrequencies["No"] : 0 },
           ]);
-          setSliderFrequencies( Object.entries(newSliderFrequencies).map(([Puntaje, count]) => ({ Puntaje, Frecuencia: count })) );
+          setSliderFrequencies( Object.entries(newSliderFrequencies || {}).map(([Puntaje, count]) => ({ Puntaje, Frecuencia: count })) );
 
           // Compute section level using getScore utility
           const score = getScore(1, maxScore, sumScore);
@@ -115,7 +115,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
             { id: "Sí", label: "Sí", value: 0 },
             { id: "No", label: "No", value: 0 },
           ]);
-          setSliderFrequencies( Object.entries(newSliderFrequencies).map(([Puntaje, count]) => ({ Puntaje, Frecuencia: count })) );
+          setSliderFrequencies( Object.entries(newSliderFrequencies || {}).map(([Puntaje, count]) => ({ Puntaje, Frecuencia: count })) );
 
         }
       } catch (err) {
@@ -161,13 +161,13 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
       <PieChart key = "PieChart" data={radioFrequencies} label="Respuestas Sí/No" />
 
       {/* Histogram */}
-      {/* <Histogram 
+      <Histogram 
         key = {"HistogramChart"} 
         data={sliderFrequencies} 
         keys={["Frecuencia"]} 
         indexBy="Puntaje" 
         label={"Preguntas cuantitativas"}
-        /> */}
+        />
       
       {/* grafica con datos de si y nos, es decir cantidad de si y nos sobre todas las preguntas usando newradio */}
       {/* grafica con de conteo de uno, dos tres usando los datos de newslider*/}

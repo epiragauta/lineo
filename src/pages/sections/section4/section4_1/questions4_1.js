@@ -12,7 +12,7 @@ export const questions4_1 = [
     label: "¿La Alta Dirección proporciona los recursos necesarios para implementar lo establecido en la normativa vigente?",
     name: "respRecursosPregunta1",
     options: ["Sí", "No", "No Aplica"],
-    initialValue: "",
+    initialValue: "Sí",
   },
   {
     type: "checkbox",
@@ -48,7 +48,7 @@ export const questions4_1 = [
     label: "¿La alta dirección mantiene y mejora el proceso estadístico de acuerdo con el marco legal y las funciones de la entidad?",
     name: "respMejoraPregunta1",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "slider",
@@ -81,7 +81,7 @@ export const questions4_1 = [
     label: "¿La Alta Dirección proporciona los recursos necesarios para implementar lo establecido en la normativa vigente?",
     name: "asignacionPregunta1",
     options: ["Sí", "No", "No Aplica"],
-    initialValue: "",
+    initialValue: "Sí",
   },
   {
     type: "checkbox",

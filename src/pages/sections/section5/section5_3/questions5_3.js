@@ -10,7 +10,7 @@ export const questions5_3 = [
     label: "¿La dependencia encargada de la operación estadística identifica y documenta adecuadamente la relevancia de la operación estadística y su relación con la política pública?",
     name: "identificacionRelevanciaPregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "checkbox",
@@ -49,7 +49,7 @@ export const questions5_3 = [
     label: "¿La dependencia encargada de la operación estadística evidencia la relevancia de la información estadística en términos de su importancia para el país?",
     name: "documentacionRelevanciaPregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "slider",
@@ -107,7 +107,7 @@ export const questions5_3 = [
     label: "¿Cómo evalúa la dependencia encargada de la operación estadística la revisión y actualización de la relevancia de los resultados de la operación estadística en función de cambios en las políticas públicas?",
     name: "revisionActualizacionRelevanciaPregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "textarea",

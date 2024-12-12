@@ -12,7 +12,7 @@ export const questions6_2 = [
     label: "¿Utiliza fuentes secundarias?",
     name: "utiliza_fuentes_secundarias_pregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   
   // Pregunta de Tipo Radio: Consideración de la Calidad de los Datos
@@ -22,7 +22,7 @@ export const questions6_2 = [
     label: "Si la respuesta es Sí, ¿La operación estadística considera la calidad de los datos (completitud y consistencia entre variables) cuando utiliza fuentes secundarias?",
     name: "considera_calidad_datos_pregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   
   // Pregunta de Tipo Checkbox: Aspectos de la Calidad Evaluados
