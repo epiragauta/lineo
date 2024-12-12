@@ -35,13 +35,6 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
       try {
         // Fetch the number of submissions
         const count = await getNumberOfSubmissions(formId);
-        const {data, error} = await supabase
-          .from('submissions')
-          .select('responses')
-          .eq('form_id', formId)
-          .order("created_at", { ascending: false }) // Obtener la más reciente
-          .limit(1)
-          .single(); // Obtener un solo registro
 
         if (count !== null) {
           setSubmissionCount(count);
@@ -62,48 +55,68 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
           5: 0,
         };
 
-        let maxScore = 0;
-        let sumScore = 0;
+        if (count){
+          const {data, error} = await supabase
+            .from('submissions')
+            .select('responses')
+            .eq('form_id', formId)
+            .order("created_at", { ascending: false }) // Obtener la más reciente
+            .limit(1)
+            .single(); // Obtener un solo registro
 
-        for (const question of formQuestions) {
 
-          if (question.type === "radio" && question.options.length === 2
-            && question.options.includes("Sí") && question.options.includes("No")
-          ) {
-            const answer = data.responses[question.name];
-            maxScore += 1;
-            if(answer) {
-              if(answer === "0") {
-                sumScore += 1;
-                newRadioFrequencies["Sí"] += 1;
+          let maxScore = 0;
+          let sumScore = 0;
+
+          for (const question of formQuestions) {
+
+            if (question.type === "radio" && question.options.length === 2
+              && question.options.includes("Sí") && question.options.includes("No")
+            ) {
+              const answer = data.responses[question.name];
+              maxScore += 1;
+              if(answer) {
+                if(answer === "0") {
+                  sumScore += 1;
+                  newRadioFrequencies["Sí"] += 1;
+                }
+                if(answer === "1") {
+                  newRadioFrequencies["No"] += 1;
+                }
               }
-              if(answer === "1") {
-                newRadioFrequencies["No"] += 1;
+            } else if (question.type === "slider") {
+              const answer = data.responses[question.name];
+              maxScore += 4;
+              if(answer) {
+                sumScore += answer;
+                newSliderFrequencies[answer + 1] += 1;
               }
-            }
-          } else if (question.type === "slider") {
-            const answer = data.responses[question.name];
-            maxScore += 4;
-            if(answer) {
-              sumScore += answer;
-              newSliderFrequencies[answer + 1] += 1;
             }
           }
+
+          setRadioFrequencies([
+            { id: "Sí", label: "Sí", value: newRadioFrequencies["Sí"] ? newRadioFrequencies["Sí"] : 0 },
+            { id: "No", label: "No", value: newRadioFrequencies["No"] ? newRadioFrequencies["No"] : 0 },
+          ]);
+          setSliderFrequencies( Object.entries(newSliderFrequencies).map(([Puntaje, count]) => ({ Puntaje, Frecuencia: count })) );
+
+          // Compute section level using getScore utility
+          const score = getScore(1, maxScore, sumScore);
+          if (score !== null) {
+            setSectionLevel(score);
+
+          } else {
+            setError("Failed to compute score of the section.");
+          }
         }
+        else{
 
-        setRadioFrequencies([
-          { id: "Sí", label: "Sí", value: newRadioFrequencies["Sí"] ? newRadioFrequencies["Sí"] : 0 },
-          { id: "No", label: "No", value: newRadioFrequencies["No"] ? newRadioFrequencies["No"] : 0 },
-        ]);
-        setSliderFrequencies( Object.entries(newSliderFrequencies).map(([Puntaje, count]) => ({ Puntaje, Frecuencia: count })) );
+          setRadioFrequencies([
+            { id: "Sí", label: "Sí", value: 0 },
+            { id: "No", label: "No", value: 0 },
+          ]);
+          setSliderFrequencies( Object.entries(newSliderFrequencies).map(([Puntaje, count]) => ({ Puntaje, Frecuencia: count })) );
 
-        // Compute section level using getScore utility
-        const score = getScore(1, maxScore, sumScore);
-        if (score !== null) {
-          setSectionLevel(score);
-
-        } else {
-          setError("Failed to compute score of the section.");
         }
       } catch (err) {
         setError("An unexpected error occurred.");
@@ -125,8 +138,8 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
         <DashboardCard
           icon={<FaClipboardList className="text-blue-600 w-6 h-6" />}
           title="Calificación"
-          value={sectionLevel.score ? sectionLevel.score : "N/A"}
-          percentage={sectionLevel.percentage ? sectionLevel.percentage : "N/A"}
+          value={submissionCount && sectionLevel.score ? sectionLevel.score : "N/A"}
+          percentage={sectionLevel.percentage ? sectionLevel.percentage : ""}
           loading={loading}
           error={error}
         />
