@@ -14,7 +14,7 @@ export const questions12_4 = [
     label: "¿La dependencia encargada de la operación estadística realiza evaluaciones del desempeño al culminar cada una de las fases del proceso estadístico?",
     name: "evaluaciones_culminar_fase_pregunta_12_1",
     options: ["Sí", "No"],
-    initialValue: 0,
+    initialValue: "0",
   },
 
   // Subtítulo: Revisión del Diseño del Proceso
@@ -31,7 +31,7 @@ export const questions12_4 = [
     label: "¿La dependencia encargada de la operación estadística realiza revisiones periódicas del diseño del proceso estadístico a intervalos planificados?",
     name: "revisiones_periodicas_diseno_proceso_pregunta_12_1",
     options: ["Sí", "No"],
-    initialValue: 0,
+    initialValue: "0",
   },
 
   // Pregunta de Tipo Checkbox: Aspectos evaluados en la revisión del diseño
@@ -64,7 +64,7 @@ export const questions12_4 = [
     label: "¿La dependencia encargada de la operación estadística documenta los resultados de la revisión del diseño y las acciones de mejora, cuando aplicable?",
     name: "documentacion_resultados_acciones_mejora_pregunta_12_1",
     options: ["Sí", "No"],
-    initialValue: 0,
+    initialValue: "0",
   },
 
   // Subtítulo: Evaluación Final del Proceso Estadístico
@@ -81,7 +81,7 @@ export const questions12_4 = [
     label: "¿La dependencia encargada de la operación estadística realiza una evaluación final del proceso estadístico para su mejora continua y lecciones aprendidas?",
     name: "evaluacion_final_mejora_continua_pregunta_12_1",
     options: ["Sí", "No"],
-    initialValue: 0,
+    initialValue: "0",
   },
 
   // Pregunta de Tipo Ratio: Inclusión de análisis de hallazgos en la evaluación final
@@ -91,7 +91,7 @@ export const questions12_4 = [
     label: "Si la respuesta es sí, ¿la evaluación final incluye el análisis de hallazgos, conclusiones y recomendaciones de evaluaciones anteriores?",
     name: "inclusion_analisis_hallazgos_evaluacion_final_pregunta_12_1",
     options: ["Sí", "No"],
-    initialValue: 0,
+    initialValue: "0",
   },
 
   // Subtítulo: Análisis de Resultados del Seguimiento y Medición
@@ -108,7 +108,7 @@ export const questions12_4 = [
     label: "¿La dependencia encargada de la operación estadística analiza y documenta los resultados del mecanismo de seguimiento y medición del proceso estadístico, incluyendo las dificultades encontradas y las acciones tomadas para enfrentarlas?",
     name: "analisis_documentacion_resultados_seguimiento_pregunta_12_1",
     options: ["Sí", "No"],
-    initialValue: 0,
+    initialValue: "0",
   },
 
   // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos

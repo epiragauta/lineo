@@ -10,7 +10,7 @@ export const questions5_1 = [
     label: "¿La entidad identifica adecuadamente a los usuarios internos y externos que tienen necesidades de información estadística?",
     name: "identificacionUsuariosRelevantesPregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   {
     type: "checkbox",
@@ -45,7 +45,7 @@ export const questions5_1 = [
     label: "¿La entidad define, implementa y mantiene los mecanismos de consulta que permiten obtener y analizar las necesidades de información de los usuarios?",
     name: "mecanismosConsultaUsuariosPregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   {
     type: "checkbox",

@@ -10,7 +10,7 @@ export const questions4_9 = [
     label: "¿La dependencia encargada de la operación estadística define e implementa los controles y acciones necesarios para asegurar que el operador subcontratado cumple con los requisitos establecidos en la norma y en cada iteración del proceso?",
     name: "definicionImplementacionControlesOperadoresPregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   {
     type: "checkbox",
@@ -47,7 +47,7 @@ export const questions4_9 = [
     label: "¿La dependencia encargada de la operación estadística mantiene la responsabilidad de la producción estadística aun cuando se subcontrate el desarrollo de fases o la producción total?",
     name: "responsabilidadProduccionEstadisticaPregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   {
     type: "evidencias",

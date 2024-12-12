@@ -14,7 +14,7 @@ export const questions6_1 = [
     label: "¿La operación estadística verifica que las necesidades de los usuarios se mantengan vigentes al momento de realizar el diseño?",
     name: "verificacion_necesidades_momento_diseno_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Pregunta de Tipo Radio: Verificación de Brecha de Tiempo
@@ -24,7 +24,7 @@ export const questions6_1 = [
     label: "Si la respuesta es Sí, ¿La verificación se realiza cuando la brecha de tiempo entre la fase de Detección y Análisis de Necesidades y el inicio del Diseño es amplia?",
     name: "verificacion_brecha_tiempo_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Evidencias Documentales para Verificación de Necesidades al Momento del Diseño

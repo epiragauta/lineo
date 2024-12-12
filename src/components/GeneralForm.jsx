@@ -1,11 +1,10 @@
 // src/components/GeneralForm.jsx
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import FormWrapper from "./FormWrapper";
 import { supabase } from "../backend/supabaseClient";
 import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
-import useFormPersistence from "../hooks/useFormPersistence";
 import { renderQuestions } from "../utils/renderQuestions";
 import { operationQuestions } from "../questions/operationQuestions"; 
 import { getInitialFormData } from "../utils/getInitialFormData";
@@ -20,14 +19,60 @@ import { getInitialFormData } from "../utils/getInitialFormData";
  * @param {Array} formQuestions - Array of form question components.
  * @param {Array} introductions - Array of introductions.
  */
-const GeneralForm = ({ subsection, label, formQuestions, introductions}) => {
+const GeneralForm = ({ subsection, label, formQuestions, introductions }) => {
   const { user } = useContext(AuthContext);
   const userId = user ? user.id : null;
 
   const formId = subsection;
   const initialFormData = getInitialFormData(operationQuestions, formQuestions);
 
-  const [formData, setFormData] = useFormPersistence(formId, initialFormData, userId);
+  const [formData, setFormData] = useState(initialFormData);
+  const [loading, setLoading] = useState(true);
+
+  // Función para cargar la respuesta previa del formulario
+  const loadSubmission = async () => {
+    if (!userId) {
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const { data, error } = await supabase
+        .from("submissions")
+        .select("id, responses")
+        .eq("form_id", formId)
+        .order("created_at", { ascending: false }) // Obtener la más reciente
+        .limit(1)
+        .single(); // Obtener un solo registro
+      console.log(data);
+
+      setFormData(initialFormData);
+
+      if (error && error.code !== "PGRST116") { // PGRST116: No rows found
+        throw error;
+      }
+
+      if (data && data.responses) {
+        setFormData({
+          ...initialFormData,
+          ...data.responses,
+        });
+      }
+    } catch (error) {
+      console.error("Error fetching submission:", error);
+      toast.error("Hubo un error al cargar los datos previos.", {
+        position: "top-right",
+        autoClose: 5000,
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    loadSubmission();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [userId, formId]);
 
   // Handle changes for text inputs, radio buttons, and checkboxes
   const handleChange = (e) => {
@@ -67,51 +112,46 @@ const GeneralForm = ({ subsection, label, formQuestions, introductions}) => {
       toast.error("Usuario no autenticado. Por favor, inicia sesión.", {
         position: "top-right",
         autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
       });
       return;
     }
 
     try {
-      const { data, error } = await supabase.from("submissions").insert([
-        {
-          user_id: userId,
-          form_id: formId,
-          responses: formData,
-        },
-      ]);
+       {
+        // Insertar una nueva respuesta
+        const { data, error } = await supabase.from("submissions").insert([
+          {
+            user_id: userId,
+            form_id: formId,
+            responses: formData,
+          },
+        ]);
 
-      if (error) {
-        throw error;
+        if (error) {
+          throw error;
+        }
+
+        console.log("Form submitted successfully:", data);
+        toast.success("Formulario enviado exitosamente!", {
+          position: "top-right",
+          autoClose: 5000,
+        });
       }
 
-      console.log("Form submitted successfully:", data);
-      toast.success("Formulario enviado exitosamente!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-      });
-
-      // Reset form data
-      setFormData(initialFormData);
+      // Opcional: Resetear el formulario después de enviar
+      // setFormData(initialFormData);
     } catch (error) {
       console.error("Error submitting form:", error);
       toast.error("Hubo un error al enviar el formulario. Inténtalo de nuevo.", {
         position: "top-right",
         autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
       });
     }
   };
+
+  if (loading) {
+    return <div>Cargando formulario...</div>;
+  }
 
   const mainTitle = label;
 

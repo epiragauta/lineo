@@ -21,15 +21,15 @@ export const operationQuestions = [
       { value: "interno", label: "Control Interno" },
       { value: "metodologia", label: "Subdirección de Metodología" },
     ],
-    initialValue: "",
+    initialValue: "direccion",
   },
   {
     type: "radio",
     key: "registroAdmin",
-    label: "Categorización como Registro Administrativo",
+    label: "¿La operación se presenta como un registro administrativo?",
     name: "registroAdmin",
     options: ["Sí", "No"],
-    initialValue: "No",
+    initialValue: "1",
   },
   {
     type: "input",
