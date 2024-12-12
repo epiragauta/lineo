@@ -83,6 +83,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
         const score = getScore(count, maxScore, sumScore);
         if (score !== null) {
           setSectionLevel(score);
+
         } else {
           setError("Failed to compute score of the section.");
         }
@@ -105,8 +106,9 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
         {/* First Card: Number of Submissions */}
         <DashboardCard
           icon={<FaClipboardList className="text-blue-600 w-6 h-6" />}
-          title="Número de envíos"
-          value={submissionCount}
+          title="Calificación"
+          value={sectionLevel.score ? sectionLevel.score : "N/A"}
+          percentage={sectionLevel.percentage}
           loading={loading}
           error={error}
         />
