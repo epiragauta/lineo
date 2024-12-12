@@ -1,6 +1,8 @@
 export function getScore(submissionsCount, maxScore, sumScore) {
     console.log(submissionsCount, maxScore, sumScore);
-    const percentage = Math.round(sumScore / (maxScore * submissionsCount) * 100);
+    const denominator = maxScore * submissionsCount;
+
+    const percentage = Math.round(sumScore / (denominator) * 100);
   
     // Usar Math.min para limitar el nivel máximo a 5
     const level = Math.max(Math.min(Math.ceil(percentage / 20), 5) - 1, 0);
@@ -28,6 +30,9 @@ export function getScore(submissionsCount, maxScore, sumScore) {
     ];
   
     return { 
+      sumScore: sumScore,
+      maxScore: denominator,
+      score: sumScore.toString() + "/" + denominator.toString(),
       percentage: percentage, 
       level: level, 
       description: levelDescriptions[level],

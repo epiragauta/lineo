@@ -13,7 +13,7 @@ import React from "react";
  * @param {string} [props.error=null] - Error message
  * @returns {JSX.Element}
  */
-const DashboardCard = ({ icon, title, value, loading = false, error = null, color}) => {
+const DashboardCard = ({ icon, title, value, percentage = null, loading = false, error = null, color}) => {
   return (
     <div className="bg-white shadow rounded-lg p-6 flex items-center">
       <div className="p-3 bg-blue-100 rounded-full">
@@ -26,7 +26,9 @@ const DashboardCard = ({ icon, title, value, loading = false, error = null, colo
         ) : error ? (
           <p className="text-lg font-bold text-red-500">{error}</p>
         ) : (
-          <p className= {`text-lg font-bold text-${color}`}>{value}</p>
+          <>
+            <p className= {`text-lg font-bold text-${color}`}>{value} {percentage ? ` ó ${percentage}%` : ""}</p>
+          </>
         )}
       </div>
     </div>

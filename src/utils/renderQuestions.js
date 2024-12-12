@@ -124,7 +124,7 @@ export const renderQuestions = (questions, formData, handleChange, handleSelectC
             label={question.label}
             name={question.name}
             value={formData[question.name]}
-            onChange={handleChange}
+            handleChange={handleChange}
           />
         );
 

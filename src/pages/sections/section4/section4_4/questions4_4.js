@@ -39,7 +39,7 @@ export const questions4_4 = [
     label: "¿La dependencia encargada de la operación estadística asegura que toda la documentación (como el documento metodológico y otros documentos de soporte) esté disponible para su uso antes de iniciar la fase de recolección o acopio?",
     name: "disponibilidadDocumentacionPregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   {
     type: "evidencias",

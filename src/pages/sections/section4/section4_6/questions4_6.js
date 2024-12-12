@@ -10,7 +10,7 @@ export const questions4_6 = [
     label: "¿La dependencia encargada de la operación estadística asegura que en el proceso estadístico se implementan las buenas prácticas estadísticas, los estándares estadísticos o geográficos y los lineamientos emitidos por el DANE?",
     name: "implementacionBuenasPracticasPregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   {
     type: "checkbox",
@@ -46,7 +46,7 @@ export const questions4_6 = [
     label: "¿La dependencia encargada de la operación estadística utiliza estándares estadísticos emitidos por el DANE, y en caso de no estar disponibles, emplea estándares nacionales o internacionales?",
     name: "usoEstandaresEstadisticosPregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   {
     type: "slider",

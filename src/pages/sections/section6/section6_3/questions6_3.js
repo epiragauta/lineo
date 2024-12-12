@@ -14,7 +14,7 @@ export const questions6_3 = [
     label: "¿La operación estadística determina y documenta adecuadamente el alcance temático de acuerdo con el objetivo general?",
     name: "determinacion_documentacion_alcance_tematico_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Pregunta de Tipo Checkbox: Aspectos Incluidos en la Documentación del Alcance Temático
@@ -58,7 +58,7 @@ export const questions6_3 = [
     label: "¿La operación estadística evidencia el uso de las nomenclaturas y clasificaciones estadísticas adoptadas, adaptadas o elaboradas en su última versión disponible?",
     name: "uso_nomenclaturas_clasificaciones_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Pregunta de Tipo Radio: Documentación del Referente de Nomenclaturas y Clasificaciones
@@ -68,7 +68,7 @@ export const questions6_3 = [
     label: "Si la respuesta es Sí, ¿la operación estadística documenta el referente de las nomenclaturas y clasificaciones utilizadas, incluyendo el organismo emisor, versión y fecha de publicación?",
     name: "documentacion_referente_nomenclaturas_clasificaciones_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Evidencias Documentales para Nomenclaturas y Clasificaciones
@@ -97,7 +97,7 @@ export const questions6_3 = [
     label: "¿La operación estadística evidencia y referencia el uso de conceptos estandarizados emitidos por el DANE o por referentes nacionales o internacionales de amplio reconocimiento en la temática?",
     name: "uso_conceptos_estandarizados_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Pregunta de Tipo Radio: Documentación de Justificación de Aspectos Temáticos No Considerados
@@ -107,7 +107,7 @@ export const questions6_3 = [
     label: "Si la respuesta es No, ¿se documenta la justificación de los aspectos temáticos no considerados?",
     name: "documentacion_justificacion_aspectos_no_considerados_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Evidencias Documentales para Conceptos Estandarizados
@@ -136,7 +136,7 @@ export const questions6_3 = [
     label: "¿La operación estadística determina y documenta las variables estadísticas a ser recolectadas y los indicadores estadísticos a generar en relación con el fenómeno de estudio y los objetivos de la operación estadística?",
     name: "determinacion_documentacion_variables_indicadores_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Evidencias Documentales para Pertinencia de Variables e Indicadores
@@ -165,7 +165,7 @@ export const questions6_3 = [
     label: "¿La operación estadística determina el instrumento de recolección necesario y asegura que el cuestionario esté conforme con el objetivo de la operación estadística y estructurado en bloques temáticos con una secuencia lógica?",
     name: "determinacion_instrumento_recoleccion_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Pregunta de Tipo Radio: Documentación y Mejora de Acciones para Minimizar Desgaste de la Fuente
@@ -175,7 +175,7 @@ export const questions6_3 = [
     label: "Además, ¿se documentan y mejoran las acciones para minimizar el desgaste de la fuente, como la reducción de la longitud del cuestionario y el entrenamiento de los entrevistadores?",
     name: "documentacion_mejora_acciones_minimizar_desgaste_pregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   
   // Evidencias Documentales para Instrumento de Recolección y Desgaste de la Fuente

@@ -48,7 +48,7 @@ export const questions4_1 = [
     label: "¿La alta dirección mantiene y mejora el proceso estadístico de acuerdo con el marco legal y las funciones de la entidad?",
     name: "respMejoraPregunta1",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   {
     type: "slider",
@@ -139,7 +139,7 @@ export const questions4_1 = [
     type: "sugerencias",
     key: "sugerenciasComentario",
     label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la identificación, documentación y actualización de los usuarios y sus necesidades de información estadística?",
-    name: "sugerenciasComentario",
+    name: "sugerenciasComentarioField",
     initialValue: "",
   },
   {

@@ -42,7 +42,7 @@ export const questions4_8 = [
     label: "¿La dependencia encargada de la operación estadística sigue la descripción del proceso estadístico según el numeral 0.2 de la norma?",
     name: "cumplimientoFasesProcesoEstadisticoPregunta",
     options: ["Sí", "No"],
-    initialValue: "",
+    initialValue: "0",
   },
   {
     type: "slider",
