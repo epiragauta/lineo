@@ -134,7 +134,7 @@ export const questions4_4 = [
     type: "sugerencias",
     key: "sugerenciasInformacionDocumentadaPregunta",
     label: "¿Tiene alguna sugerencia o comentario sobre cómo la entidad podría mejorar la identificación, documentación y actualización de los usuarios y sus necesidades de información estadística?",
-    name: "sugerenciasInformacionDocumentadaPregunta",
+    name: "sugerenciasPregunta",
     initialValue: "",
   },
   {
