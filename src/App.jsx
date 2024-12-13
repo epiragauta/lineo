@@ -12,7 +12,7 @@ import AdminPanel from './pages/AdminPanel';
 import PrivateRoute from './components/PrivateRoute';
 import TabsComponent from './components/TabsComponent';
 import formsConfig from './data/formsConfig';
-import TestButton from './components/TestButton';
+import Test from './components/Test';
 import { AuthContext } from './context/AuthContext';
 
 import ForgotPassword from './pages/ForgotPassword';
@@ -46,7 +46,7 @@ function App() {
         <Route path="/reset-password" element={<ResetPassword />} />
 
         {/* Other Routes */}
-        <Route path="/test-button" element={<TestButton />} />
+        <Route path="/test" element={<Test />} />
 
         {/* Protected Routes with Layout */}
         <Route
