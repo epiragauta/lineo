@@ -5,19 +5,19 @@ const Home = () => {
     <div className="bg-white p-6 rounded shadow-md">
       <h1 className="text-3xl font-bold mb-4">Bienvenido a Lineo</h1>
       <div className="text-gray-800 text-xl space-y-4">
+        {/* <h1 className="text-2xl font-bold">Bienvenido a Linéo</h1> */}
         <p>
-          El Departamento Administrativo Nacional de Estadística (DANE), en cumplimiento de lo
-          establecido en el artículo 155 de la Ley 1955 de 2019 y el Decreto 2404 de 2019, actualizó y
-          publicó la presente norma técnica para garantizar la calidad del proceso de producción y
-          difusión de las estadísticas oficiales.
+        Las estadísticas nacionales son esenciales para el diseño, implementación y evaluación de políticas públicas, proporcionando 
+        la base para un entendimiento preciso de las dinámicas sociales y económicas de un país. La Superintendencia Nacional de Salud, 
+        cumple una función clave como actor dentro del Sistema Estadístico Nacional. Su compromiso estratégico con la calidad estadística,
+         refuerza la confiabilidad de la información, permitiendo una gestión eficiente de los datos.
         </p>
         <p>
-          El documento que se presenta a continuación tiene como finalidad dar cumplimiento a este
-          mandato legal y contribuir a que las entidades y las organizaciones que conforman el
-          Sistema Estadístico Nacional (SEN) produzcan estadísticas oficiales con estándares de
-          calidad.
+        Linéo es la herramienta técnica y estratégica diseñada para monitorear y evaluar la implementación de los lineamientos establecidos 
+        por la Norma Técnica Colombiana NTC PE 1000:2020 en la Supersalud; busca garantizar el cumplimiento de los mismos y su grado de conformidad
+         con los requisitos normativos, identificando fortalezas y oportunidades de mejora que permitan a la entidad certificar su proceso estadístico.
         </p>
-        <p>
+        {/* <p>
           El SEN está integrado por las entidades que producen y difunden estadísticas o son
           responsables de registros administrativos, así:
         </p>
@@ -50,7 +50,7 @@ const Home = () => {
           aplicación entre las que se cuentan el promover la producción estadística basada en
           procesos, para ser adoptado dentro de la gestión organizacional y en la implementación en
           todas las entidades del SEN, sin importar su tamaño y características.
-        </p>
+        </p> */}
       </div>
 
     </div>

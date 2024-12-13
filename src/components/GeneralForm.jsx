@@ -44,19 +44,19 @@ const GeneralForm = ({ subsection, label, formQuestions, introductions }) => {
         .order("created_at", { ascending: false }) // Obtener la más reciente
         .limit(1)
         .single(); // Obtener un solo registro
-      console.log(data);
-
-      setFormData(initialFormData);
-
-      if (error && error.code !== "PGRST116") { // PGRST116: No rows found
-        throw error;
-      }
-
-      if (data && data.responses) {
-        setFormData({
-          ...initialFormData,
-          ...data.responses,
-        });
+        
+        setFormData(initialFormData);
+        
+        if (error && error.code !== "PGRST116") { // PGRST116: No rows found
+          throw error;
+        }
+        
+        if (data && data.responses) {
+          setFormData({
+            ...initialFormData,
+            ...data.responses,
+          });
+        console.log(data);
       }
     } catch (error) {
       console.error("Error fetching submission:", error);

@@ -1,24 +1,4 @@
 export const questions6_5 = [
-    // Título de la Sección 6.5
-    {
-      type: "sectionTitle",
-      key: "titulo_seccion_6_5",
-      title: "Sección 6.5 - Diseño de la Recolección o acopio",
-    },
-    
-    // Subtítulo: Introducción
-    {
-      type: "sectionTitle",
-      key: "introduccion_6_5",
-      title: "Introducción",
-    },
-    
-    // Texto de Introducción
-    {
-      type: "text",
-      key: "texto_introduccion_6_5",
-      content: "El diseño de la recolección o acopio es una etapa crucial para garantizar que los datos recolectados sean pertinentes, confiables y adecuados para los objetivos de la operación estadística. Según los lineamientos de la NTC PE 1000:2020, esta fase implica la definición detallada de los métodos, instrumentos y procedimientos necesarios para captar la información requerida, asegurando la calidad y consistencia de los datos. Además, considera aspectos como la validación de los instrumentos y la planeación logística, minimizando posibles sesgos o errores durante la recolección.",
-    },
     
     // Subtítulo: Diseño de la Recolección de Datos
     {
@@ -44,20 +24,20 @@ export const questions6_5 = [
       label: "Si la respuesta es Sí, ¿El diseño de la recolección considera los siguientes aspectos?",
       name: "aspectos_considerados_diseno_recoleccion_pregunta",
       options: [
-        "estructura operativa y tecnológica",
-        "roles del personal",
-        "perfiles del personal",
-        "cargas de trabajo de recolección",
-        "rutas de recolección",
-        "digitación, transmisión o digitalización de los datos",
-        "validación de los datos",
-        "transportes necesarios",
-        "logística necesaria",
-        "cartografía actualizada",
-        "georreferenciación de las unidades de observación",
-        "entrenamiento al personal",
-        "sensibilización de las fuentes",
-        "manejo de novedades operativas",
+        "Estructura operativa y tecnológica",
+        "Roles del personal",
+        "Perfiles del personal",
+        "Cargas de trabajo de recolección",
+        "Rutas de recolección",
+        "Digitación, transmisión o digitalización de los datos",
+        "Validación de los datos",
+        "Transportes necesarios",
+        "Logística necesaria",
+        "Cartografía actualizada",
+        "Georreferenciación de las unidades de observación",
+        "Entrenamiento al personal",
+        "Sensibilización de las fuentes",
+        "Manejo de novedades operativas",
       ],
       initialValue: [],
     },
