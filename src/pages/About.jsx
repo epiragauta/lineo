@@ -6,7 +6,8 @@ import { teamMembers } from "../data/teamMembers";
 
 const About = () => {
   return (
-    <div className="container mx-auto p-6 shadow-md rounded bg-white " >
+    <div className="bg-login-bg bg-cover">
+    <div className="container mx-auto p-6 shadow-md rounded bg-white bg-opacity-70" >
       {/* Título Principal */}
       <h1 className="text-5xl font-bold mb-8 text-center text-primary">Acerca de</h1>
       
@@ -65,6 +66,7 @@ const About = () => {
         </div>
       </section>
     </div>
+  </div>
   );
 };
 
