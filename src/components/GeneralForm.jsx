@@ -132,7 +132,7 @@ const GeneralForm = ({ subsection, label, formQuestions, introductions }) => {
         }
 
         console.log("Form submitted successfully:", data);
-        toast.success("Formulario enviado exitosamente!", {
+        toast.success("Formulario actualizado exitosamente!", {
           position: "top-right",
           autoClose: 5000,
         });

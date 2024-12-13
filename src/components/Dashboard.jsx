@@ -22,7 +22,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [radioFrequencies, setRadioFrequencies] = useState([]);
-  const [sliderFrequencies, setSliderFrequencies] = useState({});
+  const [sliderFrequencies, setSliderFrequencies] = useState([]);
 
   const [sectionLevel, setSectionLevel] = useState({});
 
