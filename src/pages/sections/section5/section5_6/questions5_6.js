@@ -7,7 +7,7 @@ export const questions5_6 = [
     label: "¿La dependencia verifica la existencia de información estadística en el Sistema Estadístico Nacional que satisfaga las necesidades identificadas?",
     name: "verificacion_existencia_info_estadistica_pregunta",
     options: ["Sí", "No"],
-    initialValue: "0", // Puedes ajustar este valor si hay un valor predeterminado
+    initialValue: "Sí", // Puedes ajustar este valor si hay un valor predeterminado
   },
   
   // Pregunta de Tipo Radio: Evitar Producción de Información Duplicada
@@ -17,7 +17,7 @@ export const questions5_6 = [
     label: "Si la respuesta es Sí, ¿se asegura que no se produzca información estadística que ya sea generada por otras entidades?",
     name: "evita_produccion_informacion_duplica_pregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   
   // Evidencias Documentales para Verificación de Información Estadística
@@ -46,7 +46,7 @@ export const questions5_6 = [
     label: "¿La dependencia determina las fuentes de datos a utilizar para la generación de información estadística?",
     name: "determinacion_fuentes_datos_pregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   
   // Pregunta de Tipo Checkbox: Utilización de Fuentes de Datos

@@ -10,7 +10,7 @@ export const questions4_4 = [
     label: "¿La dependencia encargada de la operación estadística elabora, implementa, conserva y actualiza adecuadamente el documento metodológico y la ficha metodológica?",
     name: "documentacionMetodologicaPregunta",
     options: ["Sí", "No", "No Aplica"],
-    initialValue: "",
+    initialValue: "Sí",
   },
   {
     type: "checkbox",
@@ -39,7 +39,7 @@ export const questions4_4 = [
     label: "¿La dependencia encargada de la operación estadística asegura que toda la documentación (como el documento metodológico y otros documentos de soporte) esté disponible para su uso antes de iniciar la fase de recolección o acopio?",
     name: "disponibilidadDocumentacionPregunta",
     options: ["Sí", "No"],
-    initialValue: "0",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",

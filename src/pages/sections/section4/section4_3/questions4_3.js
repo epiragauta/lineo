@@ -10,7 +10,7 @@ export const questions4_3 = [
     label: "¿La dependencia encargada de la operación estadística ha implementado mecanismos que garantizan que los datos recolectados y la información estadística producida se conserven de manera confidencial conforme a la normatividad vigente de protección de datos personales y los Principios Fundamentales de las Estadísticas Oficiales de Naciones Unidas?",
     name: "confidencialidadMecanismos",
     options: ["Sí", "No", "No Aplica"],
-    initialValue: "",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",
@@ -33,7 +33,7 @@ export const questions4_3 = [
     label: "¿La entidad conserva los datos recolectados de forma segura para prevenir el acceso o uso no deseado, daños o pérdida fortuita?",
     name: "conservacionSegura",
     options: ["Sí", "No", "No Aplica"],
-    initialValue: "",
+    initialValue: "Sí",
   },
   {
     type: "evidencias",
