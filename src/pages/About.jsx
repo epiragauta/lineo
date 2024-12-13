@@ -6,7 +6,7 @@ import { teamMembers } from "../data/teamMembers";
 
 const About = () => {
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 shadow-md rounded bg-white " >
       {/* Título Principal */}
       <h1 className="text-5xl font-bold mb-8 text-center text-primary">Acerca de</h1>
       

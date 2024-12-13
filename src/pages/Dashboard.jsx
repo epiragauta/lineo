@@ -189,38 +189,40 @@ const Dashboard = () => {
   }, []); // Ejecutar solo una vez al montar el hook
 
   return (
-    <div className="w-full max-w-5xl mx-auto p-4">
-      <div className="p-6 bg-white shadow-md rounded">
-      <h1 className="text-2xl font-semibold mb-6">Dashboard General de las secciones</h1>
+    <div className=" bg-login-bg bg-cover bg-no-repeat">
+      <div className="w-full max-w-5xl mx-auto p-4 ">
+        <div className="p-6 bg-white shadow-md rounded bg-opacity-60 ">
+        <h1 className="text-2xl font-semibold mb-6">Dashboard General de las secciones</h1>
 
-      {loading && <p>Cargando...</p>}
+        {loading && <p>Cargando...</p>}
 
-      {error && <p className="text-red-500">{error}</p>}
+        {error && <p className="text-red-500">{error}</p>}
 
-      {!loading && !error && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {accumulatedData.map((section, index) => (
-            <div key={index} className="bg-gray-100 p-4 border rounded shadow-sm">
-              <h2 className="text-lg font-semibold mb-4">{section.section}</h2>
-              <DashboardCard
-                icon={<FaClipboardList className="text-blue-600 w-6 h-6" />}
-                title="Calificación"
-                value={section.sectionLevel.score ? section.sectionLevel.score : "N/A"}
-                percentage={section.sectionLevel.percentage ? section.sectionLevel.percentage : ""}
-                loading={loading}
-                error={error}
-              />
-              <DashboardCard
-                icon={<FaChartBar className="text-green-600 w-6 h-6" />}
-                title= {`Nivel ${section.sectionLevel.level ? section.section.sectionLevel.level : "N/A"}`}
-                value={section.sectionLevel.description ? section.sectionLevel.description : "N/A"} // Level logic
-                color={section.sectionLevel.color ? section.sectionLevel.color : "black"}
-                loading={loading}
-              />
-            </div>
-          ))}
+        {!loading && !error && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {accumulatedData.map((section, index) => (
+              <div key={index} className="bg-gray-100 p-4 border rounded shadow-sm">
+                <h2 className="text-lg font-semibold mb-4">{section.section}</h2>
+                <DashboardCard
+                  icon={<FaClipboardList className="text-blue-600 w-6 h-6" />}
+                  title="Calificación"
+                  value={section.sectionLevel.score ? section.sectionLevel.score : "N/A"}
+                  percentage={section.sectionLevel.percentage ? section.sectionLevel.percentage : ""}
+                  loading={loading}
+                  error={error}
+                />
+                <DashboardCard
+                  icon={<FaChartBar className="text-green-600 w-6 h-6" />}
+                  title= {`Nivel ${section.sectionLevel.level ? section.section.sectionLevel.level : "N/A"}`}
+                  value={section.sectionLevel.description ? section.sectionLevel.description : "N/A"} // Level logic
+                  color={section.sectionLevel.color ? section.sectionLevel.color : "black"}
+                  loading={loading}
+                />
+              </div>
+            ))}
+          </div>
+        )}
         </div>
-      )}
       </div>
     </div>
   );

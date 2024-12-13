@@ -190,7 +190,7 @@ const Sidebar = () => {
       </div>
 
       {/* Logo Inferior */}
-      <div className="bottom-4 left-0 w-full flex justify-center items-center">
+      <div className="bottom-4 left-0 w-full flex justify-center items-center mt-6">
         <img src={LineoLogo} alt="Lineo Logo" className="w-32" />
       </div>
     </aside>
