@@ -24,7 +24,7 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
   } = useDashboardData(formId, formQuestions);
 
   return (
-    <div className="p-6">
+    <div className="p-6 bg-gray-200 rounded-lg shadow-md space-y-6">
       <h1 className="text-2xl font-semibold mb-6">{label}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* First Card: Number of Submissions */}

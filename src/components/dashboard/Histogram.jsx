@@ -7,7 +7,7 @@ import {customBlueGreenPalette} from './colorConfig';
 
 const Histogram = ({ data, keys, indexBy, margin = { top: 50, right: 130, bottom: 50, left: 60 }, label}) => {
   return (
-    <div className="p-6 bg-gray-100">
+    <div className="p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-xl font-semibold mb-4">{label}</h2>
       <div style={{ height: 500 }}>
         <ResponsiveBar

@@ -7,7 +7,7 @@ import { customBlueGreenPalette } from './colorConfig';
 
 const PieChart = ({ data, label }) => {
   return (
-    <div className="p-6 bg-gray-100">
+    <div className="p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-xl font-semibold mb-4">{label}</h2>
       <div style={{ height: 400 }}>
         <ResponsivePie
