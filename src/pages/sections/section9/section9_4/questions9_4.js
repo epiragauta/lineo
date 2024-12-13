@@ -14,7 +14,7 @@ export const questions9_4 = [
       label: "¿La operación estadística aplica adecuadamente las reglas de edición (para validación y consistencia) e imputación al conjunto de datos para disponer de un archivo de datos depurado?",
       name: "aplicacion_reglas_edicion_imputacion_pregunta_9_4",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Ratio: Aplicación de imputación solo en operaciones que lo requieren
@@ -24,7 +24,7 @@ export const questions9_4 = [
       label: "Si la respuesta es Sí, ¿se aplica la imputación solo en las operaciones estadísticas que requieren dicha técnica?",
       name: "aplicacion_imputacion_operaciones_requieren_pregunta_9_4",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Cálculo de Indicadores y Tasas de Imputación
@@ -41,7 +41,7 @@ export const questions9_4 = [
       label: "¿La operación estadística calcula los indicadores de las variables identificadas con valores no válidos y las tasas de imputación por variable, según lo definido en el diseño?",
       name: "calculo_indicadores_tasas_imputacion_pregunta_9_4",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Efectividad en la Aplicación de Reglas de Edición e Imputación
@@ -60,7 +60,7 @@ export const questions9_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Cumplimiento del Diseño para Cálculo de Indicadores
@@ -79,7 +79,7 @@ export const questions9_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Evaluación del Proceso de Imputación

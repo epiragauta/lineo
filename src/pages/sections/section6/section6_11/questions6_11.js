@@ -13,7 +13,7 @@ export const questions6_11 = [
       label: "¿La operación estadística determina y documenta adecuadamente las pruebas que se realizarán durante la fase de construcción, así como cuando se modifiquen o actualicen aspectos metodológicos, operativos e informáticos?",
       name: "determinacion_documentacion_pruebas_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     
     // Preguntas de Tipo Radio: Aspectos Incluidos en la Documentación de Pruebas
@@ -23,7 +23,7 @@ export const questions6_11 = [
       label: "¿Las entradas?",
       name: "documentacion_pruebas_entradas_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -31,7 +31,7 @@ export const questions6_11 = [
       label: "¿Las salidas (productos)?",
       name: "documentacion_pruebas_salidas_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -39,7 +39,7 @@ export const questions6_11 = [
       label: "¿Las interacciones entre las actividades?",
       name: "documentacion_pruebas_interacciones_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -47,7 +47,7 @@ export const questions6_11 = [
       label: "¿La identificación de los riesgos para las actividades críticas?",
       name: "documentacion_pruebas_identificacion_riesgos_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Determinación y Documentación de Pruebas
@@ -76,7 +76,7 @@ export const questions6_11 = [
       label: "¿La operación estadística considera tanto las pruebas funcionales como las no funcionales para el software aplicativo?",
       name: "consideracion_pruebas_funcionales_no_funcionales_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     
     // Pregunta de Tipo Checkbox: Tipos de Pruebas Incluidas
@@ -128,7 +128,7 @@ export const questions6_11 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Efectividad en Documentación y Determinación de Pruebas
@@ -159,7 +159,7 @@ export const questions6_11 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Inclusión de Pruebas Funcionales y No Funcionales
@@ -190,7 +190,7 @@ export const questions6_11 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Evaluación de Pruebas y Actualizaciones

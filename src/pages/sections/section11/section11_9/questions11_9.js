@@ -14,7 +14,7 @@ export const questions11_9 = [
       label: "¿La dependencia encargada de la operación estadística dispone de mecanismos actualizados para brindar soporte a los usuarios de la información estadística?",
       name: "disponibilidad_mecanismos_soporte_pregunta_11_9",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Tipos de Mecanismos de Soporte
@@ -56,7 +56,7 @@ export const questions11_9 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Actualización de los Mecanismos de Soporte
@@ -73,7 +73,7 @@ export const questions11_9 = [
       label: "¿La dependencia encargada de la operación estadística revisa y actualiza regularmente los mecanismos de soporte para garantizar su efectividad y pertinencia?",
       name: "revision_actualizacion_mecanismos_soporte_pregunta_11_9",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Satisfacción del Usuario
@@ -92,7 +92,7 @@ export const questions11_9 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Pregunta de Tipo Text Area: Sugerencias

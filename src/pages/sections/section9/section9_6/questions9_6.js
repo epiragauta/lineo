@@ -14,7 +14,7 @@ export const questions9_6 = [
       label: "¿La dependencia encargada de la operación estadística asegura la confidencialidad de los datos recolectados o acopiados?",
       name: "confidencialidad_datos_pregunta_9_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Text Area: Garantía de confidencialidad
@@ -40,7 +40,7 @@ export const questions9_6 = [
       label: "¿La dependencia encargada de la operación estadística garantiza la disponibilidad de los datos almacenados?",
       name: "disponibilidad_datos_pregunta_9_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Text Area: Medidas para asegurar la disponibilidad
@@ -66,7 +66,7 @@ export const questions9_6 = [
       label: "¿La dependencia encargada de la operación estadística implementa controles de acceso adecuados para los datos almacenados?",
       name: "control_acceso_pregunta_9_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Ratio: Tipo de controles utilizados
@@ -76,7 +76,7 @@ export const questions9_6 = [
       label: "Si la respuesta es Sí, ¿qué tipo de controles se utilizan?",
       name: "tipo_controles_pregunta_9_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Copia de Seguridad
@@ -93,7 +93,7 @@ export const questions9_6 = [
       label: "¿La dependencia encargada de la operación estadística realiza copias de seguridad de los datos?",
       name: "realizacion_copias_seguridad_pregunta_9_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Range: Frecuencia de copias de seguridad
@@ -105,7 +105,7 @@ export const questions9_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Versiones y Protección de Datos
@@ -122,7 +122,7 @@ export const questions9_6 = [
       label: "¿La dependencia encargada de la operación estadística asegura la protección contra la pérdida, modificación o alteración de los datos, y mantiene versiones con fecha y hora?",
       name: "proteccion_datos_versiones_pregunta_9_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Text Area: Medidas para proteger datos y mantener versiones

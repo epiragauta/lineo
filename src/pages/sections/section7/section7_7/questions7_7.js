@@ -14,7 +14,7 @@ export const questions7_7 = [
       label: "¿La operación estadística ejecuta un plan de pruebas que permita identificar las afectaciones en el desarrollo de la operación estadística?",
       name: "plan_pruebas_ejecuta_pregunta_7_7",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Componentes del plan de pruebas
@@ -58,7 +58,7 @@ export const questions7_7 = [
       label: "¿La operación estadística incluye pruebas unitarias, funcionales o no funcionales al software aplicativo para comprobar que las validaciones están operando de acuerdo con las especificaciones establecidas?",
       name: "tipos_pruebas_incluye_pregunta_7_7",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Evidencias Documentales para Tipos de Pruebas
@@ -89,7 +89,7 @@ export const questions7_7 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Documentación de Acciones
@@ -120,7 +120,7 @@ export const questions7_7 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Implementación de Pruebas

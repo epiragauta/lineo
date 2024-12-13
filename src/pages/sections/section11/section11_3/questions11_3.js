@@ -14,7 +14,7 @@ export const questions11_3 = [
       label: "¿La dependencia encargada de la operación estadística difunde la información estadística de manera puntual, de acuerdo con las fechas establecidas en el calendario de difusión?",
       name: "difusion_puntual_info_estadistica_pregunta_11_3",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Oportunidad en la Difusión de Información Estadística
@@ -31,7 +31,7 @@ export const questions11_3 = [
       label: "¿La dependencia encargada de la operación estadística difunde la información estadística de manera oportuna, considerando el tiempo transcurrido entre el periodo de referencia y la disponibilidad de las estadísticas?",
       name: "difusion_oportuna_info_estadistica_pregunta_11_3",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Cumplimiento del Calendario de Difusión
@@ -50,7 +50,7 @@ export const questions11_3 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Cumplimiento del Calendario de Difusión (Duplicado)
@@ -69,7 +69,7 @@ export const questions11_3 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Evaluación de la Puntualidad

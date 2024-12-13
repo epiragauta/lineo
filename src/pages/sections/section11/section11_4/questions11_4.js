@@ -14,7 +14,7 @@ export const questions11_4 = [
       label: "¿La dependencia encargada de la operación estadística garantiza la conservación adecuada de las series históricas o de tiempo asociadas a la operación estadística?",
       name: "conservacion_series_historicas_tiempo_pregunta_11_4",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Conservación de Metadatos
@@ -31,7 +31,7 @@ export const questions11_4 = [
       label: "¿La dependencia encargada de la operación estadística conserva los metadatos de manera continua, asegurando que estén disponibles y actualizados?",
       name: "conservacion_metadatos_continua_actualizada_pregunta_11_4",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Conservación de Resultados Difundidos
@@ -48,7 +48,7 @@ export const questions11_4 = [
       label: "¿La dependencia encargada de la operación estadística conserva los resultados difundidos de manera efectiva, permitiendo su consulta en el tiempo?",
       name: "conservacion_resultados_difundidos_pregunta_11_4",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Eficacia en la Continuidad de la Información
@@ -67,7 +67,7 @@ export const questions11_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos

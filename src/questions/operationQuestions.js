@@ -29,7 +29,7 @@ export const operationQuestions = [
     label: "¿La operación se presenta como un registro administrativo?",
     name: "registroAdmin",
     options: ["Sí", "No"],
-    initialValue: "1",
+    initialValue: "Sí",
   },
   {
     type: "input",

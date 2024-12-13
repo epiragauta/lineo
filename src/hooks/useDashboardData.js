@@ -42,6 +42,19 @@ const useDashboardData = (formId, formQuestions) => {
           4: 0,
           5: 0,
         };
+        let curMaxScore = 0;
+        let curSumScore = 0;
+        
+        for (const question of formQuestions) {
+
+          if (question.type === "radio" && question.options.length === 2
+            && question.options.includes("Sí") && question.options.includes("No")
+          ) {
+            curMaxScore += 1;
+          } else if (question.type === "slider") {
+            curMaxScore += 4;
+          }
+        }
 
         if (count){
           const {data, error} = await supabase
@@ -53,8 +66,6 @@ const useDashboardData = (formId, formQuestions) => {
             .single(); // Obtener un solo registro
 
 
-          let curMaxScore = 0;
-          let curSumScore = 0;
 
           for (const question of formQuestions) {
 
@@ -77,7 +88,7 @@ const useDashboardData = (formId, formQuestions) => {
               curMaxScore += 4;
               if(answer) {
                 curSumScore += answer;
-                newSliderFrequencies[answer + 1] += 1;
+                newSliderFrequencies[answer] += 1;
               }
             }
           }

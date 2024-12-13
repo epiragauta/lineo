@@ -14,7 +14,7 @@ export const questions13_1 = [
       label: "¿La dependencia encargada de la operación estadística determina y selecciona las oportunidades de mejora para el proceso estadístico?",
       name: "determinacion_seleccion_oportunidades_mejora_pregunta_13_1",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Acciones para Corregir, Prevenir o Reducir Efectos No Deseados
@@ -31,7 +31,7 @@ export const questions13_1 = [
       label: "¿Las oportunidades de mejora identificadas están orientadas a corregir, prevenir o reducir los efectos no deseados sobre el proceso estadístico y sus resultados?",
       name: "orientacion_oportunidades_mejora_pregunta_13_1",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Implementación de Acciones de Mejora
@@ -48,7 +48,7 @@ export const questions13_1 = [
       label: "¿La dependencia encargada de la operación estadística implementa las acciones necesarias para cumplir los requisitos de la norma y mejorar el proceso estadístico?",
       name: "implementacion_acciones_necesarias_pregunta_13_1",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Evaluación de la Efectividad de las Mejoras
@@ -65,7 +65,7 @@ export const questions13_1 = [
       label: "¿La dependencia encargada de la operación estadística evalúa la efectividad de las oportunidades de mejora y acciones implementadas para asegurar que cumplen con los requisitos y mejoran el desempeño del proceso estadístico?",
       name: "evaluacion_efectividad_mejoras_pregunta_13_1",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos

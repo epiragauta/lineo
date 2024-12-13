@@ -12,12 +12,12 @@ const SliderQuestion = ({ label, name, value = 2, onChange, min = 1, max = 5, st
         <Slider
           value={value}
           onChange={(event, newValue) => onChange(name, newValue)}
-          min={0}
-          max={4}
+          min={min}
+          max={max}
           step={step}
           aria-labelledby={`${name}-slider`}
         />
-        <span className="ml-2 text-black">{value + 1}</span>
+        <span className="ml-2 text-black">{value}</span>
       </div>
     </div>
   );

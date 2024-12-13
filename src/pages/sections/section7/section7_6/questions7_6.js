@@ -14,7 +14,7 @@ export const questions7_6 = [
       label: "¿La operación estadística elabora y documenta adecuadamente el(los) flujo(s) de trabajo que indican las principales actividades?",
       name: "elaboracion_flujos_trabajo_pregunta_7_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Aspectos incluidos en la documentación
@@ -58,7 +58,7 @@ export const questions7_6 = [
       label: "¿La operación estadística mantiene actualizada la documentación de los flujos de trabajo?",
       name: "mantenimiento_documentacion_flujos_trabajo_pregunta_7_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Elementos actualizados regularmente
@@ -104,7 +104,7 @@ export const questions7_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Claridad y Precisión en la Documentación
@@ -135,7 +135,7 @@ export const questions7_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Cumplimiento de los Flujos de Trabajo

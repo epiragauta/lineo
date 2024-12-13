@@ -13,7 +13,7 @@ export const questions7_5 = [
       label: "¿La operación estadística genera los productos cartográficos necesarios para la recolección de acuerdo con lo diseñado?",
       name: "generacion_productos_cartograficos_pregunta_7_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Preguntas de Tipo Radio: Si la respuesta es Sí, los productos incluyen:
@@ -23,7 +23,7 @@ export const questions7_5 = [
       label: "a) mapas detallados para la recolección",
       name: "productos_cartograficos_mapas_detallados_pregunta_7_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -31,7 +31,7 @@ export const questions7_5 = [
       label: "b) integración con el marco geoestadístico nacional",
       name: "productos_cartograficos_integracion_marco_geoestadistico_pregunta_7_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Evidencias Documentales para Elaboración de Productos Cartográficos
@@ -60,7 +60,7 @@ export const questions7_5 = [
       label: "¿La operación estadística construye las rutas de recolección sobre los productos cartográficos utilizando el marco geoestadístico nacional?",
       name: "construccion_rutas_recoleccion_pregunta_7_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Text Area: Aseguramiento de conformidad con el marco geoestadístico
@@ -98,7 +98,7 @@ export const questions7_5 = [
       label: "¿La operación estadística elabora los formatos de control y supervisión conforme a lo diseñado?",
       name: "elaboracion_formatos_control_supervision_pregunta_7_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Text Area: Tipos de formatos utilizados para control y supervisión
@@ -136,7 +136,7 @@ export const questions7_5 = [
       label: "¿La operación estadística elabora productos para la sensibilización y materiales para el entrenamiento del personal encargado de la recolección o el acopio?",
       name: "elaboracion_productos_sensibilizacion_entrenamiento_pregunta_7_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Productos elaborados para sensibilización y entrenamiento

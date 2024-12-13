@@ -14,7 +14,7 @@ export const questions7_1 = [
       label: "¿La operación estadística conforma, mantiene y actualiza el marco estadístico conforme al diseño especificado?",
       name: "conformacion_mantenimiento_pregunta1_7_1",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Radio 2
@@ -24,7 +24,7 @@ export const questions7_1 = [
       label: "Si la respuesta es Sí, ¿el marco estadístico incluye la totalidad de las unidades que conforman la población objetivo?",
       name: "conformacion_mantenimiento_pregunta2_7_1",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Radio 3
@@ -34,7 +34,7 @@ export const questions7_1 = [
       label: "¿Las unidades están identificadas por medio de un código geográfico (geo-código) asociado a la DIVIPOLA o a la codificación del Marco Geoestadístico Nacional?",
       name: "conformacion_mantenimiento_pregunta3_7_1",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
   
     // Evidencias Documentales para Conformación y Mantenimiento del Marco Estadístico
@@ -93,7 +93,7 @@ export const questions7_1 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Documentación y Conservación del Marco Estadístico

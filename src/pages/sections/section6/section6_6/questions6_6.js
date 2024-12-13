@@ -13,7 +13,7 @@ export const questions6_6 = [
       label: "¿La operación estadística determina y documenta adecuadamente los procesos de procesamiento de datos, incluyendo la consolidación o integración de archivos, la verificación de completitud, codificación, edición, imputación, estimación, validación, y generación de resultados?",
       name: "determinacion_documentacion_procesos_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Preguntas de Tipo Radio: Aspectos Incluidos en la Documentación de Procesos
@@ -23,7 +23,7 @@ export const questions6_6 = [
       label: "¿Consolidación o integración de los archivos de datos?",
       name: "documentacion_procesos_consolidacion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -31,7 +31,7 @@ export const questions6_6 = [
       label: "¿Verificación de la completitud de los datos?",
       name: "documentacion_procesos_completitud_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -39,7 +39,7 @@ export const questions6_6 = [
       label: "¿Especificaciones de rutina para la codificación?",
       name: "documentacion_procesos_codificacion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -47,7 +47,7 @@ export const questions6_6 = [
       label: "¿Edición?",
       name: "documentacion_procesos_edicion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -55,7 +55,7 @@ export const questions6_6 = [
       label: "¿Imputación?",
       name: "documentacion_procesos_imputacion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -63,7 +63,7 @@ export const questions6_6 = [
       label: "¿Estimación?",
       name: "documentacion_procesos_estimacion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -71,7 +71,7 @@ export const questions6_6 = [
       label: "¿Validación y consistencia de la información alfanumérica y geográfica?",
       name: "documentacion_procesos_validacion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -79,7 +79,7 @@ export const questions6_6 = [
       label: "¿Generación de resultados?",
       name: "documentacion_procesos_generacion_resultados_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Determinación y Documentación de Procesos
@@ -108,7 +108,7 @@ export const questions6_6 = [
       label: "¿La operación estadística determina la infraestructura tecnológica necesaria y define el software aplicativo requerido para la captura, digitación, digitalización, transmisión, integración, acopio, almacenamiento, lectura, seguridad de los archivos de datos, y para los procesos estadísticos como detección de inconsistencias, validación, corrección, depuración, estimación y generación de resultados?",
       name: "determinacion_infraestructura_software_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Pregunta de Tipo Checkbox: Aspectos Cubiertos en la Infraestructura y Software Aplicativo
@@ -154,7 +154,7 @@ export const questions6_6 = [
       label: "¿La operación estadística documenta la información necesaria para el uso y mantenimiento del software aplicativo, incluyendo el modelo entidad-relación, diccionario de datos, manuales de validación, captura, usuario y sistema, y mecanismos para garantizar seguridad, mantenimiento, conservación y respaldo de los datos?",
       name: "documentacion_software_aplicativo_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Preguntas de Tipo Radio: Aspectos Incluidos en la Documentación del Software Aplicativo
@@ -164,7 +164,7 @@ export const questions6_6 = [
       label: "¿Modelo entidad-relación?",
       name: "documentacion_software_aplicativo_modelo_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -172,7 +172,7 @@ export const questions6_6 = [
       label: "¿Diccionario de datos?",
       name: "documentacion_software_aplicativo_diccionario_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -180,7 +180,7 @@ export const questions6_6 = [
       label: "¿Manual de validación y consistencia?",
       name: "documentacion_software_aplicativo_manual_validacion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -188,7 +188,7 @@ export const questions6_6 = [
       label: "¿Manual de captura?",
       name: "documentacion_software_aplicativo_manual_captura_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -196,7 +196,7 @@ export const questions6_6 = [
       label: "¿Manual de usuario?",
       name: "documentacion_software_aplicativo_manual_usuario_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -204,7 +204,7 @@ export const questions6_6 = [
       label: "¿Manual del sistema?",
       name: "documentacion_software_aplicativo_manual_sistema_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -212,7 +212,7 @@ export const questions6_6 = [
       label: "¿Mecanismos de seguridad, mantenimiento, conservación y respaldo?",
       name: "documentacion_software_aplicativo_mecanismos_seguridad_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Documentación del Software Aplicativo
@@ -243,7 +243,7 @@ export const questions6_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Efectividad en el Diseño del Procesamiento de Datos
@@ -274,7 +274,7 @@ export const questions6_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Efectividad en la Infraestructura y Software Aplicativo
@@ -305,7 +305,7 @@ export const questions6_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Documentación y Conservación de Datos

@@ -14,7 +14,7 @@ export const questions11_5 = [
       label: "¿La dependencia encargada de la operación estadística difunde las medidas de calidad asociadas a las operaciones estadísticas conforme el diseño estadístico?",
       name: "difusion_medidas_calidad_pregunta_11_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Elementos incluidos en la difusión de medidas de calidad
@@ -47,7 +47,7 @@ export const questions11_5 = [
       label: "Para las operaciones estadísticas por muestreo probabilístico, ¿la dependencia encargada de la operación estadística publica los intervalos de confianza y coeficientes de variación?",
       name: "publicacion_intervalos_coeficientes_muestreo_pregunta_11_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Tasa de Imputación
@@ -64,7 +64,7 @@ export const questions11_5 = [
       label: "¿La dependencia encargada de la operación estadística difunde la tasa de imputación para las principales variables en operaciones estadísticas que realizan imputación?",
       name: "difusion_tasa_imputacion_pregunta_11_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Calidad de la Difusión de Medidas Estadísticas
@@ -83,7 +83,7 @@ export const questions11_5 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Notas de Interpretación

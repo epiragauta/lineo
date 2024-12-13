@@ -15,7 +15,7 @@ export const questions6_9 = [
       label: "¿La operación estadística determina, documenta y conserva de manera esquemática el flujo de las actividades desarrolladas en el proceso estadístico?",
       name: "determinacion_documentacion_flujo_trabajo_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Preguntas de Tipo Radio: Aspectos Incluidos en la Documentación del Flujo de Trabajo
@@ -25,7 +25,7 @@ export const questions6_9 = [
       label: "¿Las entradas?",
       name: "documentacion_flujo_trabajo_entradas_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -33,7 +33,7 @@ export const questions6_9 = [
       label: "¿Las salidas (productos)?",
       name: "documentacion_flujo_trabajo_salidas_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -41,7 +41,7 @@ export const questions6_9 = [
       label: "¿Las interacciones entre las actividades?",
       name: "documentacion_flujo_trabajo_interacciones_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -49,7 +49,7 @@ export const questions6_9 = [
       label: "¿La identificación de los riesgos para las actividades críticas?",
       name: "documentacion_flujo_trabajo_identificacion_riesgos_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Determinación y Documentación del Flujo de Trabajo
@@ -78,7 +78,7 @@ export const questions6_9 = [
       label: "¿La operación estadística establece y conserva un cronograma de actividades?",
       name: "establecimiento_cronograma_actividades_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Pregunta de Tipo Radio: Adecuación del Cronograma
@@ -119,7 +119,7 @@ export const questions6_9 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Documentación del Diseño de Flujos de Trabajo
@@ -150,7 +150,7 @@ export const questions6_9 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Eficiencia del Cronograma de Actividades

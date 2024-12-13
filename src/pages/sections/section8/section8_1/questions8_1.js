@@ -14,7 +14,7 @@ export const questions8_1 = [
       label: "¿La operación estadística realiza el entrenamiento al personal involucrado de acuerdo con lo diseñado y lo elaborado?",
       name: "realizacion_entrenamiento_pregunta_8_1",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Radio: Conservación de evidencias del entrenamiento
@@ -24,7 +24,7 @@ export const questions8_1 = [
       label: "Si la respuesta es Sí, ¿la operación estadística conserva evidencias del entrenamiento?",
       name: "conservacion_evidencias_entrenamiento_pregunta_8_1",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
   
     // Evidencias Documentales para Entrenamiento del Personal
@@ -53,7 +53,7 @@ export const questions8_1 = [
       label: "¿La operación estadística realiza actividades de sensibilización para informar a la fuente sobre la recolección o acopio de los datos?",
       name: "realizacion_actividades_sensibilizacion_pregunta_8_1",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
   
     // Evidencias Documentales para Actividades de Sensibilización
@@ -84,7 +84,7 @@ export const questions8_1 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Efectividad en conservar evidencias de entrenamiento
@@ -115,7 +115,7 @@ export const questions8_1 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Pregunta de Tipo Range: Nivel de calidad de las actividades de sensibilización
@@ -127,7 +127,7 @@ export const questions8_1 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Realización de Actividades de Sensibilización
@@ -184,7 +184,7 @@ export const questions8_1 = [
       label: "¿La entidad ha elaborado acuerdos de intercambio de datos entre sus diferentes dependencias internas y con entidades externas?",
       name: "elaboracion_acuerdos_intercambio_datos_pregunta_8_1",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Text Area: Mecanismos y protocolos para acuerdos de intercambio de datos

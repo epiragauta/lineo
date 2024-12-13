@@ -2,13 +2,10 @@ import React, {useState, useEffect} from 'react';
 import formsConfig from '../data/formsConfig';
 
 import { getNumberOfSubmissions } from "../backend/api/numberOfSubmissions";
-
 import { getScore } from "../utils/getScore";
-
 import { supabase } from "../backend/supabaseClient";
 
-
-import { FaClipboardList, FaChartBar } from "react-icons/fa"; // Example icons
+import { FaClipboardList, FaChartBar } from "react-icons/fa"; 
 import DashboardCard from "../components/dashboard/DashboardCard";
 
 
@@ -85,7 +82,7 @@ const Dashboard = () => {
                 throw new Error(`Supabase error for formId: ${formId}`);
               }
 
-              console.log(`useDashboardData: Submission data para formId ${formId}:`, submissionData);
+              // console.log(`useDashboardData: Submission data para formId ${formId}:`, submissionData);
 
               // Procesar cada pregunta del formulario
               for (const question of formQuestions) {
@@ -124,7 +121,7 @@ const Dashboard = () => {
               throw new Error(`Failed to compute score for formId: ${formId}`);
             }
 
-            console.log(`useDashboardData: Puntaje calculado para formId ${formId}:`, score);
+            // console.log(`useDashboardData: Puntaje calculado para formId ${formId}:`, score);
 
             return {
               formId,
@@ -167,7 +164,7 @@ const Dashboard = () => {
           const sectionScore = getScore(1, totalMaxScore, totalSumScore);
           if (sectionScore !== null) {
             accumulatedDataObj[section].sectionLevel = sectionScore;
-            console.log(`useDashboardData: Puntaje calculado para sección ${section}:`, sectionScore);
+            // console.log(`useDashboardData: Puntaje calculado para sección ${section}:`, sectionScore);
           } else {
             accumulatedDataObj[section].sectionLevel = null;
             setError(`Failed to compute score for section: ${section}`);
@@ -188,15 +185,18 @@ const Dashboard = () => {
     };
 
     fetchAllDashboardData();
-    console.log("useDashboardData: Finalizando useEffect");
+    // console.log("useDashboardData: Finalizando useEffect");
   }, []); // Ejecutar solo una vez al montar el hook
 
   return (
     <div className="w-full max-w-5xl mx-auto p-4">
       <div className="p-6 bg-white shadow-md rounded">
       <h1 className="text-2xl font-semibold mb-6">Dashboard General de las secciones</h1>
+
       {loading && <p>Cargando...</p>}
+
       {error && <p className="text-red-500">{error}</p>}
+
       {!loading && !error && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {accumulatedData.map((section, index) => (
@@ -217,9 +217,6 @@ const Dashboard = () => {
                 color={section.sectionLevel.color ? section.sectionLevel.color : "black"}
                 loading={loading}
               />
-              {/* <p>Puntaje: {section.sectionLevel.score}</p>
-              <p>Porcentaje: {section.sectionLevel.percentage}</p>
-              <p>Subsecciones: {section.subsections.join(", ")}</p> */}
             </div>
           ))}
         </div>

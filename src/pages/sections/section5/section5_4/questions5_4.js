@@ -12,7 +12,7 @@ export const questions5_4 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   {
     type: "evidencias",
@@ -37,7 +37,7 @@ export const questions5_4 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   {
     type: "evidencias",
@@ -62,7 +62,7 @@ export const questions5_4 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   {
     type: "evidencias",
@@ -87,7 +87,7 @@ export const questions5_4 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   {
     type: "evidencias",
@@ -112,7 +112,7 @@ export const questions5_4 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   {
     type: "evidencias",

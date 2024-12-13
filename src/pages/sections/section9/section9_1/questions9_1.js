@@ -14,7 +14,7 @@ export const questions9_1 = [
       label: "¿La operación estadística implementa adecuadamente las actividades necesarias para la integración de datos?",
       name: "implementacion_actividades_integracion_datos_pregunta_9_1",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Mantenimiento de Actividades para la Integración de Datos
@@ -31,7 +31,7 @@ export const questions9_1 = [
       label: "¿La operación estadística mantiene de manera continua las actividades para la integración de datos?",
       name: "mantenimiento_actividades_integracion_datos_pregunta_9_1",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Efectividad en la Integración de Datos
@@ -50,7 +50,7 @@ export const questions9_1 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Documentación de Actividades de Integración de Datos
@@ -69,7 +69,7 @@ export const questions9_1 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Revisión y Actualización de Actividades de Integración de Datos

@@ -14,7 +14,7 @@ export const questions9_5 = [
       label: "¿La operación estadística por muestreo probabilístico calcula adecuadamente los factores de expansión, ajustes por no cobertura y no respuesta, y errores de muestreo (coeficientes de variación) según lo establecido en el diseño?",
       name: "calculo_factores_expansion_ajustes_pregunta_9_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Cálculos realizados
@@ -46,7 +46,7 @@ export const questions9_5 = [
       label: "¿La operación estadística realiza el cálculo de ajustes por no cobertura y no respuesta, de acuerdo con lo establecido en su metodología?",
       name: "calculo_ajustes_no_cobertura_respuesta_pregunta_9_5",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Cálculos efectuados
@@ -78,7 +78,7 @@ export const questions9_5 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Documentación de Cálculos de Ponderadores
@@ -97,7 +97,7 @@ export const questions9_5 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Revisión y Actualización de los Cálculos

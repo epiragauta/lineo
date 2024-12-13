@@ -14,7 +14,7 @@ export const questions12_5 = [
       label: "¿La dependencia encargada de la operación estadística realiza auditorías internas a intervalos planificados para verificar la eficacia y eficiencia del proceso estadístico?",
       name: "frecuencia_auditorias_internas_pregunta_12_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Cumplimiento de Requisitos en las Auditorías
@@ -52,7 +52,7 @@ export const questions12_5 = [
       label: "¿La dependencia encargada de la operación estadística conserva la información documentada de las auditorías internas?",
       name: "conservacion_documentacion_auditorias_internas_pregunta_12_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Competencia e Imparcialidad en las Auditorías
@@ -69,7 +69,7 @@ export const questions12_5 = [
       label: "¿La dependencia encargada de la operación estadística asegura la competencia y la imparcialidad de las auditorías internas?",
       name: "competencia_imparcialidad_auditorias_pregunta_12_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Cumplimiento de Directrices ISO 19011
@@ -86,7 +86,7 @@ export const questions12_5 = [
       label: "¿La dependencia encargada de la operación estadística sigue las directrices proporcionadas por la Norma ISO 19011 para la realización de las auditorías internas?",
       name: "cumplimiento_directrices_iso19011_pregunta_12_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Sugerencias para Mejorar la Determinación y Confirmación del Tipo de Fuente de Datos

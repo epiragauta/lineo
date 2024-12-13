@@ -14,7 +14,7 @@ export const questions7_2 = [
       label: "¿La operación estadística elabora el cuestionario (físico o electrónico) de acuerdo con el diseño establecido?",
       name: "elaboracion_cuestionario_pregunta_7_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Evidencias Documentales para Elaboración del Cuestionario
@@ -43,7 +43,7 @@ export const questions7_2 = [
       label: "¿La entidad asegura la disponibilidad, el mantenimiento y la calibración de los equipos de recolección automática?",
       name: "disponibilidad_mantenimiento_equipos_pregunta_7_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Evidencias Documentales para Disponibilidad y Mantenimiento de Equipos
@@ -74,7 +74,7 @@ export const questions7_2 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Eficiencia en la Elaboración del Cuestionario
@@ -105,7 +105,7 @@ export const questions7_2 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Evaluación de la Implementación

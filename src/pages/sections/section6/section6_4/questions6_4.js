@@ -34,7 +34,7 @@ export const questions6_4 = [
       label: "¿La operación estadística determina y documenta adecuadamente el universo de estudio, la población objetivo, las unidades estadísticas y el periodo de referencia?",
       name: "determinacion_documentacion_diseno_estadistico_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Preguntas de Tipo Radio: Aspectos Incluidos en la Documentación del Diseño Estadístico
@@ -44,7 +44,7 @@ export const questions6_4 = [
       label: "¿El universo de estudio?",
       name: "aspectos_incluidos_diseno_estadistico_universo_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -52,7 +52,7 @@ export const questions6_4 = [
       label: "¿La población objetivo?",
       name: "aspectos_incluidos_diseno_estadistico_poblacion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -60,7 +60,7 @@ export const questions6_4 = [
       label: "¿Las unidades estadísticas?",
       name: "aspectos_incluidos_diseno_estadistico_unidades_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -68,7 +68,7 @@ export const questions6_4 = [
       label: "¿El periodo de referencia?",
       name: "aspectos_incluidos_diseno_estadistico_periodo_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Determinación y Documentación del Diseño Estadístico
@@ -97,7 +97,7 @@ export const questions6_4 = [
       label: "¿La operación estadística define y documenta un marco estadístico con las características necesarias: completitud, actualización, cobertura geográfica, ausencia de duplicidades y existencia de variables adicionales para diseñar muestras más eficientes?",
       name: "definicion_documentacion_marco_estadistico_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Pregunta de Tipo Checkbox: Características del Marco Estadístico
@@ -142,7 +142,7 @@ export const questions6_4 = [
       label: "¿La operación estadística define, documenta, mantiene y mejora un diseño muestral que sea congruente con el diseño temático y el objetivo de la operación estadística, y que considere variables de interés, precisión, método de muestreo, marco muestral, tamaño de la muestra, selección y conformación de la muestra, parámetros de estimación, medidas de calidad y mantenimiento de la muestra?",
       name: "definicion_documentacion_diseno_muestral_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Pregunta de Tipo Slider: Efectividad en el Diseño Muestral
@@ -154,7 +154,7 @@ export const questions6_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Diseño Muestral
@@ -183,7 +183,7 @@ export const questions6_4 = [
       label: "¿La operación estadística define, documenta, mantiene y mejora mecanismos para controlar el sesgo, incluyendo identificación y control de situaciones que afectan la recolección, manejo de la no respuesta, entrenamiento del personal, seguimiento y corrección de instrumentos defectuosos y control del sesgo muestral?",
       name: "definicion_documentacion_control_sesgo_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Pregunta de Tipo Slider: Efectividad en el Control de Sesgo
@@ -195,7 +195,7 @@ export const questions6_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Control de Sesgo
@@ -224,7 +224,7 @@ export const questions6_4 = [
       label: "¿La operación estadística selecciona, documenta y aplica métodos, técnicas o herramientas estadísticas para generar información con rigor técnico, y determina y documenta los requerimientos funcionales para el desarrollo de rutinas o programas de selección de muestra y estimaciones?",
       name: "seleccion_aplicacion_metodos_estadisticos_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Pregunta de Tipo Slider: Efectividad en la Selección y Aplicación de Métodos Estadísticos
@@ -236,7 +236,7 @@ export const questions6_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Métodos Estadísticos

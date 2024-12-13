@@ -98,7 +98,7 @@ export const questions6_8 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Documentación de la Estrategia de Difusión
@@ -129,7 +129,7 @@ export const questions6_8 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Implementación de Actividades de Difusión

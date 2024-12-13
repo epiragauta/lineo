@@ -14,7 +14,7 @@ export const questions11_8 = [
       label: "¿La dependencia encargada de la operación estadística determina claramente quién es responsable de aprobar la difusión de la información estadística?",
       name: "determinacion_responsables_aprobacion_pregunta_11_8",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Ratio: Documentación del proceso de aprobación
@@ -24,7 +24,7 @@ export const questions11_8 = [
       label: "Si la respuesta es sí, ¿el proceso de aprobación está debidamente documentado?",
       name: "documentacion_proceso_aprobacion_pregunta_11_8",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Documentación de la Autorización
@@ -41,7 +41,7 @@ export const questions11_8 = [
       label: "¿La dependencia encargada de la operación estadística almacena y conserva la documentación que evidencia la autorización para la difusión en cada publicación estadística?",
       name: "almacenamiento_conservacion_documentacion_autorizacion_pregunta_11_8",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Transparencia del Proceso de Autorización
@@ -60,7 +60,7 @@ export const questions11_8 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Frecuencia de Revisión del Proceso de Autorización
@@ -77,7 +77,7 @@ export const questions11_8 = [
       label: "¿La dependencia encargada de la operación estadística revisa y actualiza periódicamente los procedimientos para la autorización de la difusión estadística?",
       name: "revision_actualizacion_procedimientos_autorizacion_pregunta_11_8",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Registro de Autorizaciones
@@ -96,7 +96,7 @@ export const questions11_8 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos

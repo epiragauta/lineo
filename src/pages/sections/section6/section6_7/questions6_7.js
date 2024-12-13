@@ -14,7 +14,7 @@ export const questions6_7 = [
       label: "¿La operación estadística define y documenta adecuadamente la metodología para realizar el análisis de la información estadística?",
       name: "definicion_documentacion_metodologia_analisis_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Preguntas de Tipo Radio: Aspectos Incluidos en la Metodología de Análisis
@@ -24,7 +24,7 @@ export const questions6_7 = [
       label: "¿Coherencia de las estimaciones?",
       name: "aspectos_metodologia_analisis_coherencia_est",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -32,7 +32,7 @@ export const questions6_7 = [
       label: "¿Correspondencia entre el comportamiento del tema objeto de estudio y los resultados obtenidos?",
       name: "aspectos_metodologia_analisis_correspondencia_comportamiento",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -40,7 +40,7 @@ export const questions6_7 = [
       label: "¿Contraste de los resultados obtenidos con los resultados esperados?",
       name: "aspectos_metodologia_analisis_contraste_resultados",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -48,7 +48,7 @@ export const questions6_7 = [
       label: "¿Verificación de la consistencia interna de las variables?",
       name: "aspectos_metodologia_analisis_verificacion_consistencia",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -56,7 +56,7 @@ export const questions6_7 = [
       label: "¿Identificación, explicación y documentación de los datos atípicos?",
       name: "aspectos_metodologia_analisis_identificacion_datos_atipicos",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -64,7 +64,7 @@ export const questions6_7 = [
       label: "¿Consistencia y coherencia de la información estadística con series e indicadores históricos?",
       name: "aspectos_metodologia_analisis_consistencia_coherencia_informacion",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -72,7 +72,7 @@ export const questions6_7 = [
       label: "¿Consistencia y coherencia de la georreferenciación de las fuentes?",
       name: "aspectos_metodologia_analisis_consistencia_georreferenciacion",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Diseño y Documentación de la Metodología de Análisis
@@ -101,7 +101,7 @@ export const questions6_7 = [
       label: "¿La operación estadística determina las herramientas tecnológicas requeridas para el análisis de la información estadística o geoestadística obtenida?",
       name: "determinacion_herramientas_tecnologicas_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Determinación de Herramientas Tecnológicas
@@ -125,7 +125,7 @@ export const questions6_7 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Variables a Anonimizar y Técnicas de Anonimización
@@ -149,7 +149,7 @@ export const questions6_7 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Técnicas de Anonimización Utilizadas
@@ -173,7 +173,7 @@ export const questions6_7 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Coherencia y Consistencia en el Análisis

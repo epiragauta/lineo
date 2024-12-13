@@ -10,7 +10,7 @@ export const questions5_5 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Identificación de Conceptos Básicos
@@ -41,7 +41,7 @@ export const questions5_5 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Identificación de Variables Estadísticas
@@ -72,7 +72,7 @@ export const questions5_5 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Identificación de Indicadores Estadísticos
@@ -103,7 +103,7 @@ export const questions5_5 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Revisión y Actualización de Conceptos, Variables e Indicadores

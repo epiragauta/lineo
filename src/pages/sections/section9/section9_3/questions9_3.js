@@ -14,7 +14,7 @@ export const questions9_3 = [
       label: "¿En los casos de omisión o inconsistencias detectadas, la operación estadística consulta la unidad de observación o la fuente de datos?",
       name: "consulta_omisiones_inconsistencias_pregunta_9_3",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Acciones en caso de consulta
@@ -60,7 +60,7 @@ export const questions9_3 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Efectividad en la Revisión y Validación
@@ -91,7 +91,7 @@ export const questions9_3 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Documentación de Omisiones e Inconsistencias
@@ -122,7 +122,7 @@ export const questions9_3 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Pregunta de Tipo Text Area: Sugerencias para mejorar la determinación y confirmación del tipo de fuente de datos

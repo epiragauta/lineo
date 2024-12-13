@@ -14,7 +14,7 @@ export const questions11_2 = [
       label: "¿La dependencia encargada de la operación estadística difunde adecuadamente los metadatos que contienen información detallada de las características de la operación estadística, la estructura de los datos, los documentos de referencia y la cobertura?",
       name: "difusion_metadatos_pregunta_11_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Conservación de Metadatos
@@ -31,7 +31,7 @@ export const questions11_2 = [
       label: "¿La dependencia encargada de la operación estadística conserva de manera adecuada los metadatos de su operación estadística?",
       name: "conservacion_metadatos_pregunta_11_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Coherencia de los Metadatos con los Resultados Disponibles
@@ -50,7 +50,7 @@ export const questions11_2 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Documentación de Metadatos
@@ -69,7 +69,7 @@ export const questions11_2 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Actualización de Metadatos

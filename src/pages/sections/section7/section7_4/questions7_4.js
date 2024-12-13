@@ -13,7 +13,7 @@ export const questions7_4 = [
       label: "¿La operación estadística aplica adecuadamente la metodología para la selección y conformación de la muestra?",
       name: "aplicacion_metodologia_pregunta_7_4",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Radio: Documentación de la metodología
@@ -23,7 +23,7 @@ export const questions7_4 = [
       label: "Si la respuesta es Sí, ¿Se asegura de que esta metodología esté claramente documentada y detallada?",
       name: "documentacion_metodologia_pregunta_7_4",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Evidencias Documentales para Metodología de Selección de Muestra
@@ -52,7 +52,7 @@ export const questions7_4 = [
       label: "¿La entidad implementa y mantiene la metodología de muestreo en todas las etapas del proceso estadístico?",
       name: "implementacion_mantenimiento_muestreo_pregunta_7_4",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Aspectos de la metodología de muestreo
@@ -99,7 +99,7 @@ export const questions7_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Documentación de la Selección de Muestra
@@ -130,7 +130,7 @@ export const questions7_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Conformación de la Muestra
@@ -161,7 +161,7 @@ export const questions7_4 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Revisión de la Metodología de Muestreo

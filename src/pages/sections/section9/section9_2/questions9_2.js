@@ -14,7 +14,7 @@ export const questions9_2 = [
       label: "¿La operación estadística implementa y garantiza adecuadamente la clasificación de los datos?",
       name: "implementacion_garantia_clasificacion_pregunta_9_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Aspectos incluidos en la clasificación
@@ -45,7 +45,7 @@ export const questions9_2 = [
       label: "¿La operación estadística define, implementa y mantiene los mecanismos para la codificación de los datos?",
       name: "definicion_implementacion_mantenimiento_codificacion_pregunta_9_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Mecanismos de codificación utilizados
@@ -79,7 +79,7 @@ export const questions9_2 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Revisión y Actualización de Clasificación y Codificación

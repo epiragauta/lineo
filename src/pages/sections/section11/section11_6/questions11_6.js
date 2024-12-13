@@ -14,7 +14,7 @@ export const questions11_6 = [
       label: "¿La dependencia encargada de la operación estadística difunde y conserva las series históricas de la información estadística producida?",
       name: "difusion_conservacion_series_historicas_pregunta_11_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Ratio: Publicación de notas explicativas sobre diferencias en las series
@@ -24,7 +24,7 @@ export const questions11_6 = [
       label: "Si la respuesta es sí, ¿se publican notas explicativas sobre las diferencias que puedan presentarse en las series?",
       name: "publicacion_notas_explicativas_diferencias_series_pregunta_11_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Claridad y Comprensión de las Notas Explicativas
@@ -41,7 +41,7 @@ export const questions11_6 = [
       label: "¿Las notas explicativas sobre las series históricas son presentadas de manera clara, comprensible, con la debida orientación y de fácil interpretación?",
       name: "claridad_comprension_notas_explicativas_pregunta_11_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Range: Calidad de las notas explicativas
@@ -53,7 +53,7 @@ export const questions11_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Empalme de Series Históricas en Rediseños
@@ -70,7 +70,7 @@ export const questions11_6 = [
       label: "¿La dependencia encargada de la operación estadística realiza, documenta y difunde el empalme de las series históricas en casos de rediseño, retropolación o proyección?",
       name: "empalme_series_historicas_pregunta_11_6",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Subtítulo: Notas Explicativas y Diferencias en las Series
@@ -89,7 +89,7 @@ export const questions11_6 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Documentación del Empalme de Series

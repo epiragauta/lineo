@@ -14,7 +14,7 @@ export const questions6_12 = [
       label: "¿La dependencia encargada de la operación estadística determina y documenta adecuadamente la metodología y los mecanismos para realizar la evaluación del desempeño en las siguientes fases de la operación estadística?",
       name: "metodologia_mecanismos_evaluacion_desempeno_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Preguntas de Tipo Radio: Aspectos Incluidos en la Documentación de Pruebas
@@ -24,7 +24,7 @@ export const questions6_12 = [
       label: "a) Diseño y construcción",
       name: "metodologia_mecanismos_evaluacion_desempeno_diseno_construccion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -32,7 +32,7 @@ export const questions6_12 = [
       label: "b) Recolección o acopio",
       name: "metodologia_mecanismos_evaluacion_desempeno_recoleccion_acopio_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -40,7 +40,7 @@ export const questions6_12 = [
       label: "c) Procesamiento",
       name: "metodologia_mecanismos_evaluacion_desempeno_procesamiento_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -48,7 +48,7 @@ export const questions6_12 = [
       label: "d) Análisis",
       name: "metodologia_mecanismos_evaluacion_desempeno_analisis_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -56,7 +56,7 @@ export const questions6_12 = [
       label: "e) Difusión",
       name: "metodologia_mecanismos_evaluacion_desempeno_difusion_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -64,7 +64,7 @@ export const questions6_12 = [
       label: "f) Evaluación final",
       name: "metodologia_mecanismos_evaluacion_desempeno_evaluacion_final_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Metodología y Mecanismos de Evaluación del Desempeño
@@ -93,7 +93,7 @@ export const questions6_12 = [
       label: "¿La dependencia encargada de la operación estadística asegura que los mecanismos de evaluación del desempeño del proceso estadístico sean consistentes con los mecanismos de seguimiento institucional?",
       name: "consistencia_seguimiento_institucional_pregunta",
       options: ["Sí", "No"],
-      initialValue: "",
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Consistencia con Mecanismos de Seguimiento Institucional
@@ -124,7 +124,7 @@ export const questions6_12 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Efectividad en la Evaluación de Desempeño
@@ -155,7 +155,7 @@ export const questions6_12 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Documentación y Seguimiento de la Evaluación

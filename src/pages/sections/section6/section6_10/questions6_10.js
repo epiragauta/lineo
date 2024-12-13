@@ -14,7 +14,7 @@ export const questions6_10 = [
       label: "¿La dependencia encargada de la operación estadística ha determinado y documentado criterios claros para el cierre de los archivos de datos?",
       name: "determinacion_documentacion_criterios_cierre_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     
     // Preguntas de Tipo Radio: Aspectos Incluidos en la Documentación de Criterios de Cierre
@@ -24,7 +24,7 @@ export const questions6_10 = [
       label: "¿Recolección o acopio de datos?",
       name: "documentacion_criterios_cierre_recoleccion_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -32,7 +32,7 @@ export const questions6_10 = [
       label: "¿Procesamiento de datos?",
       name: "documentacion_criterios_cierre_procesamiento_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     {
       type: "radio",
@@ -40,7 +40,7 @@ export const questions6_10 = [
       label: "¿Análisis de datos?",
       name: "documentacion_criterios_cierre_analisis_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     
     // Evidencias Documentales para Determinación de Criterios de Cierre de Archivos de Datos
@@ -69,7 +69,7 @@ export const questions6_10 = [
       label: "¿La dependencia encargada de la operación estadística aplica el cierre de los archivos de datos a las fases de recolección, procesamiento y análisis?",
       name: "aplicacion_cierre_archivos_datos_pregunta",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
     
     // Pregunta de Tipo Checkbox: Métodos para Evitar la Incorporación de Nuevos Datos Durante el Cierre
@@ -114,7 +114,7 @@ export const questions6_10 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Documentación del Cierre de Archivos de Datos
@@ -145,7 +145,7 @@ export const questions6_10 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
     
     // Evidencias Documentales para Eficiencia en la Implementación del Cierre de Archivos

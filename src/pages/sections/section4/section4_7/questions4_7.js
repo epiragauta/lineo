@@ -98,7 +98,7 @@ export const questions4_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   {
     type: "evidencias",
@@ -123,7 +123,7 @@ export const questions4_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   {
     type: "evidencias",
@@ -148,7 +148,7 @@ export const questions4_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   {
     type: "evidencias",

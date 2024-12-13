@@ -16,7 +16,7 @@ export const questions11_1 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Calidad de los Productos de Difusión
@@ -35,7 +35,7 @@ export const questions11_1 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Uso de Herramientas de Visualización

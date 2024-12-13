@@ -14,7 +14,7 @@ export const questions8_2 = [
       label: "¿La operación estadística recolecta o acopia los datos de acuerdo con el diseño previamente establecido?",
       name: "recoleccion_datos_pregunta_8_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Radio: Uso de instrumentos y herramientas definidas
@@ -24,7 +24,7 @@ export const questions8_2 = [
       label: "Si la respuesta es Sí, ¿se utilizan los instrumentos y herramientas definidos en el plan de trabajo?",
       name: "uso_instrumentos_herramientas_pregunta_8_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Evidencias Documentales para Recolección de Datos
@@ -53,7 +53,7 @@ export const questions8_2 = [
       label: "¿La operación estadística aplica correctamente los instrumentos definidos para la recolección o acopio de datos?",
       name: "aplicacion_correcta_instrumentos_pregunta_8_2",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Instrumentos utilizados
@@ -109,7 +109,7 @@ export const questions8_2 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Plan de Trabajo
@@ -140,7 +140,7 @@ export const questions8_2 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Evidencias Documentales para Cumplimiento del Diseño

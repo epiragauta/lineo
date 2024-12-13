@@ -17,7 +17,7 @@ export const questions5_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Determinación y Documentación de las Necesidades de Información
@@ -48,7 +48,7 @@ export const questions5_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Definición y Documentación de los Objetivos de la Operación Estadística
@@ -79,7 +79,7 @@ export const questions5_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Alcance Temático y Definición de Conceptos y Variables
@@ -110,7 +110,7 @@ export const questions5_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Formulación de Indicadores Estadísticos y Selección de Fuentes de Datos
@@ -141,7 +141,7 @@ export const questions5_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Exploración de la Metodología y Métodos de Recolección de Datos
@@ -172,7 +172,7 @@ export const questions5_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Infraestructura Requerida y Pruebas de Diseño y Construcción
@@ -203,7 +203,7 @@ export const questions5_7 = [
     min: 1,
     max: 5,
     step: 1,
-    initialValue: 2,
+    initialValue: 3,
   },
   
   // Evidencias Documentales para Elaboración del Cronograma y Asignación de Recursos

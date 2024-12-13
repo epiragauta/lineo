@@ -21,7 +21,7 @@ export const questions10_3 = [
       label: "¿La operación estadística garantiza la consistencia de los resultados obtenidos?",
       name: "consistencia_resultados_pregunta_10_1",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Text Area: Cómo asegurar la consistencia
@@ -47,7 +47,7 @@ export const questions10_3 = [
       label: "¿La operación estadística documenta adecuadamente las limitaciones de los resultados, teniendo en cuenta las medidas de calidad implementadas?",
       name: "documentacion_limitaciones_pregunta_10_1",
       options: ["Sí", "No"],
-      initialValue: 0,
+      initialValue: "Sí",
     },
   
     // Pregunta de Tipo Checkbox: Medidas de calidad consideradas
@@ -82,7 +82,7 @@ export const questions10_3 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Anonimización de Microdatos
@@ -101,7 +101,7 @@ export const questions10_3 = [
       min: 1,
       max: 5,
       step: 1,
-      initialValue: 2,
+      initialValue: 3,
     },
   
     // Subtítulo: Revisión de Limitaciones y Medidas de Calidad
