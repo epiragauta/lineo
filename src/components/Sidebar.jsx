@@ -144,10 +144,10 @@ const Sidebar = () => {
         ))}
 
         {/* Dashboards */}
-        {/* <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">
+        <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">
           Dashboards
-        </h3> */}
-        {/* <ul>
+        </h3>
+        <ul>
           <li>
             <Link
               to="/dashboard"
@@ -161,7 +161,7 @@ const Sidebar = () => {
               <span className="ml-3">Dashboard General</span>
             </Link>
           </li>
-        </ul> */}
+        </ul>
         <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">
           Información
         </h3>

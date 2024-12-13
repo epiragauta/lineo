@@ -56,7 +56,7 @@ function App() {
               <Layout>
                 <Routes>
                   <Route path="/home" element={<Home />} />
-                  {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+                  <Route path="/dashboard" element={<Dashboard />} />
 
                   {/* Rutas para Forms */}
                   {formsConfig.map((section) =>
