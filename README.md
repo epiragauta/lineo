@@ -1,83 +1,91 @@
-# Getting Started with Create React App
+# Linéo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Linéo** es una herramienta innovadora diseñada para verificar y realizar el seguimiento de la implementación de los lineamientos de la norma NTC PE 1000:2020 en la Supersalud. Facilita la gestión eficiente de los procesos, optimizando la calidad y el manejo de información estadística, y apoyando la autogestión y la mejora continua.
 
-## Pre-running
+## Características
 
-Before running the project, create a `.env` file at the root of the project directory.
-Set the Supabase credentials in the following way:
+- **Autenticación Segura:** Inicia sesión y regístrate de manera protegida.
+- **Dashboard Interactivo:** Visualiza estadísticas y análisis en tiempo real.
+- **Formularios Personalizados:** Completa y gestiona formularios para el seguimiento de la norma.
+- **Notificaciones:** Recibe alertas y actualizaciones relevantes.
+- **Panel de Administración:** Revisa los últimos envios y el seguimiento de cada dato.
+
+## Tecnologías Utilizadas
+
+- **Frontend:** React.js, Tailwind CSS, Material Tailwind
+- **Backend:** Supabase
+- **Gráficos:** Nivo, React-Toastify
+- **Iconos:** React Icons
+
+## Instalación
+
+### Prerrequisitos
+
+Asegúrate de tener instalados los siguientes elementos:
+
+- [**Node.js**](https://nodejs.org/en) (v14 o superior)
+- **npm** (v6 o superior)
+- **Cuenta en Supabase** para gestionar la base de datos
+
+### Pasos
+
+#### Clona el repositorio
 
 ```bash
-REACT_APP_SUPABASE_URL=https://your-supabase-url.supabase.co
-REACT_APP_SUPABASE_ANON_KEY=your-anon-key
+# Clonar el repositorio
+
+git clone https://github.com/tu_usuario/lineo.git
+cd lineo
 ```
 
-## Available Scripts
+#### Instala las dependencias
 
-In the project directory, you can run:
+```bash
+# Instalar las dependencias
 
-### `npm install`
-Installs app dependencies.
+npm install
+```
 
-### `npm start`
+#### Configura las variables de entorno
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Crea un archivo `.env` en la raíz del proyecto y añade tus credenciales de Supabase:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```env
+REACT_APP_SUPABASE_URL=https://tu-supabase-url.supabase.co
+REACT_APP_SUPABASE_ANON_KEY=tu-anon-key
+```
 
-### `npm test`
+## Uso
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+En el directorio del proyecto, puedes ejecutar los siguientes comandos:
 
-### `npm run build`
+### Instalar dependencias
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Iniciar la aplicación en modo desarrollo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Ejecutar pruebas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Construir la aplicación para producción
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+## Despliegue
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para desplegar la aplicación, consulta la documentación de [**Create React App**](https://create-react-app.dev/docs/deployment/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
