@@ -8,6 +8,7 @@ import LidaMartinez from "../assets/team/LidaMartinez.png";
 import LeonardoTrujillo from "../assets/team/LeonardoTrujillo.png";
 import AlvaroMontenegro from "../assets/team/AlvaroMontenegro.png";
 import JuanDaniel from "../assets/team/JuanDaniel.png";
+import SuperSalud from "../assets/team/SuperSalud.png";
 
 export const teamMembers = [
   {
@@ -81,4 +82,11 @@ export const teamMembers = [
     // linkedin: "https://www.linkedin.com/in/lida-martinez-4b8b4a1b7",
     // github: ""
   },
+  {
+    id: 8,
+    name: "Superintendencia Nacional de Salud",
+    role: " Dirección de Innovación y Desarrollo",
+    photo: SuperSalud,
+    bio: "Subdirección de Analítica",
+  }
 ];
