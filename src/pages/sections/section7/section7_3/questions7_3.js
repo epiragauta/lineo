@@ -225,7 +225,7 @@ export const questions7_3 = [
   {
     type: "sugerencias",
     key: "sugerencias_mejora_desarrollo_software_aplicativo_pregunta_7_3",
-    label: "Pendiente Pregunta",
+    label: "¿Tiene alguna sugerencia o comentario sobre cómo la alta dirección podría mejorar su apoyo en el desarrollo del software aplicativo de la operación estadística en la construcción de la operación estadística de calidad dentro de la organización?",
     name: "sugerencias_mejora_desarrollo_software_aplicativo_pregunta_7_3",
     initialValue: "",
   },
