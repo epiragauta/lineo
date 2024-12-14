@@ -18,7 +18,7 @@ const TeamMemberCard = ({ member }) => {
         <Typography variant="h5" color="blue-gray" className="mb-2">
           {member.name}
         </Typography>
-        <Typography variant="subtitle2" color="gray" className="mb-4">
+        <Typography variant="subtitle2" color="black" className="mb-4">
           {member.role}
         </Typography>
         <Typography variant="small" color="gray" className="font-normal mb-4">

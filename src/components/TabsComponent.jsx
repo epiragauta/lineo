@@ -14,7 +14,7 @@ const TabsComponent = ({ formQuestions, DashboardComponent, label, introductions
   const [activeTab, setActiveTab] = useState("Form");
 
   return (
-    <div className="bg-primary bg-opacity-70">
+    <div className="bg-login-bg  bg-opacity-70">
       <div className="w-full max-w-5xl mx-auto p-4">
         <Tabs value={activeTab} onChange={(value) => setActiveTab(value)}>
           <TabsHeader>

@@ -7,6 +7,7 @@ import DashboardCard from "./dashboard/DashboardCard";
 import PieChart from "./dashboard/PieChart";
 import Histogram from "./dashboard/Histogram";
 import useDashboardData from "../hooks/useDashboardData";
+import LineoLogo from "../assets/logos/lineo/lineo_gris.png";
 
 const Dashboard = ({ subsection, label, formQuestions }) => {
 
@@ -60,7 +61,10 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
         keys={["Frecuencia"]} 
         indexBy="Puntaje" 
         label={"Preguntas cuantitativas"}
-        />
+      />  
+      <div className="top-4 right-0 w-full flex justify-center items-center mt-6">
+        <img src={LineoLogo} alt="Lineo Logo" className="w-32" />
+      </div>
     </div>
   );
 };

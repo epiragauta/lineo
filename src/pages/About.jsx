@@ -9,13 +9,16 @@ const About = () => {
     <div className="bg-login-bg bg-cover">
     <div className="container mx-auto p-6 shadow-md rounded bg-white bg-opacity-70" >
       {/* Título Principal */}
-      <h1 className="text-5xl font-bold mb-8 text-center text-primary">Acerca de</h1>
+      <h1 className="text-6xl font-bold mb-8 text-center text-primary">Acerca de</h1>
       
       {/* Sección de Descripción de la Herramienta */}
       <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4 text-primary">Nuestra Herramienta</h2>
-        <p className="text-xl text-gray-700 leading-relaxed">
-          Nuestra herramienta tiene como objetivo verificar y hacer seguimiento por parte de la Dirección de Innovación y Desarrollo a la implementación y el cumplimiento de las normas NTC. Esto nos permite contar con registros administrativos de alta calidad que facilitan la generación de estadísticas precisas y la toma de acciones informadas basadas en estos datos.
+        <h2 className="text-5xl font-semibold mb-4 text-primary">Linéo</h2>
+        <p className="text-2xl text-gray-700 leading-relaxed">
+        Linéo es una herramienta innovadora diseñada para verificar y realizar el seguimiento de la implementación
+         de los lineamientos de la norma NTC PE 1000:2020. Facilita la gestión eficiente de los procesos, su enfoque 
+         está orientado a optimizar la calidad y el manejo de información estadística, apoyando la autogestión y la mejora
+          continua en la Supersalud.
         </p>
       </section>
       
@@ -58,7 +61,7 @@ const About = () => {
       
       {/* Sección del Equipo */}
       <section>
-        <h2 className="text-2xl font-semibold mb-6 text-primary">Nuestro Equipo</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-primary">Nuestro Equipo</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
             <TeamMemberCard key={member.id} member={member} />

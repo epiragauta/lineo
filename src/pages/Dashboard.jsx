@@ -190,7 +190,7 @@ const Dashboard = () => {
 
   return (
     <div className=" bg-login-bg bg-cover bg-no-repeat">
-      <div className="w-full max-w-5xl mx-auto p-4 ">
+      <div className="w-full max-w-7xl mx-auto p-4 ">
         <div className="p-6 bg-white shadow-md rounded bg-opacity-60 ">
         <h1 className="text-2xl font-semibold mb-6">Dashboard General de las secciones</h1>
 

@@ -76,6 +76,9 @@ const Sidebar = () => {
         <img src={SNSaludLogo} alt="SNSalud Logo" className="w-40" />
       </div>
 
+      <div className="bottom-4 left-0 w-full flex justify-center items-center mt-6">
+        <img src={LineoLogo} alt="Lineo Logo" className="w-36" />
+      </div>
       {/* Navegación */}
       <nav className="mt-6 px-2">
         {/* General */}
@@ -190,9 +193,6 @@ const Sidebar = () => {
       </div>
 
       {/* Logo Inferior */}
-      <div className="bottom-4 left-0 w-full flex justify-center items-center mt-6">
-        <img src={LineoLogo} alt="Lineo Logo" className="w-32" />
-      </div>
     </aside>
   );
 };

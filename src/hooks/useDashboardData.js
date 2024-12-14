@@ -73,7 +73,6 @@ const useDashboardData = (formId, formQuestions) => {
               && question.options.includes("Sí") && question.options.includes("No")
             ) {
               const answer = data.responses[question.name];
-              curMaxScore += 1;
               if(answer) {
                 if(answer === "Sí") {
                   curSumScore += 1;
@@ -85,7 +84,6 @@ const useDashboardData = (formId, formQuestions) => {
               }
             } else if (question.type === "slider") {
               const answer = data.responses[question.name];
-              curMaxScore += 4;
               if(answer) {
                 curSumScore += answer;
                 newSliderFrequencies[answer] += 1;

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="bg-white p-6 rounded shadow-md">
-      <h1 className="text-3xl font-bold mb-4">Bienvenido a Lineo</h1>
-      <div className="text-gray-800 text-xl space-y-4">
+    <div className="bg-white p-6 rounded shadow-md max-w-7xl mx-auto w-full">  
+      <h1 className="text-5xl font-bold mb-4">Bienvenido a Linéo</h1>
+      <div className="text-gray-800 text-3xl space-y-4 ">
         {/* <h1 className="text-2xl font-bold">Bienvenido a Linéo</h1> */}
         <p>
         Las estadísticas nacionales son esenciales para el diseño, implementación y evaluación de políticas públicas, proporcionando 

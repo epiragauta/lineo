@@ -23,7 +23,7 @@ export function getScore(submissionsCount, maxScore, sumScore) {
     "red-700",
     "orange-500",
     "yellow-500",
-    "lime-400",
+    "lime-700",
     "green-600",
     "black"
   ];
