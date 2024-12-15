@@ -9,6 +9,7 @@ import LeonardoTrujillo from "../assets/team/LeonardoTrujillo.png";
 import AlvaroMontenegro from "../assets/team/AlvaroMontenegro.png";
 import JuanDaniel from "../assets/team/JuanDaniel.png";
 import SuperSalud from "../assets/team/SuperSalud.png";
+import SofiaBello from "../assets/team/SofiaBello.png";
 
 export const teamMembers = [
   {
@@ -83,10 +84,18 @@ export const teamMembers = [
     // github: ""
   },
   {
+    id: 9,
+    name: "Sofia Bello",
+    role: "Asistente estadística",
+    photo: SofiaBello,
+    bio: "Sofía Bello, colaboradora en el desarrollo del modelo estadístico. Es proactiva y amigable",
+    linkedin: "https://www.linkedin.com/in/anasofiabellodue%C3%B1as?trk=blended-typeahead", // Enlace a LinkedIn
+  }
+  {
     id: 8,
     name: "Superintendencia Nacional de Salud",
     role: " Dirección de Innovación y Desarrollo",
     photo: SuperSalud,
     bio: "Subdirección de Analítica",
-  }
+  },
 ];

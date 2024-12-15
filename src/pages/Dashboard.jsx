@@ -104,7 +104,7 @@ const Dashboard = () => {
                 } else if (question.type === "slider") {
                   const answer = submissionData.responses[question.name];
                   if (answer) {
-                    sumScore += answer;
+                    sumScore += answer - 1;
                     if (sliderFrequencies.hasOwnProperty(answer)) {
                       sliderFrequencies[answer] += 1;
                     } else {

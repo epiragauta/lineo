@@ -28,7 +28,7 @@ const Login = () => {
 
       setMessage('¡Inicio de sesión exitoso!');
       setError('');
-      setTimeout(() => navigate('/dashboard'), 1500); // Redirect to dashboard after login
+      setTimeout(() => navigate('/home'), 1500); // Redirect to dashboard after login
     } catch (error) {
       setMessage('');
       setError('Error al iniciar sesión: ' + error.message);

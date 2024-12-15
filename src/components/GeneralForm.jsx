@@ -117,29 +117,23 @@ const GeneralForm = ({ subsection, label, formQuestions, introductions }) => {
     }
 
     try {
-       {
-        // Insertar una nueva respuesta
-        const { data, error } = await supabase.from("submissions").insert([
-          {
-            user_id: userId,
-            form_id: formId,
-            responses: formData,
-          },
-        ]);
+      const { data, error } = await supabase.from("submissions").insert([
+        {
+          user_id: userId,
+          form_id: formId,
+          responses: formData,
+        },
+      ]);
 
-        if (error) {
-          throw error;
-        }
-
-        console.log("Form submitted successfully:", data);
-        toast.success("Formulario actualizado exitosamente!", {
-          position: "top-right",
-          autoClose: 5000,
-        });
+      if (error) {
+        throw error;
       }
 
-      // Opcional: Resetear el formulario después de enviar
-      // setFormData(initialFormData);
+      console.log("Form submitted successfully:", data);
+      toast.success("Formulario actualizado exitosamente!", {
+        position: "top-right",
+        autoClose: 5000,
+      });
     } catch (error) {
       console.error("Error submitting form:", error);
       toast.error("Hubo un error al enviar el formulario. Inténtalo de nuevo.", {

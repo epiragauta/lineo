@@ -1,6 +1,6 @@
 // src/components/Dashboard.jsx
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaClipboardList, FaChartBar } from "react-icons/fa"; 
 import DashboardCard from "./dashboard/DashboardCard";
 
@@ -18,8 +18,6 @@ const Dashboard = ({ subsection, label, formQuestions }) => {
     radioFrequencies,
     sliderFrequencies,
     sectionLevel,
-    maxScore,
-    sumScore,
     loading,
     error,
   } = useDashboardData(formId, formQuestions);

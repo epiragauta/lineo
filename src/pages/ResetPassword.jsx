@@ -9,7 +9,7 @@ const ResetPassword = () => {
   const [error, setError] = useState("");
 
   const [searchParams] = useSearchParams();
-  const accessToken = searchParams.get("access_token");
+  const accessToken = searchParams.get("access_token"); //eslint-disable-line
   
 
   const navigate = useNavigate()
@@ -32,7 +32,7 @@ const ResetPassword = () => {
 
       setMessage("Contraseña actualizada con éxito. Ahora puedes iniciar sesión.");
       setError("");
-      navigate('/dashboard') // Goes to dashboard screen
+      navigate('/home') // Goes to dashboard screen
 
     } catch (error) {
       setError("Error al actualizar la contraseña: " + error.message);

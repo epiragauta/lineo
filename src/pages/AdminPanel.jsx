@@ -29,6 +29,7 @@ const AdminPanel = () => {
       try {
         setLoading(true);
         const data = await getAllSubmissions();
+        data.reverse(); 
         if (data) {
           setSubmissions(data);
         } else {

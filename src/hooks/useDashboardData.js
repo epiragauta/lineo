@@ -65,7 +65,9 @@ const useDashboardData = (formId, formQuestions) => {
             .limit(1)
             .single(); // Obtener un solo registro
 
-
+          if (error) {
+            throw error;
+          }
 
           for (const question of formQuestions) {
 
@@ -85,7 +87,7 @@ const useDashboardData = (formId, formQuestions) => {
             } else if (question.type === "slider") {
               const answer = data.responses[question.name];
               if(answer) {
-                curSumScore += answer;
+                curSumScore += answer - 1;
                 newSliderFrequencies[answer] += 1;
               }
             }
