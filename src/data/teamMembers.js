@@ -90,7 +90,7 @@ export const teamMembers = [
     photo: SofiaBello,
     bio: "Sofía Bello, colaboradora en el desarrollo del modelo estadístico. Es proactiva y amigable",
     linkedin: "https://www.linkedin.com/in/anasofiabellodue%C3%B1as?trk=blended-typeahead", // Enlace a LinkedIn
-  }
+  },
   {
     id: 8,
     name: "Superintendencia Nacional de Salud",
