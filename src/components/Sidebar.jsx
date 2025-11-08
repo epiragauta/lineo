@@ -25,9 +25,8 @@ import {
 import SNSaludLogo from "../assets/logos/sena/sena_verde.png";
 import LineoLogo from "../assets/logos/lineo/lineo_gris.png";
 import formsConfig from "../data/formsConfig";
-import { supabase } from "../backend/supabaseClient"; // Import Supabase client
+import { supabase } from "../backend/supabaseClient";
 
-// Mapeo de nombres de iconos a componentes de react-icons
 const iconMapping = {
   FaHome: <FaHome />,
   FaGavel: <FaGavel />,
@@ -43,7 +42,6 @@ const iconMapping = {
   FaChevronDown: <FaChevronDown />,
   FaChevronUp: <FaChevronUp />,
   FaInfoCircle: <FaInfoCircle />
-  // Agrega más mapeos según sea necesario
 };
 
 const Sidebar = () => {
@@ -55,13 +53,10 @@ const Sidebar = () => {
     setOpen(open === section ? null : section);
   };
 
-  // Logout function using Supabase
   const handleLogout = async () => {
     try {
       const { error } = await supabase.auth.signOut();
       if (error) throw error;
-
-      // Redirect to login page after logout
       navigate("/login");
     } catch (error) {
       console.error("Logout error:", error.message);
@@ -79,6 +74,7 @@ const Sidebar = () => {
       <div className="bottom-4 left-0 w-full flex justify-center items-center mt-6">
         <img src={LineoLogo} alt="Lineo Logo" className="w-36" />
       </div>
+
       {/* Navegación */}
       <nav className="mt-6 px-2">
         {/* General */}
@@ -89,9 +85,8 @@ const Sidebar = () => {
           <li>
             <Link
               to="/home"
-              className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
-                location.pathname === "/home" ? "bg-blue-100 text-blue-600" : ""
-              }`}
+              className={`flex items-center px-4 py-2 text-gray-700 hover:bg-primary_light hover:text-primary rounded transition ${location.pathname === "/home" ? "bg-primary_light text-primary" : ""
+                }`}
             >
               {iconMapping.FaHome}
               <span className="ml-3">Home</span>
@@ -130,11 +125,10 @@ const Sidebar = () => {
                   <li key={form.path}>
                     <Link
                       to={form.path}
-                      className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
-                        location.pathname === form.path
-                          ? "bg-blue-100 text-blue-600"
+                      className={`flex items-center px-4 py-2 text-gray-700 hover:bg-primary_light hover:text-primary rounded transition ${location.pathname === form.path
+                          ? "bg-primary_light text-primary"
                           : ""
-                      }`}
+                        }`}
                     >
                       {iconMapping[section.icon] || <FaRegLightbulb />}
                       <span className="ml-3">{form.label}</span>
@@ -154,31 +148,16 @@ const Sidebar = () => {
           <li>
             <Link
               to="/dashboard"
-              className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
-                location.pathname === "/dashboard"
-                  ? "bg-blue-100 text-blue-600"
+              className={`flex items-center px-4 py-2 text-gray-700 hover:bg-primary_light hover:text-primary rounded transition ${location.pathname === "/dashboard"
+                  ? "bg-primary_light text-primary"
                   : ""
-              }`}
+                }`}
             >
               {iconMapping.FaChartPie}
               <span className="ml-3">Dashboard General</span>
             </Link>
           </li>
         </ul>
-        <h3 className="text-gray-900 text-sm font-bold uppercase mt-4 mb-2">
-          Información
-        </h3>
-        <Link
-          to="/about"
-          className={`flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600 rounded transition ${
-            location.pathname === "/about"
-              ? "bg-blue-100 text-blue-600"
-              : ""
-          }`}
-        >
-          {iconMapping.FaInfoCircle}
-          <span className="ml-3">Acerca de</span>
-        </Link>
       </nav>
 
       {/* Botón de Cerrar Sesión */}
@@ -191,8 +170,6 @@ const Sidebar = () => {
           Logout
         </button>
       </div>
-
-      {/* Logo Inferior */}
     </aside>
   );
 };

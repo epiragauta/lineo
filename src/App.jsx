@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Layout from './layouts/Layout';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
-import About from './pages/About';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import AdminPanel from './pages/AdminPanel';
@@ -78,7 +77,6 @@ function App() {
                     ))
                   )}
 
-                  <Route path="/about" element={<About />} />
                   <Route path="/admin" element={<AdminPanel />} />
                   {/* Redirige cualquier ruta desconocida a /home */}
                   <Route path="*" element={<Navigate to="/home" replace />} />
