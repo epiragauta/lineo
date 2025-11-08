@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { supabase } from '../backend/supabaseClient';
-import LogoSuper from '../assets/logos/super/super_blanco.png';
+import LogoSuper from '../assets/logos/sena/sena_blanco.png';
 import LogoLineo from '../assets/logos/lineo/lineo_blbl.png';
 
 const Login = () => {

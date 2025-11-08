@@ -22,7 +22,7 @@ import {
   FaChevronUp,
   FaInfoCircle
 } from "react-icons/fa";
-import SNSaludLogo from "../assets/logos/super/super_azul.png";
+import SNSaludLogo from "../assets/logos/sena/sena_verde.png";
 import LineoLogo from "../assets/logos/lineo/lineo_gris.png";
 import formsConfig from "../data/formsConfig";
 import { supabase } from "../backend/supabaseClient"; // Import Supabase client
